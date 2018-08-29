@@ -1,0 +1,33 @@
+{
+  "name": "dibk-fb-webcommon",
+  "authors": [
+    "Arkitektum AS <support@arkitektum.no>"
+  ],
+  "description": "Common files for DIBK sites",
+  "main": [
+    "assets/js/*.js",
+    "assets/css/*.css",
+    "assets/images/**/*.{jpg,svg,png,gif,ico}",
+    "assets/fonts/**/*.{otf,eot,svg,ttf,woff,woff2}"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "dibk"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "/gulp-config.json",
+    "/Gulpfile.js",
+    "/package.json",
+    "bower_components",
+    "/src/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}

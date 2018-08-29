@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "vue": "v2.5.17",
+    "axios": "v0.18.0",
+    "dibk-fb-webcommon": "~12.0.5"
+  },
+  "license": "MIT",
+  "name": "DigitekVeiviser",
+  "private": true,
+  "version": "0.0.0"
+}

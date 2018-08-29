@@ -1,0 +1,43 @@
+{
+  "name": "dibk-fb-webcommon",
+  "authors": [
+    "Arkitektum AS <support@arkitektum.no>"
+  ],
+  "description": "Common files for DIBK sites",
+  "main": [
+    "assets/js/*.js",
+    "assets/css/*.css",
+    "assets/images/**/*.{jpg,svg,png,gif,ico}",
+    "assets/fonts/**/*.{otf,eot,svg,ttf,woff,woff2}"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "dibk"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "/gulp-config.json",
+    "/Gulpfile.js",
+    "/package.json",
+    "bower_components",
+    "/src/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "version": "12.0.5",
+  "_release": "12.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v12.0.5",
+    "commit": "050335bbe63fbe5890b5f4da51c0efe0917e599d"
+  },
+  "_source": "https://bitbucket.org/dibk/fb-webcommon.git",
+  "_target": "~12.0.5",
+  "_originalSource": "dibk-fb-webcommon"
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link href="../assets/css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+
+	<section class="header-section">
+		<div class="header-background-image"></div>
+
+		<div class="general-container">
+			<div class="container">
+				<div class="navigation">
+
+					<img  class="mobile-logo" src="Content/bower_components/dibk-fb-webcommon/assets/images/dibk_logo_mob.svg">
+					<img  class="desktop-logo" src="Content/bower_components/dibk-fb-webcommon/assets/images/DiBk_logo_rgb.svg">
+					<nav id="main-menu" class="navigaton-bar">
+						<ul>
+
+							<li><a href="#">SKJEMA INNSTILLINGER</a></li>
+							<li><a href="#">LOGG</a></li>
+							<li><a class="content-toggle" data-content-toggle="dropdown-admin" href="#">ADMIN</a>
+								<div id="dropdown-admin" class="toggleableContent"">
+									<div class="row">
+										<div class="col-lg-3">
+											<ul>
+												<li><a href="#">Brukere</a></li>
+												<li><a href="#">Forsendelse</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-3"></div>
+										<div class="col-lg-3"></div>
+										<div class="col-lg-3"></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</li>
+							<form>
+							<li><a href="#">BRUKERPROFIL</a></li>
+							<li><a href="#">LOGG UT</a></li>
+							</form>
+						</ul>
+
+
+					</nav>
+					<i id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="general-container">
+			<h1>Dette trenger du til søknaden</h1>
+			<p class="intro-text">Når du skal fylle ut søknaden er det flere opplysninger om foretaket du må ha for hånden. Her er en oversikt.</p>
+
+			<h2>Krav til utdanning og praksis</h2>
+			<p>
+				Godkjenningsbeviset for sentral godkjenning for ansvarsrett skal avspeile foretakets faglige kvalifikasjoner, gjennomføringsevne og at seriøsitetsvilkårene er oppfylt.Dette skal legges til grunn når du velger hvilke godkjenningsområder du søker om.
+			</p>
+			<p>
+				Ved førstegangs søknad om sentral godkjenning for ansvarsrett er det krav om at den faglige ledelsen minimum innehar fag-/svennebrev eller tilsvarende.&nbsp;Foretakets faglige kvalifikasjoner skal dokumenteres og være i samsvar med foretakets organisasjonsplan.
+			</p>
+			<p>
+				Byggesaksforskriften kap. 11 stiller generelle krav til faglige kvalifikasjoner.
+			</p>
+			<p>
+				<a title="Tabell med utdanningsnivåer og praksislenger knyttet til funksjoner og tiltaksklasser " href="#">
+					I veiledningen til byggesaksforskriften § 11-3 finner du en tabell med de utdanningsnivåer og praksislengder som er knyttet opp mot de forskjellige funksjoner og tiltaksklasser.
+				</a>
+			</p>
+			<p>
+				Foretak som søker om fornyelse av sin sentrale godkjenning vurderes etter kompetansekravene som gjaldt før 1. januar 2016. Dette er en overgangsbestemmelse i byggesaksforskriften som gjelder kravene til utdanning og praksis. Disse foretakene har frist fram til 1. juli 2018 til å oppfylle kompetansekravene.
+			</p>
+			
+
+			<a class="linkbutton" href="https://tt02.altinn.basefarm.net/Pages/ExternalAuthentication/Redirect.aspx?returnUrl=https://fellesbygg.dibk.no/meldingsboks">
+				<img alt="Idporten-logo" src="/assets/images/idporten-logo.png" width="20"> Min meldingsboks
+			</a>
+		</div>
+	</section>
+	
+	<script src="../assets/js/main.js"></script>
+
+<section>
+<footer>
+ <div class="container body-content container-footer">
+<div class="general-container">
+	 <div class="row">
+                    <div class="col-sm-4 footertext">
+                        <p>
+                            <h2>Kontakt</h2>
+                        </p>
+                        <ul>
+                            <li><a href="http://dibk.no/no/Systemside/HeaderMenu/Kontakt-oss/">Kontakt DIBK</a></li>
+                            <li>E-post: <a style="font-size: 1em; line-height: 1em;" title="Henvendelser om fortolkning av regelverk og generelle spørsmål kan rettes til post@dibk.no" href="mailto:post@dibk.no">post@dibk.no</a></li>
+                            <li>Byggsøk: <a style="font-size: 1em; line-height: 1em;" title="Spørsmål om Byggsøk? Send en epost til brukerstøtte" href="mailto:byggsok@dibk.no">byggsok@dibk.no</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 footertext">
+                        <p><h2>Kontaktperson for DIBK</h2></p>
+                        <ul>
+                            <li>Olaug Hana Nesheim</li>
+                            <li>Telefon: +47 93 05 66 35</li>
+                            <li>E-post: <a href="mailto:ohn@dibk.no">ohn@dibk.no</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-sm-4 footertext">
+                        <p><h2>Kontaktperson for Arkitektum AS</h2></p>
+                        <ul>
+                            <li>Tor Kjetil Nilsen</li>
+                            <li>Telefon: +47 48 14 84 68</li>
+                            <li>E-post: <a href="mailto:tor@arkitektum.no">tor@arkitektum.no</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="margin-top">
+                    <p class="pull-right">Versjon: @Html.ApplicationVersionNumber()</p>
+                    <p>&copy; @DateTime.Now.Year - Direktoratet for byggkvalitet </p>
+                </div>
+                </div>
+
+</div>
+</footer>
+
+</section>
+
+</body>
+
+
+
+</html>

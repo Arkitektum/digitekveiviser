@@ -1,0 +1,87 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/Content/bower_components/dibk-fb-webcommon/assets/images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>@ViewBag.Title - DIBK DigiTEK</title>
+    @Styles.Render("~/Content/bower_components/dibk-fb-webcommon/assets/css/styles")
+</head>
+<body>
+    <section class="header-section">
+        <div class="header-background-image"></div>
+
+        <div class="general-container">
+            <div class="container">
+                <div class="navigation">
+
+                    <a href="/">
+                        <img class="mobile-logo" src="~/Content/bower_components/dibk-fb-webcommon/assets/images/dibk_logo_mob.svg">
+                        <img class="desktop-logo" src="~/Content/bower_components/dibk-fb-webcommon/assets/images/DiBk_logo_rgb.svg">
+                    </a>
+                    <nav id="main-menu" class="navigaton-bar">
+                        <ul>
+
+                            <li><a href='@Url.Action("Index", "Home")'>DigiTEK</a></li>
+                            <li><a href='@Url.Action("brann", "Home")'>Brann</a></li>
+
+
+                        </ul>
+                    </nav>
+                    <i id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section>
+        <div id="vue-container" class="container general-container">
+            @RenderBody()
+        </div>
+    </section>
+
+
+    <section>
+        <footer role="contentinfo">
+            <div class="container body-content container-footer footer-content">
+                <div class="general-container">
+                    <div class="row">
+                        <div class="col-sm-4 footertext">
+                            <h2 class="footer-header">Kontakt oss</h2>
+                            <p>E-post: <a title="Vi vurderer ikke konkrete byggesaker eller konkrete løsninger. Spørsmål om din byggesak må du rette til kommunen som er ansvarlig for byggesaken." href="mailto:post@dibk.no">post@dibk.no</a></p>
+                            <p><em>Vi vurderer ikke konkrete byggesaker eller konkrete løsninger. Spørsmål om din byggesak må du rette til kommunen som er ansvarlig for byggesaken.</em></p>
+                            <p>Byggsøk: <a title="byggsok@dibk.no" href="mailto:byggsok@dibk.no">byggsok@dibk.no</a> <br /> Webansvarlig: <a title="redaktor@dibk.no" href="mailto:redaktor@dibk.no">redaktor@dibk.no</a><br />Telefon: 22 47 56 00</p>
+                            <p><strong>Tips oss!<br /></strong>Har du mistanke om ulovlig omsetning av byggevarer, kan du <a title="Tips oss om ulovlig omsetning av byggevarer" href="https://sgbruker.dibk.no/product_report_cases/new">tipse oss via dette skjemaet.</a></p>
+                        </div>
+                        <div class="col-sm-4 footertext">
+                            <h2 class="footer-header">Postadresse</h2>
+                            <p>Postboks 8742 Youngstorget<br />0028 OSLO</p>
+                            <h2 class="footer-header">Besøksadresse</h2>
+                            <p>Mariboes gate 13 0183 OSLO<br />Hunnsvegen 5 2821 GJØVIK</p>
+                            <h2 class="footer-header">Fakturaadresse</h2>
+                            <p>Direktoratet for byggkvalitet<br />Fakturamottak DFØ<br />Postboks 4746<br />7468 Trondheim<br />Organisasjonsnr: 974 760 223<br />IBAN-NR: NO3763450508979</p>
+                        </div>
+                        <div class="col-sm-4 footertext">
+                            <h2 class="footer-header">Snarveier</h2>
+                            <p><a title="Her finner du alle relevante regler, veiledninger og hjelpemidler til bygningsregelverket" href="/byggereglene/">Byggereglene</a><a title="lovdata.no: Plan- og bygningsloven" href="https://lovdata.no/dokument/NL/lov/2008-06-27-71"><br />Plan- og bygningsloven<br /></a><a title="Skjemaer og blanketter til byggesøknaden" href="/saksbehandling/byggsok/Byggesaksblanketter/">Skjemaer og blanketter<br /></a><a title="Finn rapporter og publikasjoner" href="/verktoy-og-veivisere/rapporter-og-publikasjoner/">Rapporter og publikasjoner</a><br /><a title="Lag og lever byggesøknaden på nett" href="https://ebs-2010.dibk.no/">ByggSøk</a><br /><a title="Søk om sentral godkjenning eller søk etter foretak med sentral godkjenning." href="/sentral-godkjenning/">Sentral godkjenning<br /></a><a title="Nyhetsbrevet vårt sendes ut annenhver uke. Abonner her!" href="/om-oss/hold-deg-oppdatert-om-byggesak/">Abonner på nyhetsbrev<br /></a><a title="Tips oss om ulovlig omsetning av byggevarer" href="/produkter-til-byggverk/tipsskjema/">Tips oss om ulovlig omsetning av byggevarer</a></p>
+                        </div>
+                        <div class="col-sm-4 footertext">
+                            <h2 class="footer-header">Personvernerklæring</h2>
+                            <p><a title="Les mer om hvordan vi behandler personopplysninger" href="/om-oss/personvernerklaring/">Slik behandler vi personopplysninger</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+    </section>
+
+    @Scripts.Render("~/Content/bower_components/dibk-fb-webcommon/assets/js/scripts")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
