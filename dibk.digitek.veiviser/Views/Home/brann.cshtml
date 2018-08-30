@@ -3,182 +3,38 @@
     ViewBag.Title = "brann";
 }
 
-<h2>Brann</h2>
+<div id="vue-brann">
+    <div class="wizard-container">
+
+        <div>
+            <nav class="wizard-sidebar">
+                <div class="wizard-sidebar-header">Brann</div>
+                <div v-on:click="selectedSchemaType = schemaType" class="wizard-sidebar-item" v-bind:class="{active: selectedSchemaType && selectedSchemaType.key == schemaType.key}" v-for="(schemaType) in schemaTypes">
+                    <div>{{ schemaType.number }}</div>
+                    <p>{{ schemaType.name }}</p>
+                </div>
+                <button class="linkbutton">Vis resultat</button>
+                <button class="linkbutton linkbutton-secondary">Start på nytt</button>
+            </nav>
+        </div>
+
+        <main v-if="selectedSchemaType" class="wizard-schema">
+            <h1 class="wizard-schema-title">{{ selectedSchemaType.name }}</h1>
+            <div v-show="selectedSchemaType.key == '1'">
+                @Html.Partial("Brann/_Risikoklasse")
+            </div>
+            <div v-show="selectedSchemaType.key == '2'">
+                @Html.Partial("Brann/_Brannklasse")
+            </div>
+            <div v-show="selectedSchemaType.key == '3'">
+                @Html.Partial("Brann/_Brannspredning")
+            </div>
+        </main>
+    </div>
+</div>
 
 
-<!-- Select Basic -->
-<div class="control-group">
-    <label class="control-label" for="typeVirksomhet">typeVirksomhet</label>
-    <div class="controls">
-        <select v-model="variables.typeVirksomhet.value" id="typeVirksomhet" name="typeVirksomhet" class="input-xlarge">
-            <option />
-            <option>Flyhangar</option>
-            <option>Kontor</option>
-            <option>Barnehage</option>
-            <option>Bolig</option>
-            <option>Kinolokale</option>
-            <option>Sykehus</option>
-        </select>
-    </div>
-</div>
-<p />
-<!-- control if TypeVirksomhet exist then show other option -->
-<div v-show="!variables.typeVirksomhet.value">
-    <!-- Multiple Radios -->
-    <div class="control-group">
-        <label class="control-label" for="bareSporadiskPersonopphold">bareSporadiskPersonopphold</label>
-        <div class="controls">
-            <label class="radio" for="utgangTerrengAlleBoenheter-1">
-                <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold" value="" checked="checked" />
-                null
-            </label>
-            <label class="radio" for="bareSporadiskPersonopphold-0">
-                <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold" value="true" />
-                true
-            </label>
-            <label class="radio" for="bareSporadiskPersonopphold-1">
-                <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold" value="false" />
-                false
-            </label>
-            <label class="radio" for="bareSporadiskPersonopphold-1">
-                <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold" value="begge" />
-                Begge
-            </label>
-        </div>
-    </div>
-    <!-- Multiple Radios -->
-    <div class="control-group">
-        <label class="control-label" for="alleKjennerRomningsVeiene">alleKjennerRomningsVeiene</label>
-        <div class="controls">
-            <label class="radio" for="utgangTerrengAlleBoenheter-1">
-                <input type="radio" v-model="variables.alleKjennerRomningsVeiene.value" name="alleKjennerRomningsVeiene" id="alleKjennerRomningsVeiene" value="" checked="checked" />
-                null
-            </label>
-            <label class="radio" for="alleKjennerRomningsVeiene-0">
-                <input type="radio" v-model="variables.alleKjennerRomningsVeiene.value" name="alleKjennerRomningsVeiene" id="alleKjennerRomningsVeiene" value="true" />
-                true
-            </label>
-            <label class="radio" for="alleKjennerRomningsVeiene-1">
-                <input type="radio" v-model="variables.alleKjennerRomningsVeiene.value" name="alleKjennerRomningsVeiene" id="alleKjennerRomningsVeiene" value="false" />
-                false
-            </label>
-        </div>
-    </div>
-    <!-- Multiple Radios -->
-    <div class="control-group">
-        <label class="control-label" for="bareBeregnetVakne">bareBeregnetVakne</label>
-        <div class="controls">
-            <label class="radio" for="utgangTerrengAlleBoenheter-1">
-                <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne" value="" checked="checked" />
-                null
-            </label>
-            <label class="radio" for="bareBeregnetVakne-0">
-                <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne" value="true" />
-                true
-            </label>
-            <label class="radio" for="bareBeregnetVakne-1">
-                <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-1" value="false" />
-                false
-            </label>
-        </div>
-    </div>
-    <!-- Multiple Radios -->
-    <div class="control-group">
-        <label class="control-label" for="liteBrannfarligAktivitet">liteBrannfarligAktivitet</label>
-        <div class="controls">
-            <label class="radio" for="utgangTerrengAlleBoenheter-1">
-                <input type="radio" v-model="variables.liteBrannfarligAktivitet.value" name="liteBrannfarligAktivitet" id="liteBrannfarligAktivitet" value="" checked="checked" />
-                null
-            </label>
-            <label class="radio" for="liteBrannfarligAktivitet-0">
-                <input type="radio" v-model="variables.liteBrannfarligAktivitet.value" name="liteBrannfarligAktivitet" id="liteBrannfarligAktivitet" value="true" />
-                true
-            </label>
-            <label class="radio" for="liteBrannfarligAktivitet-1">
-                <input type="radio" v-model="variables.liteBrannfarligAktivitet.value" name="liteBrannfarligAktivitet" id="liteBrannfarligAktivitet" value="false" />
-                false
-            </label>
-        </div>
-    </div>
-</div>
-<p />
-<!-- Multiple Radios -->
-<div class="control-group">
-    <label class="control-label" for="utgangTerrengAlleBoenheter">utgangTerrengAlleBoenheter</label>
-    <div class="controls">
-        <label class="radio" for="utgangTerrengAlleBoenheter-1">
-            <input type="radio" v-model="variables.utgangTerrengAlleBoenheter.value" name="utgangTerrengAlleBoenheter" id="utgangTerrengAlleBoenheter" value="" checked="checked" />
-            null
-        </label>
-        <label class="radio" for="utgangTerrengAlleBoenheter-0">
-            <input type="radio" v-model="variables.utgangTerrengAlleBoenheter.value" name="utgangTerrengAlleBoenheter" id="utgangTerrengAlleBoenheter" value="true" />
-            true
-        </label>
-        <label class="radio" for="utgangTerrengAlleBoenheter-1">
-            <input type="radio" v-model="variables.utgangTerrengAlleBoenheter.value" name="utgangTerrengAlleBoenheter" id="utgangTerrengAlleBoenheter" value="false" />
-            false
-        </label>
-    </div>
-</div>
-<!-- Text input-->
-<div class="control-group">
-    <label class="control-label" for="antallEtasjer">antallEtasjer</label>
-    <div class="controls">
-        <input v-model.number="variables.antallEtasjer.value" type="number" id="antallEtasjer" name="antallEtasjer" placeholder="Antall" class="input-mini" />
-    </div>
-</div>
-<!-- Text input-->
-<div class="control-group">
-    <label class="control-label" for="brtArealPrEtasje">brtArealPrEtasje</label>
-    <div class="controls">
-        <input v-model.number="variables.brtArealPrEtasje.value" id="brtArealPrEtasje" name="brtArealPrEtasje" type="number" placeholder="Areal" class="input-mini" />
-    </div>
-</div>
-<!-- Select Basic -->
-<div class="control-group">
-    <label class="control-label" for="konsekvensAvBrann">konsekvensAvBrann</label>
-    <div class="controls">
-        <select id="konsekvensAvBrann" v-model="variables.konsekvensAvBrann.value" name="konsekvensAvBrann" class="input-xlarge">
-            <option />
-            <option>Liten konsekvens</option>
-            <option>Middels konsekvens</option>
-            <option>Stor konsekvens</option>
-            <option>Saerlig stor konsekvens</option>
-        </select>
-    </div>
-</div>
-<!-- Text input-->
-<div class="control-group">
-    <label class="control-label" for="brannBelastning">brannBelastning</label>
-    <div class="controls">
-        <input v-model.number="variables.brannBelastning.value" type="number" id="antallEtasjer" name="antallEtasjer" placeholder="Antall" class="input-mini" />
-    </div>
-</div>
-<!-- Multiple Radios -->
-<div class="control-group">
-    <label class="control-label" for="bygningOffentligUnderTerreng">bygningOffentligUnderTerreng</label>
-    <div class="controls">
-        <label class="radio" for="utgangTerrengAlleBoenheter-1">
-            <input type="radio" v-model="variables.bygningOffentligUnderTerreng.value" name="bygningOffentligUnderTerreng" id="bygningOffentligUnderTerreng" value="" checked="checked" />
-            null
-        </label>
-        <label class="radio" for="bygningOffentligUnderTerreng-0">
-            <input type="radio" v-model="variables.bygningOffentligUnderTerreng.value" name="bygningOffentligUnderTerreng" id="bygningOffentligUnderTerreng" value="true" />
-            true
-        </label>
-        <label class="radio" for="bygningOffentligUnderTerreng-1">
-            <input type="radio" v-model="variables.bygningOffentligUnderTerreng.value" name="bygningOffentligUnderTerreng" id="bygningOffentligUnderTerreng" value="false" />
-            false
-        </label>
-    </div>
-</div>
-<!-- Text input-->
-<div class="control-group">
-    <label class="control-label" for="arealBrannseksjonPrEtasje">arealBrannseksjonPrEtasje</label>
-    <div class="controls">
-        <input id="arealBrannseksjonPrEtasje" v-model.numer="variables.arealBrannseksjonPrEtasje.value" name="arealBrannseksjonPrEtasje" type="number" placeholder="Areal" class="input-mini" />
-    </div>
-</div>
+
 
 @section scripts{
     <script src="/Scripts/brann.js"></script>
