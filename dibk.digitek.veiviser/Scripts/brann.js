@@ -1,4 +1,4 @@
-﻿
+
 
 var vueBrannModel = new Vue({
     el: '#vue-brann',
@@ -20,7 +20,7 @@ var vueBrannModel = new Vue({
             liteBrannfarligAktivitet: { value: null, type: "boolean" },
             konsekvensAvBrann: { value: null, type: "String" },
             brannBelastning: { value: null, type: "long" },
-            brannEnergi: { value: null, type: "long" },
+            brannenergi: { value: null, type: "long" },
             bygningOffentligUnderTerreng: { value: null, type: "boolean" },
             arealBrannseksjonPrEtasje: { value: null, type: "long" }
         },
