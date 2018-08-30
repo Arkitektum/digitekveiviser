@@ -67,17 +67,17 @@
 <div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
-        <label class="control-label" for="bareBeregnetVakne">Er beregnet for overnatting?</label>
+        <label class="control-label" for="beregnetForOvernatting">Er beregnet for overnatting?</label>
         <p>Bygg er beregnet for overnatting</p>
         <div class="controls">
-            <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-null" value="" />
-            <label class="radio" for="bareBeregnetVakne-null">Vet ikke</label>
+            <input type="radio" v-model="variables.beregnetForOvernatting.value" name="beregnetForOvernatting" id="beregnetForOvernatting-null" value="" />
+            <label class="radio" for="beregnetForOvernatting-null">Vet ikke</label>
 
-            <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-true" value="true" />
-            <label class="radio" for="bareBeregnetVakne-true">Ja</label>
+            <input type="radio" v-model="variables.beregnetForOvernatting.value" name="beregnetForOvernatting" id="beregnetForOvernatting-true" value="true" />
+            <label class="radio" for="beregnetForOvernatting-true">Ja</label>
 
-            <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-false" value="false" />
-            <label class="radio" for="bareBeregnetVakne-false">Nei</label>
+            <input type="radio" v-model="variables.beregnetForOvernatting.value" name="beregnetForOvernatting" id="beregnetForOvernatting-false" value="false" />
+            <label class="radio" for="beregnetForOvernatting-false">Nei</label>
         </div>
     </div>
 </div>

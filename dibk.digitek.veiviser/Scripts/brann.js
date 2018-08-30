@@ -16,7 +16,7 @@ var vueBrannModel = new Vue({
             utgangTerrengAlleBoenheter: { value: null, type: "boolean" },
             bareSporadiskPersonopphold: { value: null, type: "String" },
             alleKjennerRomningsVeiene: { value: null, type: "boolean" },
-            bareBeregnetVakne: { value: null, type: "boolean" },
+            beregnetForOvernatting: { value: null, type: "boolean" },
             liteBrannfarligAktivitet: { value: null, type: "boolean" },
             konsekvensAvBrann: { value: null, type: "String" },
             brannBelastning: { value: null, type: "long" },
