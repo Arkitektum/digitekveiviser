@@ -144,6 +144,7 @@
     <Content Include="Content\wizard.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\apiMethods.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="bower.json" />
@@ -216,6 +217,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include=".bowerrc" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\resourceMethods.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\brann_backup.cshtml" />

@@ -13,7 +13,9 @@ namespace dibk.digitek.veiviser.App_Start
             bundles.Add(new ScriptBundle("~/Content/bower_components/dibk-fb-webcommon/assets/js/scripts").Include(
                         "~/Content/bower_components/dibk-fb-webcommon/assets/js/main.min.js",
                         "~/Content/bower_components/vue/dist/vue.js",
-                        "~/Content/bower_components/axios/dist/axios.min.js"));
+                        "~/Content/bower_components/axios/dist/axios.min.js",
+                        "~/Scripts/resourceMethods.js",
+                        "~/Scripts/apiMethods.js"));
 
             bundles.Add(new StyleBundle("~/Content/bower_components/dibk-fb-webcommon/assets/css/styles").Include(
                         "~/Content/bower_components/dibk-fb-webcommon/assets/css/main.css",
