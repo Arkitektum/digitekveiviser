@@ -28,6 +28,10 @@ namespace dibk.digitek.veiviser.Controllers
         {
             return View();
         }
+        public ActionResult brannResults()
+        {
+            return View();
+        }
 
         public ActionResult brannresult()
         {

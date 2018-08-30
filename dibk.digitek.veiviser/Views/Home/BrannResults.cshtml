@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "brann resultat";
+}
+
+<div id="vue-brann-results">
+    <div class="wizard-container">
+        <main v-if="dmnNames && dmnRules" class="wizard-schema">
+            <h1 class="wizard-schema-title">Resultat</h1>
+            <div v-for="(categoryFields, categoryName) in resultData" class="wizard-schema-section">
+                <h2><span>{{ getChapter(categoryName) }}</span> {{ getTableName(categoryName) }}</h2>
+                <div class="wizard-schema-description">
+                    <p>{{ getDescription(categoryName) }}</p>
+                </div>
+                <div v-for="(fieldValue, fieldName) in categoryFields">
+                    <p v-if="getCallName(fieldName) !== 'Referanse forskrift'"><b>{{ getCallName(fieldName) }}: </b>{{ fieldValue }}</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="/Scripts/brannResults.js"></script>
+}
