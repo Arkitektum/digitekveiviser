@@ -15,14 +15,9 @@
     "URL": ""
   },
   "referanseParagrafForskrift": {
-    "CallName": "",
+    "CallName": "referanse Paragraf Forskrift",
     "Description": "",
     "URL": ""
-  },
-  "_typeVirksomhet": {
-    "CallName": "Type virksomhet",
-    "Description": "Virksomhetstype, anvendelse av bygg, som har definert risikoklasse",
-    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
   },
   "_bareSporadiskPersonopphold": {
     "CallName": "Kun sporadisk personopphold",
@@ -54,6 +49,11 @@
     "Description": "Alle i bygg kjenner rømningsforhold og kan bringe seg selv i sikkerhet",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
   },
+  "beregnetForOvernatting": {
+    "CallName": "Beregnet for overnatting",
+    "Description": "Bygg er beregnet for overnatting",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
+  },
   "liteBrannfarligAktivitet": {
     "CallName": "Liten brannfare",
     "Description": "Forutsatt bruk av bygg medfører liten brannfare",
@@ -64,14 +64,24 @@
     "Description": "Klassfisering av bygg etter konsekvens av brann for ",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-3/"
   },
-  "_arealBrannseksjonPrEtasje": {
-    "CallName": "Størrelse brannseksjon pr. etasje",
-    "Description": "Størrelse brannseksjon pr. etasje, m2 bestemmer sammen med brannenergi tiltak for å påvirke rømningstid ",
-    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-12/"
+  "_typeVirksomhet": {
+    "CallName": "Type virksomhet",
+    "Description": "Virksomhetstype, anvendelse av bygg, som har definert risikoklasse",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
   },
-  "_bygningOffentligUnderTerreng": {
-    "CallName": "Off. bygning, under terreng",
-    "Description": "Bygging med offentlig adgang som i hovedsak ligger under terreng, bestemmer krav til ledesystem",
+  "_antallEtasjer": {
+    "CallName": "Antall etasjer",
+    "Description": "Antall etasjer i bygget",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-3/"
+  },
+  "_brtArealPrEtasje": {
+    "CallName": "Bruttoareal/etasje",
+    "Description": "Bruttoareal pr etasje",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-3/"
+  },
+  "_utgangTerrengAlleBoenheter": {
+    "CallName": "Utgang til terreng",
+    "Description": "Utgang til terreng fra alle boenheter",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-3/"
   },
   "merknadBkl": {
@@ -84,6 +94,16 @@
     "Description": "Vurdering av konsekvens av brann for liv, helse, miljø og samfunnsmessige interesser",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-3/"
   },
+  "_brannenergi": {
+    "CallName": "Brannenergi MJ/m2",
+    "Description": "Spesifikk brannenergi MJ/m2  på omhyllingsflate",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iii/11-7/"
+  },
+  "_arealBrannseksjonPrEtasje": {
+    "CallName": "Størrelse brannseksjon pr. etasje",
+    "Description": "Størrelse brannseksjon pr. etasje, m2 bestemmer sammen med brannenergi tiltak for å påvirke rømningstid ",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-12/"
+  },
   "_brannTiltakStrSeksjonBelastning": {
     "CallName": "Brannbegrensende tiltak",
     "Description": "Brannbegrensende tiltak som kan påvirke (øke) størrelse på brannseksjon",
@@ -93,6 +113,11 @@
     "CallName": "Brannmotstand seksjoneringsvegg",
     "Description": "Krav til brannmotstand i seksjoneringsvegg avhengig av spesifikk brannenergi MJ/m2",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iii/11-7/"
+  },
+  "kravBrannveggKvalitet": {
+    "CallName": "Mangler",
+    "Description": "!!!",
+    "URL": ""
   },
   "baerendeHovedSystem": {
     "CallName": "Bærende hovedsystem",
@@ -110,7 +135,7 @@
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/ii/11-4"
   },
   "baerendeDelerUnderOversteKjeller": {
-    "CallName": "Bærende bygningsdeler under øverste kjeller",
+    "CallName": "Brannmotstand i bærende bygningsdeler under øverste kjeller",
     "Description": "Krav til brannmotstand i bærende bygningsdeler under øverste kjeller",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/ii/11-4"
   },
@@ -224,6 +249,11 @@
     "Description": "Maksimum lengde på brannslange",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/v/11-16/"
   },
+  "_bygningOffentligUnderTerreng": {
+    "CallName": "Off. bygning, under terreng",
+    "Description": "Bygging med offentlig adgang som i hovedsak ligger under terreng, bestemmer krav til ledesystem",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-3/"
+  },
   "_kravLedesystemEvakuering": {
     "CallName": "Krav til ledesystem",
     "Description": "Krav til ledesystem ved evakuering",
@@ -280,7 +310,7 @@
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iii/11-9/"
   },
   "kravKledningSjaktHulrom": {
-    "CallName": "",
+    "CallName": "Krav til kledning i sjakter og hulrom",
     "Description": "Krav til brannmotstand i kledning i sjakter og hulrom, etter risiko- og brannklasse",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iii/11-9/"
   },
@@ -370,7 +400,7 @@
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-13/"
   },
   "kravMinFriDorBredde": {
-    "CallName": "",
+    "CallName": "Min fri dør bredde",
     "Description": "Krav til minste fri bredde på dør, etter risikoklasse",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-13/"
   },
@@ -383,11 +413,6 @@
     "CallName": "Avstand til dør (1)",
     "Description": "Krav til lengste avstand til dør som er utgang fra branncelle eller til trapp, ved 1 dør, etter risikoklasse",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-13/"
-  },
-  "_brannenergi": {
-    "CallName": "Brannenergi MJ/m2",
-    "Description": "Spesifikk brannenergi MJ/m2 på omhyllingsflate",
-    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iii/11-7/"
   },
   "kravAvstandDorIBranncelleflereDorer": {
     "CallName": "Avstand til dør (>1)",
