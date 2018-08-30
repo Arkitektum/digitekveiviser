@@ -4,11 +4,11 @@ var vueBrannModel = new Vue({
     el: '#vue-brann',
     data: {
         schemaTypes: [
-            { key: '1', name: 'Risikoklasser', number: '1' },
-            { key: '2', name: 'Brannklasser', number: '2' },
-            { key: '3', name: 'Brannspredning mellom byggverk', number: '3' }
+            { key: '1', name: 'Risikoklasser', number: 1 },
+            { key: '2', name: 'Brannklasser', number: 2 },
+            { key: '3', name: 'Brannspredning mellom byggverk', number: 3 }
         ],
-        selectedSchemaType: { key: '1', name: 'Risikoklasser', number: '1' },
+        selectedSchemaType: { key: '1', name: 'Risikoklasser', number: 1 },
         variables: {
             typeVirksomhet: { value: null, type: "String" },
             antallEtasjer: { value: null, type: "long" },
@@ -30,6 +30,28 @@ var vueBrannModel = new Vue({
 
     },
     methods: {
-        
+        setSelectedSchemaType(schemaType) {
+            this.selectedSchemaType = schemaType;
+        },
+        getNextSchemaType: function () {
+            var nextSchemaTypeNumber = this.selectedSchemaType.number + 1;
+            var nextSchemaType = null;
+            this.schemaTypes.forEach(function (schemaType) {
+                if (schemaType.number == nextSchemaTypeNumber) {
+                    nextSchemaType = schemaType;
+                }
+            }.bind(this));
+            return nextSchemaType;
+        },
+        getPreviousSchemaType: function () {
+            var previousSchemaTypeNumber = this.selectedSchemaType.number - 1;
+            var previousSchemaType = null;
+            this.schemaTypes.forEach(function (schemaType) {
+                if (schemaType.number == previousSchemaTypeNumber) {
+                    previousSchemaType = schemaType;
+                }
+            }.bind(this));
+            return previousSchemaType;
+        }
     }
 });

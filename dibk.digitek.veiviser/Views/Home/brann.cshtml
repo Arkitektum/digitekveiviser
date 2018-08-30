@@ -17,7 +17,6 @@
                 <button class="linkbutton linkbutton-secondary">Start på nytt</button>
             </nav>
         </div>
-
         <main v-if="selectedSchemaType" class="wizard-schema">
             <h1 class="wizard-schema-title">{{ selectedSchemaType.name }}</h1>
             <div v-show="selectedSchemaType.key == '1'">
@@ -29,8 +28,10 @@
             <div v-show="selectedSchemaType.key == '3'">
                 @Html.Partial("Brann/_Brannspredning")
             </div>
-            <button  disabled class="linkbutton">Forrige</button>
-            <button class="linkbutton">Neste</button>
+            <div class="wizard-navigation-buttons">
+                <button v-if="getPreviousSchemaType()" v-on:click="setSelectedSchemaType(getPreviousSchemaType())" class="linkbutton wizard-navigation-button wizard-navigation-button-previous">Forrige</button>
+                <button v-if="getNextSchemaType()" v-on:click="setSelectedSchemaType(getNextSchemaType())" class="linkbutton wizard-navigation-button wizard-navigation-button-next">Neste</button>
+            </div>
         </main>
     </div>
 </div>

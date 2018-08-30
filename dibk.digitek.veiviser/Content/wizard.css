@@ -17,6 +17,87 @@
     line-height: 1.6;
 }
 
+.wizard-navigation-buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+    .wizard-navigation-buttons .wizard-navigation-button {
+        min-width: 30%;
+        font-size: 18px;
+        -webkit-transition: background 0.1s ease-in-out;
+        transition: background 0.1s ease-in-out;
+    }
+
+        .wizard-navigation-buttons .wizard-navigation-button:hover,
+        .wizard-navigation-buttons .wizard-navigation-button:focus {
+            background: #072938;
+        }
+
+    .wizard-navigation-buttons .wizard-navigation-button-previous {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+        .wizard-navigation-buttons .wizard-navigation-button-previous:before {
+            content: ' ';
+            display: inline-block;
+            position: absolute;
+            left: 1em;
+            right: auto;
+            top: calc(50% - 0.4rem);
+            width: 0.5rem;
+            height: 0.5rem;
+            vertical-align: middle;
+            -webkit-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+            border: 2px solid white;
+            border-width: 2px 2px 0 0;
+            margin-right: 1em;
+        }
+
+
+
+        .wizard-navigation-buttons .wizard-navigation-button-previous:hover:before,
+        .wizard-navigation-buttons .wizard-navigation-button-previous:focus:before {
+            -webkit-animation: pushprev 0.8s linear infinite;
+            animation: pushprev 0.8s linear infinite;
+        }
+
+    .wizard-navigation-buttons .wizard-navigation-button-next {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+        .wizard-navigation-buttons .wizard-navigation-button-next:after {
+            content: ' ';
+            display: inline-block;
+            position: absolute;
+            left: auto;
+            right: 1em;
+            top: calc(50% - 0.4rem);
+            width: 0.5rem;
+            height: 0.5rem;
+            vertical-align: middle;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border: 2px solid white;
+            border-width: 2px 2px 0 0;
+            margin-left: 1em;
+        }
+
+        .wizard-navigation-buttons .wizard-navigation-button-next:hover:after,
+        .wizard-navigation-buttons .wizard-navigation-button-next:focus:after {
+            -webkit-animation: pushnext 0.8s linear infinite;
+            animation: pushnext 0.8s linear infinite;
+        }
+
+
 .wizard-sidebar {
     width: 340px;
     padding: 30px 20px 20px;
