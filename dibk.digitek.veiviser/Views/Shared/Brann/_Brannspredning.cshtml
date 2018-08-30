@@ -5,30 +5,36 @@
 <div class="wizard-schema-section">
     <!-- Text input-->
     <div class="control-group">
-        <label class="control-label" for="brannenergi">Brannenergi</label>
+        <label class="control-label" for="brannenergi">Brannenergi MJ/m2</label>
+        <p>Spesifikk brannenergi MJ/m2 på omhyllingsflate</p>
         <div class="controls">
             <input v-model.number="variables.brannEnergi.value" id="brannEnergi" name="brannEnergi" type="number" />
         </div>
     </div>
+</div>
 
+<div class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
-        <label class="control-label" for="bygningOffentligUnderTerreng">Bygning offentlig under terreng</label>
+        <label class="control-label" for="bygningOffentligUnderTerreng">Ligger bygning med offentlig adgang under terreng?</label>
         <div class="controls">
             <input type="radio" v-model="variables.bygningOffentligUnderTerreng.value" name="bygningOffentligUnderTerreng" id="bygningOffentligUnderTerreng-null" value="" />
-            <label class="radio" for="bygningOffentligUnderTerreng-null">null</label>
+            <label class="radio" for="bygningOffentligUnderTerreng-null">Vet ikke</label>
 
             <input type="radio" v-model="variables.bygningOffentligUnderTerreng.value" name="bygningOffentligUnderTerreng" id="bygningOffentligUnderTerreng-true" value="true" />
-            <label class="radio" for="bygningOffentligUnderTerreng-true">true</label>
+            <label class="radio" for="bygningOffentligUnderTerreng-true">Ja</label>
 
             <input type="radio" v-model="variables.bygningOffentligUnderTerreng.value" name="bygningOffentligUnderTerreng" id="bygningOffentligUnderTerreng-false" value="false" />
-            <label class="radio" for="bygningOffentligUnderTerreng-false">false</label>
+            <label class="radio" for="bygningOffentligUnderTerreng-false">Nei</label>
         </div>
     </div>
+</div>
 
+<div class="wizard-schema-section">
     <!-- Text input-->
     <div class="control-group">
-        <label class="control-label" for="arealBrannseksjonPrEtasje">Areal brannseksjon per etasje</label>
+        <label class="control-label" for="arealBrannseksjonPrEtasje">Hva er størrelse på brannseksjon pr. etasje?</label>
+        <p>m2</p>
         <div class="controls">
             <input v-model.number="variables.arealBrannseksjonPrEtasje.value" id="arealBrannseksjonPrEtasje" name="arealBrannseksjonPrEtasje" type="number" />
         </div>

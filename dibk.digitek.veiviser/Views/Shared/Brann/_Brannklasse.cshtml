@@ -5,6 +5,7 @@
     <!-- Select Basic -->
     <div class="control-group">
         <label class="control-label" for="konsekvensAvBrann">Konsekvens av brann</label>
+        <p>Vurdering av konsekvens av brann for liv, helse, miljø og samfunnsmessige interesser</p>
         <div class="controls">
             <div class="select-wrapper">
                 <select id="konsekvensAvBrann" v-model="variables.konsekvensAvBrann.value" name="konsekvensAvBrann">
@@ -19,27 +20,12 @@
     </div>
 </div>
 <div class="wizard-schema-section">
-    <!-- Select Basic -->
-    <div class="control-group">
-        <label class="control-label" for="typeVirksomhet">Type virksomhet</label>
-        <div class="controls">
-            <div class="select-wrapper">
-                <select v-model="variables.typeVirksomhet.value" id="typeVirksomhet" name="typeVirksomhet">
-                    <option />
-                    <option>Flyhangar</option>
-                    <option>Kontor</option>
-                    <option>Barnehage</option>
-                    <option>Bolig</option>
-                    <option>Kinolokale</option>
-                    <option>Sykehus</option>
-                </select>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Text input-->
     <div class="control-group">
-        <label class="control-label" for="antallEtasjer">Antall etasjer</label>
+        <label class="control-label" for="antallEtasjer">Hvor mange etasjer har prosjektet?</label>
+        <p>telle med kjeller og loft?....</p>
         <div class="controls">
             <input v-model.number="variables.antallEtasjer.value" type="number" id="antallEtasjer" name="antallEtasjer" placeholder="Antall" />
         </div>
@@ -47,25 +33,28 @@
 
     <!-- Text input-->
     <div class="control-group">
-        <label class="control-label" for="brtArealPrEtasje">Brutto areal per etasje</label>
+        <label class="control-label" for="brtArealPrEtasje">Hva er brutto areal(BRA) per etasje i m2?</label>
+        <p></p>
         <div class="controls">
             <input v-model.number="variables.brtArealPrEtasje.value" id="brtArealPrEtasje" name="brtArealPrEtasje" type="number" placeholder="Areal" />
         </div>
     </div>
-
+</div>
+<div class="wizard-schema-section">
 
     <!-- Multiple Radios -->
     <div class="control-group">
-        <label class="control-label" for="utgangTerrengAlleBoenheter">Utgang terrreng alle boenheter</label>
+        <label class="control-label" for="utgangTerrengAlleBoenheter">Har alle boenheter utgang til terreng?</label>
+        <p></p>
         <div class="controls">
             <input type="radio" v-model="variables.utgangTerrengAlleBoenheter.value" name="utgangTerrengAlleBoenheter" id="utgangTerrengAlleBoenheter-null" value="" checked="checked" />
-            <label class="radio" for="utgangTerrengAlleBoenheter-null">null</label>
+            <label class="radio" for="utgangTerrengAlleBoenheter-null">Vet ikke</label>
 
             <input type="radio" v-model="variables.utgangTerrengAlleBoenheter.value" name="utgangTerrengAlleBoenheter" id="utgangTerrengAlleBoenheter-true" value="true" />
-            <label class="radio" for="utgangTerrengAlleBoenheter-true">true</label>
+            <label class="radio" for="utgangTerrengAlleBoenheter-true">Ja</label>
 
             <input type="radio" v-model="variables.utgangTerrengAlleBoenheter.value" name="utgangTerrengAlleBoenheter" id="utgangTerrengAlleBoenheter-false" value="false" />
-            <label class="radio" for="utgangTerrengAlleBoenheter-false">false</label>
+            <label class="radio" for="utgangTerrengAlleBoenheter-false">Nei</label>
         </div>
     </div>
 

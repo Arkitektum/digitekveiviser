@@ -8,7 +8,7 @@
 
         <div>
             <nav class="wizard-sidebar">
-                <div class="wizard-sidebar-header">Brann</div>
+                <div class="wizard-sidebar-header">Kapittel 11 sikkerhet ved brann</div>
                 <div v-on:click="selectedSchemaType = schemaType" class="wizard-sidebar-item" v-bind:class="{active: selectedSchemaType && selectedSchemaType.key == schemaType.key}" v-for="(schemaType) in schemaTypes">
                     <div>{{ schemaType.number }}</div>
                     <p>{{ schemaType.name }}</p>
@@ -29,6 +29,8 @@
             <div v-show="selectedSchemaType.key == '3'">
                 @Html.Partial("Brann/_Brannspredning")
             </div>
+            <button  disabled class="linkbutton">Forrige</button>
+            <button class="linkbutton">Neste</button>
         </main>
     </div>
 </div>
