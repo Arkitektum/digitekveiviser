@@ -1,0 +1,110 @@
+﻿{
+  "risikoklasseFraTypeVirksomhet": {
+    "Chapter": "§ 11-2",
+    "TableName": "Ulike virksomheter og tilhørende risikoklasse"
+  },
+  "risikoklassifisering": {
+    "Chapter": "§ 11-2",
+    "TableName": "Risikoklasser"
+  },
+  "vedleggTilRisikoklasse": {
+    "Chapter": "§ 11-2",
+    "TableName": "Risikoklasser"
+  },
+  "konsekvensBrannklassifisering": {
+    "Chapter": "§ 11-3",
+    "TableName": "Brannklasser"
+  },
+  "brannklasse": {
+    "Chapter": "§ 11-3",
+    "TableName": "Brannklasse for byggverk"
+  },
+  "brannklasseKonsekvensBeskrivelse": {
+    "Chapter": "§ 11-3",
+    "TableName": "Brannklasser"
+  },
+  "tiltakStorrelseBrannseksjonBelastning": {
+    "Chapter": "§ 11-7",
+    "TableName": "Tabell 1: Størrelse på brannseksjon"
+  },
+  "brannmotstandSeksjoneringsvegg": {
+    "Chapter": "§ 11-7",
+    "TableName": "Tabell 2: Brannmotstand for seksjoneringsvegg"
+  },
+  "tiltakBrannveggHoyeBygg": {
+    "Chapter": "§ 11-6",
+    "TableName": "Tabell 1: Brannveggens brannmotstand avhengig av spesifikk brannenergi"
+  },
+  "brannmotstandBaerendeBygningsdeler": {
+    "Chapter": "§ 11-4",
+    "TableName": "Bærende bygningsdelers brannmotstand avhengig av brannklasse"
+  },
+  "brannmotstandSkillendeKonstruksjon": {
+    "Chapter": "§ 11-8",
+    "TableName": "Tabell 1: Brannmotstand til branncellebegrensende bygningsdeler"
+  },
+  "klassifiseringTrapperom": {
+    "Chapter": "§ 11-8",
+    "TableName": "Trapperom klassifisering"
+  },
+  "brannmotstandTrapperom": {
+    "Chapter": "§ 11-8",
+    "TableName": "Tekst"
+  },
+  "tiltakPavirkeRomningstid": {
+    "Chapter": "§ 11-12",
+    "TableName": "Tekst"
+  },
+  "brannalarmKategori": {
+    "Chapter": "§ 11-12",
+    "TableName": "Tabell 3: Brannalarmkategori avhengig av risikoklasse"
+  },
+  "kravBranndetektorRom": {
+    "Chapter": "§ 11-12",
+    "TableName": "Tekst"
+  },
+  "detektorBrannalarmKategori": {
+    "Chapter": "§ 11-12",
+    "TableName": "Forklaring til tabell 3"
+  },
+  "tiltakManuellBrannslokking": {
+    "Chapter": "§ 11-16",
+    "TableName": "Tekst"
+  },
+  "ledesystemEvakuering": {
+    "Chapter": "§ 11-12, 3. ledd",
+    "TableName": "Tekst"
+  },
+  "ledesystemEvakueringVarighet": {
+    "Chapter": "§ 11-12, 3. ledd",
+    "TableName": "Tekst"
+  },
+  "overflateKledningBrannseksjon": {
+    "Chapter": "§ 11-9, 2. ledd",
+    "TableName": "Tabell 1 og 2: Ytelser til overflater og kledning ... "
+  },
+  "overflaterBranncelleRomningsvei": {
+    "Chapter": "§ 11-9, 2. ledd",
+    "TableName": "Tabell 1 og 2: Ytelser til overflater og kledning ... "
+  },
+  "brannmotstandIsolasjon": {
+    "Chapter": "§ 11-9, 2. ledd",
+    "TableName": "Tekst"
+  },
+  "brannmotstandDorRomningsvei": {
+    "Chapter": "§ 11-8",
+    "TableName": "Tabell 2: Brannmotstand til dør til og i rømningsvei"
+  },
+  "brannmotstandDorISeksjoneringsvegg": {
+    "Chapter": "§ 11-7, 2. ledd",
+    "TableName": "Tabell 2: Brannmotstand for seksjoneringsvegg."
+  },
+  "brannmotstandMotstaendeVinduerYttervegger": {
+    "Chapter": "§ 11-7",
+    "TableName": "Tabell 2: Brannmotstand for seksjoneringsvegg."
+  },
+  "branncelleRomningUtgang": {
+    "Chapter": "§ 11-13",
+    "TableName": "Tekst"
+  }
+}

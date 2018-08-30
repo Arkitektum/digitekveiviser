@@ -15,9 +15,34 @@
     "URL": ""
   },
   "referanseParagrafForskrift": {
-    "CallName": "Referanse forskrift",
-    "Description": "Referanse til kapitel i byggeteknisk forskrift (TEK17)",
-    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/innledning/"
+    "CallName": "",
+    "Description": "",
+    "URL": ""
+  },
+  "_typeVirksomhet": {
+    "CallName": "Type virksomhet",
+    "Description": "Virksomhetstype, anvendelse av bygg, som har definert risikoklasse",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
+  },
+  "_bareSporadiskPersonopphold": {
+    "CallName": "Kun sporadisk personopphold",
+    "Description": "Bygg der personer av og til oppholder seg",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
+  },
+  "_alleKjennerRomningsVeiene": {
+    "CallName": "Evakuering kjent",
+    "Description": "Alle i bygg kjenner rømningsforhold og kan bringe seg selv i sikkerhet",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
+  },
+  "_beregnetForOvernatting": {
+    "CallName": "Beregnet for overnatting",
+    "Description": "Bygg er beregnet for overnatting",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
+  },
+  "_liteBrannfarligAktivitet": {
+    "CallName": "Liten brannfare",
+    "Description": "Forutsatt bruk av bygg medfører liten brannfare",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
   },
   "bareSporadiskPersonopphold": {
     "CallName": "Kun sporadisk personopphold",
@@ -27,11 +52,6 @@
   "alleKjennerRomningsVeiene": {
     "CallName": "Evakuering kjent",
     "Description": "Alle i bygg kjenner rømningsforhold og kan bringe seg selv i sikkerhet",
-    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
-  },
-  "_beregnetForOvernatting": {
-    "CallName": "Beregnet for overnatting",
-    "Description": "Bygg er beregnet for overnatting",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-2/"
   },
   "liteBrannfarligAktivitet": {
@@ -45,9 +65,14 @@
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-3/"
   },
   "_arealBrannseksjonPrEtasje": {
-    "CallName": "Bruttoareal brannseksjon per etasje",
-    "Description": "Største bruttoareal i m2 pr etasje uten seksjonering",
-    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iii/11-7/"
+    "CallName": "Størrelse brannseksjon pr. etasje",
+    "Description": "Størrelse brannseksjon pr. etasje, m2 bestemmer sammen med brannenergi tiltak for å påvirke rømningstid ",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-12/"
+  },
+  "_bygningOffentligUnderTerreng": {
+    "CallName": "Off. bygning, under terreng",
+    "Description": "Bygging med offentlig adgang som i hovedsak ligger under terreng, bestemmer krav til ledesystem",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/i/11-3/"
   },
   "merknadBkl": {
     "CallName": "Merknad",
@@ -358,6 +383,11 @@
     "CallName": "Avstand til dør (1)",
     "Description": "Krav til lengste avstand til dør som er utgang fra branncelle eller til trapp, ved 1 dør, etter risikoklasse",
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-13/"
+  },
+  "_brannenergi": {
+    "CallName": "Brannenergi MJ/m2",
+    "Description": "Spesifikk brannenergi MJ/m2 på omhyllingsflate",
+    "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iii/11-7/"
   },
   "kravAvstandDorIBranncelleflereDorer": {
     "CallName": "Avstand til dør (>1)",
