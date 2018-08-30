@@ -18,10 +18,10 @@
                             {{ getDescription(fieldName) }}
                         </div>
                         <div v-if="getCallName(fieldName) && getDescriptionUrl(fieldName)">
-                            <a v-bind:href="getDescriptionUrl(fieldName)">Les mer om {{ getCallName(fieldName) }}</a>
+                            <a v-bind:href="getDescriptionUrl(fieldName)" target="_blank">Les mer om {{ getCallName(fieldName) }}</a>  i byggesaksforskriften
                         </div>
                         <div v-else-if="getDescriptionUrl(fieldName)">
-                            <a v-bind:href="getDescriptionUrl(fieldName)">Les mer</a>
+                            <a v-bind:href="getDescriptionUrl(fieldName)" target="_blank">Les mer</a>
                         </div>
                     </div>
                 </div>
