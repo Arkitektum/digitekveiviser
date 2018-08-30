@@ -251,27 +251,39 @@ input[type="radio"] {
     z-index: -1;
 }
 
-input[type="radio"] + label:before {
-    content: ' ';
-    display: block;
-    vertical-align: middle;
-    min-width: 10px;
-    width: 10px;
-    height: 10px;
-    background: white;
-    margin-right: 1em;
-    border-radius: 50%;
-    border: 0.3em solid white;
-    box-shadow: 0 0 0 1px #afaba8;
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    input[type="radio"] + label:before {
+        content: ' ';
+        display: block;
+        vertical-align: middle;
+        min-width: 10px;
+        width: 10px;
+        height: 10px;
+        background: white;
+        margin-right: 1em;
+        border-radius: 50%;
+        border: 0.3em solid white;
+        box-shadow: 0 0 0 1px #afaba8;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    input[type="radio"]:not(:disabled):checked + label {
+        box-shadow: 0 0 0 1px #072938, 0 0 4px 0 #072938;
+    }
+
+        input[type="radio"]:not(:disabled):checked + label:before {
+            background: #00757F;
+            box-shadow: 0 0 0 1px #072938;
+        }
+
+.wizard-result-rule {
+    padding: 8px 0;
 }
 
-input[type="radio"]:not(:disabled):checked + label {
-    box-shadow: 0 0 0 1px #072938, 0 0 4px 0 #072938;
-}
+    .wizard-result-rule .wizard-result-rule-value {
+    }
 
-    input[type="radio"]:not(:disabled):checked + label:before {
-        background: #00757F;
-        box-shadow: 0 0 0 1px #072938;
+    .wizard-result-rule .wizard-result-rule-description {
+        font-size: 14px;
+        font-style: italic;
     }
