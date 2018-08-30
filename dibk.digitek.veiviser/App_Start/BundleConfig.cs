@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,7 +17,8 @@ namespace dibk.digitek.veiviser.App_Start
 
             bundles.Add(new StyleBundle("~/Content/bower_components/dibk-fb-webcommon/assets/css/styles").Include(
                         "~/Content/bower_components/dibk-fb-webcommon/assets/css/main.css",
-                        "~/Content/site.css"));
+                        "~/Content/site.css",
+                        "~/Content/wizard.css"));
 
             BundleTable.EnableOptimizations = false;
         }
