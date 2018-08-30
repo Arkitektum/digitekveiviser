@@ -211,6 +211,7 @@
     <Content Include="Content\bower_components\vue\README.md" />
     <Content Include="Content\bower_components\vue\yarn.lock" />
     <Content Include="Data\dmnRules.json" />
+    <Content Include="Data\dummyResults.json" />
     <Content Include="Data\dmnNames.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\uu.js" />

@@ -1,0 +1,72 @@
+﻿{
+  "type": "Object",
+  "value": {
+    "tiltakPavirkeRomningstid": {
+      "referanseParagrafForskrift": "§7-27 tabell 1 s.57",
+      "tiltakPavirkeRomningstid": "Slukkesystem*"
+    },
+    "brannmotstandSeksjoneringsvegg": {
+      "referanseParagrafForskrift": "§ 11-7",
+      "_kravBrannmotstSeksjVegg": "Ikke krav"
+    },
+    "kravBranndetektorRom": {
+      "kravBranndetektorLoft": "Ikke Krav",
+      "kravBrannsetektorSengerom": "Ikke Krav",
+      "kravBranndetektorKjeller": "Ikke Krav",
+      "kravBranndetektorTekniskRom": "Ikke Krav",
+      "kravBranndetektorAndre": "Ikke Krav",
+      "kravBranndetektorRomningsvei": "Ikke Krav",
+      "kravBranndetektorFellesrom": "Ikke Krav"
+    },
+    "tiltakBrannveggHoyeBygg": {
+      "referanseParagrafForskrift": "§11-6",
+      "kravBrannveggKvalitet": "REI 120-M A2-s1, d0 [A 120]"
+    },
+    "vedleggTilRisikoklasse": {
+      "referanseParagrafForskrift": "§ 11-2",
+      "beregnetForOvernatting": false,
+      "liteBrannfarligAktivitet": true,
+      "bareSporadiskPersonopphold": "true",
+      "alleKjennerRomningsVeiene": true
+    },
+    "branncelleRomningUtgang": {
+      "kravMinFriDorBredde": 0.9,
+      "referanseParagrafForskrift": "§ 7-27 tabell 4 s.60/63",
+      "avstandDorIBranncelle1Dor": 15,
+      "kravMaxLengdeFluktvei": 50,
+      "kravFriBreddeRomnVei": "1cm pr.pers / min. 0,9m",
+      "kravAvstandDorIBranncelleflereDorer": 30
+    },
+    "tiltakManuellBrannslokking": {
+      "referanseParagrafForskrift": "§ 11-16",
+      "kravManuellSlokking": "Håndslokkeapparat, evt. brannslange",
+      "maxBrannslangeLengde": "maks 30m lengde"
+    },
+    "brannmotstandDorISeksjoneringsvegg": {
+      "referanseParagrafForskrift": "Side 47",
+      "kravBrannmotstandDorISeksjvegg": "Ikke krav"
+    },
+    "detektorBrannalarmKategori": {
+      "referanseParagrafForskrift": "§ 11-12",
+      "beskrBrannDetektor": "Ikke kategorisert"
+    },
+    "brannalarmKategori": {
+      "_brannalarmKategori": 0
+    },
+    "risikoklasseFraTypeVirksomhet": {
+      "referanseParagrafForskrift": "§ 11-2",
+      "_rkl": "RKL1"
+    },
+    "klassifiseringTrapperom": {
+      "_trappeRomKlasse": "TR1"
+    },
+    "tiltakStorrelseBrannseksjonBelastning": {
+      "referanseParagrafForskrift": "§ 7-24 tabell 6 s. 51",
+      "_brannTiltakStrSeksjonBelastning": "Ikke krav"
+    }
+  },
+  "valueInfo": {
+    "objectTypeName": "java.util.HashMap",
+    "serializationDataFormat": "application/x-java-serialized-object"
+  }
+}
