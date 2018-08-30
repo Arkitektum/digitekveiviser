@@ -208,6 +208,7 @@
     <Content Include="Content\bower_components\vue\package.json" />
     <Content Include="Content\bower_components\vue\README.md" />
     <Content Include="Content\bower_components\vue\yarn.lock" />
+    <Content Include="Data\brannkrav.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\brann.js" />
     <Content Include="Scripts\brann_backup.js" />
