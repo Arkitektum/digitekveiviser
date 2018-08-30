@@ -1,0 +1,36 @@
+﻿<div class="wizard-schema-description">
+    <p>Tiltak mot brannspredning mellom byggverk</p>
+</div>
+
+<div class="wizard-schema-section">
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label" for="brannenergi">Brannenergi</label>
+        <div class="controls">
+            <input v-model.number="variables.brannEnergi.value" id="brannEnergi" name="brannEnergi" type="number" />
+        </div>
+    </div>
+
+    <!-- Multiple Radios -->
+    <div class="control-group">
+        <label class="control-label" for="bygningOffentligUnderTerreng">Bygning offentlig under terreng</label>
+        <div class="controls">
+            <input type="radio" v-model="variables.bygningOffentligUnderTerreng.value" name="bygningOffentligUnderTerreng" id="bygningOffentligUnderTerreng-null" value="" />
+            <label class="radio" for="bygningOffentligUnderTerreng-null">null</label>
+
+            <input type="radio" v-model="variables.bygningOffentligUnderTerreng.value" name="bygningOffentligUnderTerreng" id="bygningOffentligUnderTerreng-true" value="true" />
+            <label class="radio" for="bygningOffentligUnderTerreng-true">true</label>
+
+            <input type="radio" v-model="variables.bygningOffentligUnderTerreng.value" name="bygningOffentligUnderTerreng" id="bygningOffentligUnderTerreng-false" value="false" />
+            <label class="radio" for="bygningOffentligUnderTerreng-false">false</label>
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label" for="arealBrannseksjonPrEtasje">Areal brannseksjon per etasje</label>
+        <div class="controls">
+            <input v-model.number="variables.arealBrannseksjonPrEtasje.value" id="arealBrannseksjonPrEtasje" name="arealBrannseksjonPrEtasje" type="number" />
+        </div>
+    </div>
+</div>

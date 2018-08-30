@@ -1,0 +1,87 @@
+﻿
+<div class="wizard-schema-description">
+    <p>Risikovurdering av bygg i tilfelle brann</p>
+</div>
+
+<div class="wizard-schema-section">
+    <h2 class="wizard-schema-section-title">Sekjsonsoverskrift</h2>
+    <!-- Select Basic -->
+    <div class="control-group">
+        <label class="control-label" for="typeVirksomhet">Type virksomhet</label>
+        <div class="controls">
+            <div class="select-wrapper">
+                <select v-model="variables.typeVirksomhet.value" id="typeVirksomhet" name="typeVirksomhet">
+                    <option />
+                    <option>Flyhangar</option>
+                    <option>Kontor</option>
+                    <option>Barnehage</option>
+                    <option>Bolig</option>
+                    <option>Kinolokale</option>
+                    <option>Sykehus</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
+    <!-- Multiple Radios -->
+    <div class="control-group">
+        <label class="control-label" for="bareSporadiskPersonopphold">Kun sporadisk personopphold</label>
+        <div class="controls">
+            <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold-null" value="" checked="checked" />
+            <label class="radio" for="bareSporadiskPersonopphold-null">null</label>
+
+            <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold-true" value="true" />
+            <label class="radio" for="bareSporadiskPersonopphold-true">true</label>
+
+            <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold-false" value="false" />
+            <label class="radio" for="bareSporadiskPersonopphold-false">false</label>
+
+            <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold-both" value="begge" />
+            <label class="radio" for="bareSporadiskPersonopphold-both">Begge</label>
+        </div>
+    </div>
+    <!-- Multiple Radios -->
+    <div class="control-group">
+        <label class="control-label" for="alleKjennerRomningsVeiene">Evakuering kjent</label>
+        <div class="controls">
+            <input type="radio" v-model="variables.alleKjennerRomningsVeiene.value" name="alleKjennerRomningsVeiene" id="alleKjennerRomningsVeiene-null" value="" checked="checked" />
+            <label class="radio" for="alleKjennerRomningsVeiene-null">null</label>
+
+            <input type="radio" v-model="variables.alleKjennerRomningsVeiene.value" name="alleKjennerRomningsVeiene" id="alleKjennerRomningsVeiene-true" value="true" />
+            <label class="radio" for="alleKjennerRomningsVeiene-true">true</label>
+
+            <input type="radio" v-model="variables.alleKjennerRomningsVeiene.value" name="alleKjennerRomningsVeiene" id="alleKjennerRomningsVeiene-false" value="false" />
+            <label class="radio" for="alleKjennerRomningsVeiene-false">false</label>
+        </div>
+    </div>
+    <!-- Multiple Radios -->
+    <div class="control-group">
+        <label class="control-label" for="bareBeregnetVakne">Bare beregnet våkne</label>
+        <div class="controls">
+            <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-null" value="" />
+            <label class="radio" for="bareBeregnetVakne-null">null</label>
+
+            <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-true" value="true" />
+            <label class="radio" for="bareBeregnetVakne-true">true</label>
+
+            <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-false" value="false" />
+            <label class="radio" for="bareBeregnetVakne-false">false</label>
+        </div>
+    </div>
+    <!-- Multiple Radios -->
+    <div class="control-group">
+        <label class="control-label" for="liteBrannfarligAktivitet">Liten brannfare</label>
+        <div class="controls">
+            <input type="radio" v-model="variables.liteBrannfarligAktivitet.value" name="liteBrannfarligAktivitet" id="liteBrannfarligAktivitet-null" value="" checked="checked" />
+            <label class="radio" for="liteBrannfarligAktivitet-null">null</label>
+
+            <input type="radio" v-model="variables.liteBrannfarligAktivitet.value" name="liteBrannfarligAktivitet" id="liteBrannfarligAktivitet-true" value="true" />
+            <label class="radio" for="liteBrannfarligAktivitet-true">true</label>
+
+            <input type="radio" v-model="variables.liteBrannfarligAktivitet.value" name="liteBrannfarligAktivitet" id="liteBrannfarligAktivitet-false" value="false" />
+            <label class="radio" for="liteBrannfarligAktivitet-false">false</label>
+        </div>
+    </div>
+</div>
