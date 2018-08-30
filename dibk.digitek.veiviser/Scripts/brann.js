@@ -1,4 +1,4 @@
-
+﻿
 
 var vueBrannModel = new Vue({
     el: '#vue-brann',
@@ -52,6 +52,10 @@ var vueBrannModel = new Vue({
                 }
             }.bind(this));
             return previousSchemaType;
+        },
+        saveResultsToLocalStorage: function () {
+            localStorage.variables = JSON.stringify(this.variables);
+            window.location.href = '/Home/brannResults';
         }
     }
 });

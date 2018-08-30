@@ -5,12 +5,15 @@ var vueBrannModel = new Vue({
     data: {
         resultData: null,
         dmnNames: null,
-        dmnRules: null
+        dmnRules: null,
+        variables: null,
+        modelOutput: null
     },
     created: function () {
         this.getDmnNames();
         this.getDmnRules();
-        this.getDummyResults();
+        this.getResultsFromLocalStorage();
+        this.postApiData();
     },
     methods: {
         getDmnNames: function () {
@@ -25,13 +28,18 @@ var vueBrannModel = new Vue({
                     this.dmnRules = dmnRules;
                 });
         },
-        getDummyResults: function () {
-            axios.get('/Data/dummyResults.json')
-                .then(function (response) {
-                    this.resultData = response.data.value;
-                }.bind(this))
-                .catch(function (error) {
-                    console.log(error)
+        postApiData: function () {
+            Promise.resolve(postApiData({ variables: this.variables }))
+                .then((executionId) => {
+                    console.log(executionId);
+                    this.getModelOutput(executionId);
+                })
+        },
+        getModelOutput: function (executionId) {
+            Promise.resolve(GETVariablesByExecutionId(executionId))
+                .then((modelOutput) => {
+                    console.log(modelOutput);
+                    this.modelOutput = modelOutput;
                 });
         },
         getCallName: function (key) {
@@ -48,6 +56,9 @@ var vueBrannModel = new Vue({
         },
         getTableName: function (key) {
             return getTableName(key) ? getTableName(key) : key;
+        },
+        getResultsFromLocalStorage: function () {
+            this.variables = JSON.parse(localStorage.variables);
         }
     }
 });

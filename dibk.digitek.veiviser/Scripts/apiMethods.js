@@ -1,10 +1,10 @@
-﻿function postApiData(apiData) {
-    axios.post('https://digitek-dev.arkitektum.no/engine-rest/process-definition/key/BranntekniskProsjekteringAPIV01/start', apiData)
+﻿axios.defaults.headers.post['Content-Type'] = 'application/json';
+
+function postApiData(apiData) {
+    return axios.post('https://digitek-dev.arkitektum.no/engine-rest/process-definition/key/BranntekniskProsjektering/start', apiData)
         .then(function (response) {
-            if (response && response.data) {
-                this.GETVariablesByExecutionId(response.data.id);
-                this.GETAllTaskByExecutionId(response.data.id);
-                return response.data;
+            if (response && response.data && response.data.id) {
+                return response.data.id;
             } else {
                 console.warn("'response.data' is not defined");
             }
@@ -15,7 +15,7 @@
 }
 
 function GETVariablesByExecutionId(executionId) {
-    axios.get('https://digitek-dev.arkitektum.no/engine-rest/process-instance/' + executionId + '/variables')
+    return axios.get('https://digitek-dev.arkitektum.no/engine-rest/process-instance/' + executionId + '/variables')
         .then(function (taskVariables) {
             if (taskVariables && taskVariables.data && taskVariables.data.modelOutputs) {
                 return taskVariables.data.modelOutputs;
@@ -33,7 +33,6 @@ function GetAllTaskByExecutionId(executionId) {
         .then(function (openTask) {
             if (openTask && openTask.data) {
                 var taskList = openTask.data.map(a => a.id);
-                postCompleteTaskList(taskList);
             } else {
                 console.warn("'openTask.data' is not defined");
             }

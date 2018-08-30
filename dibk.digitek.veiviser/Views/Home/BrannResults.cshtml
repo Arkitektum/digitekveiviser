@@ -5,9 +5,9 @@
 
 <div id="vue-brann-results">
     <div class="wizard-container">
-        <main v-if="dmnNames && dmnRules" class="wizard-schema">
+        <main v-if="dmnNames && dmnRules && modelOutput && modelOutput.value" class="wizard-schema">
             <h1 class="wizard-schema-title">Resultat</h1>
-            <div v-for="(categoryFields, categoryName) in resultData" class="wizard-schema-section">
+            <div v-for="(categoryFields, categoryName) in modelOutput.value" class="wizard-schema-section">
                 <h2><span>{{ getChapter(categoryName) }}</span> {{ getTableName(categoryName) }}</h2>
                 <div v-for="(fieldValue, fieldName) in categoryFields">
                     <div v-if="getCallName(fieldName) !== 'Referanse forskrift'" class="wizard-result-rule">
