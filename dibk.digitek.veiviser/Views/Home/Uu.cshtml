@@ -13,7 +13,7 @@
                     <div>{{ schemaType.number }}</div>
                     <p>{{ schemaType.name }}</p>
                 </div>
-                <button class="linkbutton">Vis resultat</button>
+                <button class="linkbutton" v-on:click="saveResultsToLocalStorage()">Vis resultat</button>
                 <button class="linkbutton linkbutton-secondary">Start på nytt</button>
             </nav>
         </div>
@@ -30,8 +30,10 @@
                 @Html.Partial("Uu/_Gang")
             </div>
 
-            <button disabled class="linkbutton">Forrige</button>
-            <button class="linkbutton">Neste</button>
+            <div class="wizard-navigation-buttons">
+                <button v-if="getPreviousSchemaType()" v-on:click="setSelectedSchemaType(getPreviousSchemaType())" class="linkbutton wizard-navigation-button wizard-navigation-button-previous">Forrige</button>
+                <button v-if="getNextSchemaType()" v-on:click="setSelectedSchemaType(getNextSchemaType())" class="linkbutton wizard-navigation-button wizard-navigation-button-next">Neste</button>
+            </div>
         </main>
     </div>
 </div>

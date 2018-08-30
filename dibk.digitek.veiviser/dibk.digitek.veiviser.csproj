@@ -214,6 +214,7 @@
     <Content Include="Data\dummyResults.json" />
     <Content Include="Data\dmnNames.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\uuResults.js" />
     <Content Include="Scripts\uu.js" />
     <Content Include="Scripts\brann.js" />
     <Content Include="Scripts\brannResults.js" />
@@ -225,7 +226,6 @@
     <Content Include="Scripts\resourceMethods.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\brann_backup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -255,7 +255,7 @@
     <Content Include="Views\Shared\Uu\_Dor.cshtml" />
     <Content Include="Views\Shared\Uu\_Gang.cshtml" />
     <Content Include="Views\Home\BrannResults.cshtml" />
-    <Content Include="Views\Home\brannresult.cshtml" />
+    <Content Include="Views\Home\UuResults.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

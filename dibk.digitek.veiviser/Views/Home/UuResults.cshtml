@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Uu resultat";
+}
+
+<div id="vue-uu-results">
+    <div class="wizard-container">
+        <main v-if="dmnNames && dmnRules && modelOutput && modelOutput.value" class="wizard-schema">
+            <h1 class="wizard-schema-title">Resultat</h1>
+            <div v-for="(categoryFields, categoryName) in modelOutput.value" class="wizard-schema-section">
+                <h2><span>{{ getChapter(categoryName) }}</span> {{ getTableName(categoryName) }}</h2>
+                <div v-for="(fieldValue, fieldName) in categoryFields">
+                    <div v-if="getCallName(fieldName) !== 'Referanse forskrift'" class="wizard-result-rule">
+                        <div class="wizard-result-rule-value">
+                            <b>{{ getCallName(fieldName) }}: </b>{{ fieldValue }}
+                        </div>
+                        <div class="wizard-result-rule-description" v-if="getDescription(fieldName)">
+                            {{ getDescription(fieldName) }}
+                        </div>
+                        <div v-if="getCallName(fieldName) && getDescriptionUrl(fieldName)">
+                            <a v-bind:href="getDescriptionUrl(fieldName)" target="_blank">Les mer om {{ getCallName(fieldName) }}</a>  i byggesaksforskriften
+                        </div>
+                        <div v-else-if="getDescriptionUrl(fieldName)">
+                            <a v-bind:href="getDescriptionUrl(fieldName)" target="_blank">Les mer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="/Scripts/uuResults.js"></script>
+}

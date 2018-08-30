@@ -49,11 +49,11 @@
   },
   "brannmotstandTrapperom": {
     "Chapter": "§ 11-8",
-    "TableName": "Tekst"
+    "TableName": "Brannceller"
   },
   "tiltakPavirkeRomningstid": {
     "Chapter": "§ 11-12",
-    "TableName": "Tekst"
+    "TableName": "Tiltak for å påvirke rømnings- og redningstider"
   },
   "brannalarmKategori": {
     "Chapter": "§ 11-12",
@@ -61,7 +61,7 @@
   },
   "kravBranndetektorRom": {
     "Chapter": "§ 11-12",
-    "TableName": "Tekst"
+    "TableName": "Tiltak for å påvirke rømnings- og redningstider"
   },
   "detektorBrannalarmKategori": {
     "Chapter": "§ 11-12",
@@ -69,15 +69,15 @@
   },
   "tiltakManuellBrannslokking": {
     "Chapter": "§ 11-16",
-    "TableName": "Tekst"
+    "TableName": "Tilrettelegging for manuell slokking"
   },
   "ledesystemEvakuering": {
     "Chapter": "§ 11-12, 3. ledd",
-    "TableName": "Tekst"
+    "TableName": "Tiltak for å påvirke rømnings- og redningstider"
   },
   "ledesystemEvakueringVarighet": {
     "Chapter": "§ 11-12, 3. ledd",
-    "TableName": "Tekst"
+    "TableName": "Tiltak for å påvirke rømnings- og redningstider"
   },
   "overflateKledningBrannseksjon": {
     "Chapter": "§ 11-9, 2. ledd",
@@ -89,7 +89,7 @@
   },
   "brannmotstandIsolasjon": {
     "Chapter": "§ 11-9, 2. ledd",
-    "TableName": "Tekst"
+    "TableName": "Materialer og produkters egenskaper ved brann"
   },
   "brannmotstandDorRomningsvei": {
     "Chapter": "§ 11-8",
@@ -105,6 +105,6 @@
   },
   "branncelleRomningUtgang": {
     "Chapter": "§ 11-13",
-    "TableName": "Tekst"
+    "TableName": "Utgang fra branncelle"
   }
 }

@@ -33,7 +33,7 @@ namespace dibk.digitek.veiviser.Controllers
             return View();
         }
 
-        public ActionResult brannresult()
+        public ActionResult uuResults()
         {
             return View();
         }
