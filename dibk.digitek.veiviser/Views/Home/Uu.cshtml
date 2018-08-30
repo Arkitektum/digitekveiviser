@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Universell utforming";
+}
+
+<div id="vue-uu">
+    <div class="wizard-container">
+
+        <div>
+            <nav class="wizard-sidebar">
+                <div class="wizard-sidebar-header">Kapittel 12 universell utforming av byggverk</div>
+                <div v-on:click="selectedSchemaType = schemaType" class="wizard-sidebar-item" v-bind:class="{active: selectedSchemaType && selectedSchemaType.key == schemaType.key}" v-for="(schemaType) in schemaTypes">
+                    <div>{{ schemaType.number }}</div>
+                    <p>{{ schemaType.name }}</p>
+                </div>
+                <button class="linkbutton">Vis resultat</button>
+                <button class="linkbutton linkbutton-secondary">Start på nytt</button>
+            </nav>
+        </div>
+
+        <main v-if="selectedSchemaType" class="wizard-schema">
+            <h1 class="wizard-schema-title">{{ selectedSchemaType.name }}</h1>
+            <div v-show="selectedSchemaType.key == '1'">
+                @Html.Partial("Uu/_Generelt")
+            </div>
+            <div v-show="selectedSchemaType.key == '2'">
+                @Html.Partial("Uu/_Dor")
+            </div>
+            <div v-show="selectedSchemaType.key == '3'">
+                @Html.Partial("Uu/_Gang")
+            </div>
+
+            <button disabled class="linkbutton">Forrige</button>
+            <button class="linkbutton">Neste</button>
+        </main>
+    </div>
+</div>
+
+
+
+
+@section scripts{
+    <script src="/Scripts/uu.js"></script>
+}

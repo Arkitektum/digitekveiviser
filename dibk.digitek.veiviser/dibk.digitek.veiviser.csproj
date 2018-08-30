@@ -212,6 +212,7 @@
     <Content Include="Content\bower_components\vue\yarn.lock" />
     <Content Include="Data\brannkrav.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\uu.js" />
     <Content Include="Scripts\brann.js" />
     <Content Include="Scripts\brann_backup.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -245,6 +246,11 @@
     <Content Include="Views\Shared\Brann\_Risikoklasse.cshtml" />
     <Content Include="Views\Shared\Brann\_Brannklasse.cshtml" />
     <Content Include="Views\Shared\Brann\_Brannspredning.cshtml" />
+    <Content Include="Views\Home\Uu.cshtml" />
+    <Content Include="Views\Shared\Uu\_Generelt.cshtml" />
+    <Content Include="Views\Home\Utvikler.cshtml" />
+    <Content Include="Views\Shared\Uu\_Dor.cshtml" />
+    <Content Include="Views\Shared\Uu\_Gang.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

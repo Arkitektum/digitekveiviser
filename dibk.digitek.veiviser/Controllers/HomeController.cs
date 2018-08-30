@@ -14,7 +14,17 @@ namespace dibk.digitek.veiviser.Controllers
             return View();
         }
 
-        public ActionResult brann()
+        public ActionResult Brann()
+        {
+            return View();
+        }
+
+        public ActionResult Uu()
+        {
+            return View();
+        }
+
+        public ActionResult Utvikler()
         {
             return View();
         }

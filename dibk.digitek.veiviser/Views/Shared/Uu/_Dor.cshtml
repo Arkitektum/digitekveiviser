@@ -1,0 +1,27 @@
+﻿
+<div class="wizard-schema-description">
+    <p>Universell utforming av byggverk</p>
+    <p>......</p>
+</div>
+
+<div class="wizard-schema-section">
+
+
+    <!-- Multiple Radios -->
+    <div class="control-group">
+        <label class="control-label" for="utgangTerrengAlleBoenheter">Har dører automatisk system for åpning/låsing?</label>
+        <p></p>
+        <div class="controls">
+            <input type="radio" v-model="variables.utgangTerrengAlleBoenheter.value" name="utgangTerrengAlleBoenheter" id="utgangTerrengAlleBoenheter-null" value="" checked="checked" />
+            <label class="radio" for="utgangTerrengAlleBoenheter-null">Vet ikke</label>
+
+            <input type="radio" v-model="variables.utgangTerrengAlleBoenheter.value" name="utgangTerrengAlleBoenheter" id="utgangTerrengAlleBoenheter-true" value="true" />
+            <label class="radio" for="utgangTerrengAlleBoenheter-true">Ja</label>
+
+            <input type="radio" v-model="variables.utgangTerrengAlleBoenheter.value" name="utgangTerrengAlleBoenheter" id="utgangTerrengAlleBoenheter-false" value="false" />
+            <label class="radio" for="utgangTerrengAlleBoenheter-false">Nei</label>
+        </div>
+    </div>
+</div>
+
+
