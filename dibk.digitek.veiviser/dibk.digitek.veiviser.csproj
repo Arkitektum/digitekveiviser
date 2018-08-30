@@ -251,6 +251,7 @@
     <Content Include="Views\Home\Utvikler.cshtml" />
     <Content Include="Views\Shared\Uu\_Dor.cshtml" />
     <Content Include="Views\Shared\Uu\_Gang.cshtml" />
+    <Content Include="Views\Home\brannresult.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
