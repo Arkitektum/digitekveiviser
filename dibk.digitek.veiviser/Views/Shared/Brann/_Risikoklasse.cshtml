@@ -1,10 +1,12 @@
 ﻿
 <div class="wizard-schema-description">
     <p>Risikovurdering av bygg i tilfelle brann</p>
+    <p>......</p>
 </div>
 
 <div class="wizard-schema-section">
-    <h2 class="wizard-schema-section-title">Sekjsonsoverskrift</h2>
+
+    <p>Hvis du ikke vet hvilke virksomhetstype som gjelder for prosjektet så kan du velge blank og så svare på andre spørsmål for å vurdere risikoklassen</p>
     <!-- Select Basic -->
     <div class="control-group">
         <label class="control-label" for="typeVirksomhet">Type virksomhet</label>
@@ -27,61 +29,74 @@
 <div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
-        <label class="control-label" for="bareSporadiskPersonopphold">Kun sporadisk personopphold</label>
+        <label class="control-label" for="bareSporadiskPersonopphold">Kun sporadisk personopphold?</label>
+        <p>Bygg der personer av og til oppholder seg</p>
         <div class="controls">
             <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold-null" value="" checked="checked" />
-            <label class="radio" for="bareSporadiskPersonopphold-null">null</label>
+            <label class="radio" for="bareSporadiskPersonopphold-null">Vet ikke</label>
 
             <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold-true" value="true" />
-            <label class="radio" for="bareSporadiskPersonopphold-true">true</label>
+            <label class="radio" for="bareSporadiskPersonopphold-true">Ja</label>
 
             <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold-false" value="false" />
-            <label class="radio" for="bareSporadiskPersonopphold-false">false</label>
+            <label class="radio" for="bareSporadiskPersonopphold-false">Nei</label>
 
             <input type="radio" v-model="variables.bareSporadiskPersonopphold.value" name="bareSporadiskPersonopphold" id="bareSporadiskPersonopphold-both" value="begge" />
-            <label class="radio" for="bareSporadiskPersonopphold-both">Begge</label>
+            <label class="radio" for="bareSporadiskPersonopphold-both">Både og</label>
         </div>
     </div>
+</div>
+
+<div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
-        <label class="control-label" for="alleKjennerRomningsVeiene">Evakuering kjent</label>
+        <label class="control-label" for="alleKjennerRomningsVeiene">Er evakuering kjent?</label>
+        <p>Alle i bygg kjenner rømningsforhold og kan bringe seg selv i sikkerhet.</p>
         <div class="controls">
             <input type="radio" v-model="variables.alleKjennerRomningsVeiene.value" name="alleKjennerRomningsVeiene" id="alleKjennerRomningsVeiene-null" value="" checked="checked" />
-            <label class="radio" for="alleKjennerRomningsVeiene-null">null</label>
+            <label class="radio" for="alleKjennerRomningsVeiene-null">Vet ikke</label>
 
             <input type="radio" v-model="variables.alleKjennerRomningsVeiene.value" name="alleKjennerRomningsVeiene" id="alleKjennerRomningsVeiene-true" value="true" />
-            <label class="radio" for="alleKjennerRomningsVeiene-true">true</label>
+            <label class="radio" for="alleKjennerRomningsVeiene-true">Ja</label>
 
             <input type="radio" v-model="variables.alleKjennerRomningsVeiene.value" name="alleKjennerRomningsVeiene" id="alleKjennerRomningsVeiene-false" value="false" />
-            <label class="radio" for="alleKjennerRomningsVeiene-false">false</label>
+            <label class="radio" for="alleKjennerRomningsVeiene-false">Nei</label>
         </div>
     </div>
+</div>
+
+<div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
-        <label class="control-label" for="bareBeregnetVakne">Bare beregnet våkne</label>
+        <label class="control-label" for="bareBeregnetVakne">Er beregnet for overnatting?</label>
+        <p>Bygg er beregnet for overnatting</p>
         <div class="controls">
             <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-null" value="" />
-            <label class="radio" for="bareBeregnetVakne-null">null</label>
+            <label class="radio" for="bareBeregnetVakne-null">Vet ikke</label>
 
             <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-true" value="true" />
-            <label class="radio" for="bareBeregnetVakne-true">true</label>
+            <label class="radio" for="bareBeregnetVakne-true">Ja</label>
 
             <input type="radio" v-model="variables.bareBeregnetVakne.value" name="bareBeregnetVakne" id="bareBeregnetVakne-false" value="false" />
-            <label class="radio" for="bareBeregnetVakne-false">false</label>
+            <label class="radio" for="bareBeregnetVakne-false">Nei</label>
         </div>
     </div>
+</div>
+
+<div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
-        <label class="control-label" for="liteBrannfarligAktivitet">Liten brannfare</label>
+        <label class="control-label" for="liteBrannfarligAktivitet">Bruk medfører liten brannfare?</label>
+        <p>Forutsatt bruk av bygg medfører liten brannfare</p>
         <div class="controls">
             <input type="radio" v-model="variables.liteBrannfarligAktivitet.value" name="liteBrannfarligAktivitet" id="liteBrannfarligAktivitet-null" value="" checked="checked" />
-            <label class="radio" for="liteBrannfarligAktivitet-null">null</label>
+            <label class="radio" for="liteBrannfarligAktivitet-null">Vet ikke</label>
 
             <input type="radio" v-model="variables.liteBrannfarligAktivitet.value" name="liteBrannfarligAktivitet" id="liteBrannfarligAktivitet-true" value="true" />
-            <label class="radio" for="liteBrannfarligAktivitet-true">true</label>
+            <label class="radio" for="liteBrannfarligAktivitet-true">Ja</label>
 
             <input type="radio" v-model="variables.liteBrannfarligAktivitet.value" name="liteBrannfarligAktivitet" id="liteBrannfarligAktivitet-false" value="false" />
-            <label class="radio" for="liteBrannfarligAktivitet-false">false</label>
+            <label class="radio" for="liteBrannfarligAktivitet-false">Nei</label>
         </div>
     </div>
 </div>
