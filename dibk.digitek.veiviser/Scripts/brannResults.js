@@ -38,7 +38,7 @@ var vueBrannModel = new Vue({
             return getCallName(key) ? getCallName(key) : key;
         },
         getDescription: function (key) {
-            return getDescription(key) ? getDescription(key) : key;
+            return getDescription(key) ? getDescription(key) : null;
         },
         getDescriptionUrl: function (key) {
             return getDescriptionUrl(key) ? getDescriptionUrl(key) : null;
