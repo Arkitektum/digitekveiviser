@@ -1,0 +1,77 @@
+﻿body {
+    padding: 0;
+    background-color: white;
+    background-image: linear-gradient(164deg,rgba(137,174,196,0.34),white,rgba(0,117,127,0.19));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header-section img.mobile-logo {
+    margin-bottom: -7px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .header-section {
+        padding: 0;
+        background: #072938;
+        overflow: hidden;
+    }
+
+        .header-section .header-background-image {
+            display: none;
+        }
+
+        .header-section img.mobile-logo {
+            display: inline-block;
+            margin-bottom: -7px;
+        }
+
+        .header-section img.desktop-logo {
+            display: none;
+        }
+        .header-section .fa.fa-bars:before {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            padding: 0;
+            color: #fff;
+            font-size: 25px;
+            content: "\f0c9";
+        }
+        
+        .header-section .navigaton-bar {
+            background-color: #072938;
+            left: left: -moz-calc(100% - 300px);
+            left: -webkit-calc(100% - 300px);
+            left: calc(100% - 300px);
+            padding: 0;
+            margin-bottom: 0;
+            width: 300px;
+            display: none;
+        }
+        .header-section .navigaton-bar.active {
+            display: block;
+        }
+
+            .header-section .navigaton-bar > ul, 
+            .header-section .navigaton-bar > ul > form {
+                display: block;
+            }
+
+                .header-section .navigaton-bar > ul > li,
+                .header-section .navigaton-bar > ul > form > li {
+                    display: block;
+                    text-align: left;
+                    border-bottom: 1px solid #00757F;
+                }
+
+                    .header-section .navigaton-bar > ul > li a,
+                    .header-section .navigaton-bar > ul > form > li a {
+                        color: #FFF;
+                        font-size: 14px;
+                        font-family: "Altis";
+                    }
+
+        
+}
