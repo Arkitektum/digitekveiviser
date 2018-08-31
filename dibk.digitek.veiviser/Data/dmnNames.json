@@ -25,15 +25,15 @@
   },
   "tiltakStorrelseBrannseksjonBelastning": {
     "Chapter": "§ 11-7",
-    "TableName": "Tabell 1: Størrelse på brannseksjon"
+    "TableName": "Størrelse på brannseksjon"
   },
   "brannmotstandSeksjoneringsvegg": {
     "Chapter": "§ 11-7",
-    "TableName": "Tabell 2: Brannmotstand for seksjoneringsvegg"
+    "TableName": "Brannmotstand for seksjoneringsvegg"
   },
   "tiltakBrannveggHoyeBygg": {
     "Chapter": "§ 11-6",
-    "TableName": "Tabell 1: Brannveggens brannmotstand avhengig av spesifikk brannenergi"
+    "TableName": "Brannveggens brannmotstand avhengig av spesifikk brannenergi"
   },
   "brannmotstandBaerendeBygningsdeler": {
     "Chapter": "§ 11-4",
@@ -41,7 +41,7 @@
   },
   "brannmotstandSkillendeKonstruksjon": {
     "Chapter": "§ 11-8",
-    "TableName": "Tabell 1: Brannmotstand til branncellebegrensende bygningsdeler"
+    "TableName": "Brannmotstand til branncellebegrensende bygningsdeler"
   },
   "klassifiseringTrapperom": {
     "Chapter": "§ 11-8",
@@ -57,7 +57,7 @@
   },
   "brannalarmKategori": {
     "Chapter": "§ 11-12",
-    "TableName": "Tabell 3: Brannalarmkategori avhengig av risikoklasse"
+    "TableName": "Brannalarmkategori avhengig av risikoklasse"
   },
   "kravBranndetektorRom": {
     "Chapter": "§ 11-12",
@@ -81,11 +81,11 @@
   },
   "overflateKledningBrannseksjon": {
     "Chapter": "§ 11-9, 2. ledd",
-    "TableName": "Tabell 1 og 2: Ytelser til overflater og kledning ... "
+    "TableName": "Ytelser til overflater og kledning ... "
   },
   "overflaterBranncelleRomningsvei": {
     "Chapter": "§ 11-9, 2. ledd",
-    "TableName": "Tabell 1 og 2: Ytelser til overflater og kledning ... "
+    "TableName": "Ytelser til overflater og kledning ... "
   },
   "brannmotstandIsolasjon": {
     "Chapter": "§ 11-9, 2. ledd",
@@ -93,15 +93,15 @@
   },
   "brannmotstandDorRomningsvei": {
     "Chapter": "§ 11-8",
-    "TableName": "Tabell 2: Brannmotstand til dør til og i rømningsvei"
+    "TableName": "Brannmotstand til dør til og i rømningsvei"
   },
   "brannmotstandDorISeksjoneringsvegg": {
     "Chapter": "§ 11-7, 2. ledd",
-    "TableName": "Tabell 2: Brannmotstand for seksjoneringsvegg."
+    "TableName": "Brannmotstand for seksjoneringsvegg."
   },
   "brannmotstandMotstaendeVinduerYttervegger": {
     "Chapter": "§ 11-7",
-    "TableName": "Tabell 2: Brannmotstand for seksjoneringsvegg."
+    "TableName": "Brannmotstand for seksjoneringsvegg."
   },
   "branncelleRomningUtgang": {
     "Chapter": "§ 11-13",
