@@ -12,17 +12,17 @@
                 <div v-for="(fieldValue, fieldName) in categoryFields">
                     <div v-if="getCallName(fieldName) !== 'Referanse forskrift'" class="wizard-result-rule">
                         <div class="wizard-result-rule-value">
-                            <b>{{ getCallName(fieldName) }}: </b>{{ fieldValue }}
-                        </div>
+                            {{ getCallName(fieldName) }}: <b>{{ fieldValue }}</b>
+</div>
                         <div class="wizard-result-rule-description" v-if="getDescription(fieldName)">
-                            {{ getDescription(fieldName) }}
+                            {{ getDescription(fieldName) }} <a v-bind:href="getDescriptionUrl(fieldName)" target="_blank">Les mer</a>
                         </div>
-                        <div v-if="getCallName(fieldName) && getDescriptionUrl(fieldName)">
-                            <a v-bind:href="getDescriptionUrl(fieldName)" target="_blank">Les mer om {{ getCallName(fieldName) }}</a>  i byggesaksforskriften
+                        @*<div v-if="getCallName(fieldName) && getDescriptionUrl(fieldName)">
+                            <a v-bind:href="getDescriptionUrl(fieldName)" target="_blank">Les mer</a>
                         </div>
                         <div v-else-if="getDescriptionUrl(fieldName)">
                             <a v-bind:href="getDescriptionUrl(fieldName)" target="_blank">Les mer</a>
-                        </div>
+                        </div>*@
                     </div>
                 </div>
             </div>
