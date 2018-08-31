@@ -115,8 +115,8 @@
     "URL": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iii/11-7/"
   },
   "kravBrannveggKvalitet": {
-    "CallName": "Mangler",
-    "Description": "!!!",
+    "CallName": "Brannvegg i høye bygg",
+    "Description": "Brannvegg v/ mønehøyde >9m og nabobygg < 8m avst",
     "URL": ""
   },
   "baerendeHovedSystem": {

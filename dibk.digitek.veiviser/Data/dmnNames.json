@@ -65,7 +65,7 @@
   },
   "detektorBrannalarmKategori": {
     "Chapter": "§ 11-12",
-    "TableName": "Forklaring til tabell 3"
+    "TableName": "Tiltak for å påvirke rømnings- og redningstider"
   },
   "tiltakManuellBrannslokking": {
     "Chapter": "§ 11-16",
@@ -81,11 +81,11 @@
   },
   "overflateKledningBrannseksjon": {
     "Chapter": "§ 11-9, 2. ledd",
-    "TableName": "Ytelser til overflater og kledning ... "
+    "TableName": "Ytelser til overflater og kledning"
   },
   "overflaterBranncelleRomningsvei": {
     "Chapter": "§ 11-9, 2. ledd",
-    "TableName": "Ytelser til overflater og kledning ... "
+    "TableName": "Ytelser til overflater og kledning"
   },
   "brannmotstandIsolasjon": {
     "Chapter": "§ 11-9, 2. ledd",
@@ -97,11 +97,11 @@
   },
   "brannmotstandDorISeksjoneringsvegg": {
     "Chapter": "§ 11-7, 2. ledd",
-    "TableName": "Brannmotstand for seksjoneringsvegg."
+    "TableName": "Brannmotstand for seksjoneringsvegg"
   },
   "brannmotstandMotstaendeVinduerYttervegger": {
     "Chapter": "§ 11-7",
-    "TableName": "Brannmotstand for seksjoneringsvegg."
+    "TableName": "Brannmotstand for seksjoneringsvegg"
   },
   "branncelleRomningUtgang": {
     "Chapter": "§ 11-13",
