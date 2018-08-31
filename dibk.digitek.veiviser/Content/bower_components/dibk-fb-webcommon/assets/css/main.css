@@ -211,7 +211,7 @@ footer general-container {
   float: right; }
 
 label {
-  color: #7B7B79;
+  color:#222;
   display: block;
   margin: 0.6em 0px;
   font-weight: bold;
