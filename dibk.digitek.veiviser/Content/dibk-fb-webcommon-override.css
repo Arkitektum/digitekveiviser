@@ -76,3 +76,11 @@
 
         
 }
+
+.vertical-spacer-50 {
+    margin-bottom: 50px;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}

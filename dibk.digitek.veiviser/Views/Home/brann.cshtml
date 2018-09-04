@@ -31,7 +31,12 @@
             <div class="wizard-navigation-buttons">
                 <button v-if="getPreviousSchemaType()" v-on:click="setSelectedSchemaType(getPreviousSchemaType())" class="linkbutton wizard-navigation-button wizard-navigation-button-previous">Forrige</button>
                 <button v-if="getNextSchemaType()" v-on:click="setSelectedSchemaType(getNextSchemaType())" class="linkbutton wizard-navigation-button wizard-navigation-button-next">Neste</button>
+                <button v-if="!getNextSchemaType()" class="linkbutton wizard-navigation-button" v-on:click="saveResultsToLocalStorage()">Vis resultat</button>
             </div>
+            <div v-if="getNextSchemaType()" class="wizard-navigation-buttons flex-end">
+                <button class="linkbutton wizard-navigation-button" v-on:click="saveResultsToLocalStorage()">Vis resultat</button>
+            </div>
+            <div class="vertical-spacer-50"></div>
         </main>
     </div>
 </div>

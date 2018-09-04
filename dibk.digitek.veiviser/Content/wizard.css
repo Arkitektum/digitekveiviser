@@ -22,7 +22,6 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 50px;
 }
 
     .wizard-navigation-buttons .wizard-navigation-button {
