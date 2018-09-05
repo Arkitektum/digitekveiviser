@@ -25,10 +25,25 @@ var vueBrannModel = new Vue({
             arealBrannseksjonPrEtasje: { value: null, type: "long" }
         },
         descriptions: null,
-        hvilkeVirksomhetstype:null
+        hvilkeVirksomhetstype: null
     },
-    created: function () {
-
+    watch: {
+        hvilkeVirksomhetstype: function (value) {
+            if (value == 'null') {
+                this.variables.typeVirksomhet.value = null;
+                this.variables.bareSporadiskPersonopphold.value = null;
+                this.variables.alleKjennerRomningsVeiene.value = null;
+                this.variables.beregnetForOvernatting.value = null;
+                this.variables.liteBrannfarligAktivitet.value = null;
+            } else if (value == 'true') {
+                this.variables.bareSporadiskPersonopphold.value = null;
+                this.variables.alleKjennerRomningsVeiene.value = null;
+                this.variables.beregnetForOvernatting.value = null;
+                this.variables.liteBrannfarligAktivitet.value = null;
+            } else if (value == 'false') {
+                this.variables.typeVirksomhet.value = null;
+            }
+        }
     },
     methods: {
         setSelectedSchemaType(schemaType) {
