@@ -5,7 +5,7 @@ var vueBrannModel = new Vue({
     data: {
         schemaTypes: [
             { key: '1', name: 'Gi parameter for risikoklasse', number: 1 },
-            { key: '2', name: 'Brannklasser', number: 2 },
+            { key: '2', name: 'Gi parameter for brannklasse', number: 2 },
             { key: '3', name: 'Brannspredning mellom byggverk', number: 3 }
         ],
         selectedSchemaType: { key: '1', name: 'Gi parameter for risikoklasse', number: 1 },

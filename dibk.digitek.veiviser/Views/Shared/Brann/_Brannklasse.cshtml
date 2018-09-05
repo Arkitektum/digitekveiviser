@@ -1,11 +1,11 @@
 ﻿<div class="wizard-schema-description">
-    <p>Klassfisering av bygg etter konsekvens av brann for</p>
+    <p>Vurdering av konsekvens av brann for liv, helse, miljø og samfunnsmessige interesser</p>
 </div>
 <div class="wizard-schema-section">
     <!-- Select Basic -->
     <div class="control-group">
         <label class="control-label" for="konsekvensAvBrann">Konsekvens av brann</label>
-        <p>Vurdering av konsekvens av brann for liv, helse, miljø og samfunnsmessige interesser</p>
+        <p>Klassfisering av bygg etter konsekvens av brann. Hvis konsekvens ikke velges vil brannklasse bli satt etter verdi i parametrene nedenfor</p>
         <div class="controls">
             <div class="select-wrapper">
                 <select id="konsekvensAvBrann" v-model="variables.konsekvensAvBrann.value" name="konsekvensAvBrann">
@@ -19,12 +19,13 @@
         </div>
     </div>
 </div>
-<div class="wizard-schema-section">
+<p>Parametrene herunder brukes til brannklassifisering, hvis det mangler, men også til utledning av andre preaksepterte ytelser. De må legges inn.</p>
 
+<div class="wizard-schema-section">
 
     <!-- Text input-->
     <div class="control-group">
-        <label class="control-label" for="antallEtasjer">Hvor mange etasjer har prosjektet?</label>
+        <label class="control-label" for="antallEtasjer">Hvor mange etasjer har byggverket?</label>
         <p></p>
         <div class="controls">
             <input v-model.number="variables.antallEtasjer.value" type="number" id="antallEtasjer" name="antallEtasjer" placeholder="Antall" />
