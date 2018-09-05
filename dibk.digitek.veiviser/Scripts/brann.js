@@ -1,14 +1,14 @@
-﻿
+
 
 var vueBrannModel = new Vue({
     el: '#vue-brann',
     data: {
         schemaTypes: [
-            { key: '1', name: 'Risikoklasser', number: 1 },
+            { key: '1', name: 'Gi parameter for risikoklasse', number: 1 },
             { key: '2', name: 'Brannklasser', number: 2 },
             { key: '3', name: 'Brannspredning mellom byggverk', number: 3 }
         ],
-        selectedSchemaType: { key: '1', name: 'Risikoklasser', number: 1 },
+        selectedSchemaType: { key: '1', name: 'Gi parameter for risikoklasse', number: 1 },
         variables: {
             typeVirksomhet: { value: null, type: "String" },
             antallEtasjer: { value: null, type: "long" },
@@ -24,7 +24,8 @@ var vueBrannModel = new Vue({
             bygningOffentligUnderTerreng: { value: null, type: "boolean" },
             arealBrannseksjonPrEtasje: { value: null, type: "long" }
         },
-        descriptions: null
+        descriptions: null,
+        hvilkeVirksomhetstype:null
     },
     created: function () {
 

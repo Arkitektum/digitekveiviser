@@ -1,7 +1,7 @@
 ﻿axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 function postApiData(apiData) {
-    return axios.post('https://digitek-dev.arkitektum.no/engine-rest/process-definition/key/BranntekniskProsjektering/start', apiData)
+    return axios.post('http://localhost:8080/engine-rest/process-definition/key/BranntekniskProsjektering/start', apiData)
         .then(function (response) {
             if (response && response.data && response.data.id) {
                 return response.data.id;
@@ -15,7 +15,7 @@ function postApiData(apiData) {
 }
 
 function GETVariablesByExecutionId(executionId) {
-    return axios.get('https://digitek-dev.arkitektum.no/engine-rest/process-instance/' + executionId + '/variables')
+    return axios.get('http://localhost:8080/engine-rest/process-instance/' + executionId + '/variables')
         .then(function (taskVariables) {
             if (taskVariables && taskVariables.data && taskVariables.data.modelOutputs) {
                 return taskVariables.data.modelOutputs;
@@ -29,7 +29,7 @@ function GETVariablesByExecutionId(executionId) {
 }
 
 function GetAllTaskByExecutionId(executionId) {
-    axios.get('https://digitek-dev.arkitektum.no/engine-rest/task?processInstanceId=' + executionId)
+    axios.get('http://localhost:8080/engine-rest/task?processInstanceId=' + executionId)
         .then(function (openTask) {
             if (openTask && openTask.data) {
                 var taskList = openTask.data.map(a => a.id);
@@ -51,7 +51,7 @@ function postCompleteTaskList(taskList, taskListIndex) {
 
 function postCompleteTask(taskList, taskIdListIndex) {
     var taskId = taskList[taskIdListIndex];
-    axios.post('https://digitek-dev.arkitektum.no/engine-rest/task/' + taskId + '/complete', '{}')
+    axios.post('http://localhost:8080/engine-rest/task/' + taskId + '/complete', '{}')
         .then(function (response) {
             postCompleteTaskList(taskIdListIndex + 1);
         })
