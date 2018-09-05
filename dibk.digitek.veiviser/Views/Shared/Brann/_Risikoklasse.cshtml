@@ -1,13 +1,33 @@
 ﻿
 <div class="wizard-schema-description">
-    <p>Veiviseren sjekker om det finnes preaksepterte ytelser for prosjektet basert på valg og verdier i denne veiviseren.</p>
+    <p>Angi virksomhetstype, hvis den er kjent. For en del virksomhetstyper er det predefinert risikoklasse. Er typen ukjent/uklar så kan risikoklasse utledes av andre parametre; velg da "Nei". Vet ikke/kan ikke svare tillater å gå videre til brannklassifisering.</p>
 </div>
 
 <div class="wizard-schema-section">
-
-    <p>Hvis du ikke vet hvilke virksomhetstype som gjelder for prosjektet så kan du velge blank og så svare på andre spørsmål for å vurdere risikoklassen</p>
-    <!-- Select Basic -->
+    <!-- Multiple Radios (inline) -->
     <div class="control-group">
+        <label class="control-label" for="hvilkeVirksomhetstype">Vet du hvilke virksomhetstype som gjelder for prosjektet?</label>
+        <div class="controls">
+
+            <input type="radio" v-model="hvilkeVirksomhetstype" name="hvilkeVirksomhetstype" id="hvilkeVirksomhetstype-null" value="null" checked="checked">
+            <label class="radio" for="hvilkeVirksomhetstype-null">
+                Vet ikke/kan ikke svare
+            </label>
+            <input type="radio" v-model="hvilkeVirksomhetstype" name="hvilkeVirksomhetstype" id="hvilkeVirksomhetstype-true" value="true">
+            <label class="radio" for="hvilkeVirksomhetstype-true">
+                Ja. Velg virksomhetstype fra nedtrekkslisten som vises
+            </label>
+            <input type="radio" v-model="hvilkeVirksomhetstype" name="hvilkeVirksomhetstype" id="hvilkeVirksomhetstype-false" value="false">
+            <label class="radio" for="hvilkeVirksomhetstype-false">
+                Nei. Fyll inn andre parametre for å sette risikoklasse
+            </label>
+        </div>
+    </div>
+
+</div>
+<div v-show="hvilkeVirksomhetstype == 'true'" class="wizard-schema-section">
+    <div>
+        <!-- Select Basic -->
         <label class="control-label" for="typeVirksomhet">Type virksomhet</label>
         <div class="controls">
             <div class="select-wrapper">
@@ -24,8 +44,7 @@
         </div>
     </div>
 </div>
-
-<div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
+<div v-show="hvilkeVirksomhetstype == 'false'"  class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
         <label class="control-label" for="bareSporadiskPersonopphold">Kun sporadisk personopphold?</label>
@@ -46,7 +65,7 @@
     </div>
 </div>
 
-<div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
+<div v-show="hvilkeVirksomhetstype == 'false'" class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
         <label class="control-label" for="alleKjennerRomningsVeiene">Er evakuering kjent?</label>
@@ -64,7 +83,7 @@
     </div>
 </div>
 
-<div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
+<div v-show="hvilkeVirksomhetstype == 'false'" class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
         <label class="control-label" for="beregnetForOvernatting">Er beregnet for overnatting?</label>
@@ -82,7 +101,7 @@
     </div>
 </div>
 
-<div v-show="!variables.typeVirksomhet.value" class="wizard-schema-section">
+<div v-show="hvilkeVirksomhetstype == 'false'" class="wizard-schema-section">
     <!-- Multiple Radios -->
     <div class="control-group">
         <label class="control-label" for="liteBrannfarligAktivitet">Bruk medfører liten brannfare?</label>
