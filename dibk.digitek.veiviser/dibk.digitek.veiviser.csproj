@@ -103,8 +103,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bower_components\axios\dist\axios.js" />
-    <Content Include="Content\bower_components\axios\dist\axios.min.js" />
+    <Content Include="Content\bower_components\axios\dist\axios.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bower_components\axios\dist\axios.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\bower_components\dibk-fb-webcommon\assets\css\main.css" />
     <Content Include="Content\bower_components\dibk-fb-webcommon\assets\css\main.min.css" />
     <Content Include="Content\bower_components\dibk-fb-webcommon\assets\fonts\1087AB_0.svg" />
@@ -181,7 +185,9 @@
     <Content Include="Content\bower_components\dibk-fb-webcommon\assets\fonts\1087AB_5.woff" />
     <Content Include="Content\bower_components\dibk-fb-webcommon\assets\fonts\1087AB_6.eot" />
     <Content Include="Content\bower_components\dibk-fb-webcommon\assets\fonts\1087AB_6.ttf" />
-    <Content Include="Content\bower_components\dibk-fb-webcommon\assets\fonts\1087AB_6.woff" />
+    <Content Include="Content\bower_components\dibk-fb-webcommon\assets\fonts\1087AB_6.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\bower_components\dibk-fb-webcommon\assets\fonts\1087AB_7.eot" />
     <Content Include="Content\bower_components\dibk-fb-webcommon\assets\fonts\1087AB_7.ttf" />
     <Content Include="Content\bower_components\dibk-fb-webcommon\assets\fonts\1087AB_7.woff" />
@@ -210,9 +216,14 @@
     <Content Include="Content\bower_components\vue\package.json" />
     <Content Include="Content\bower_components\vue\README.md" />
     <Content Include="Content\bower_components\vue\yarn.lock" />
-    <Content Include="Data\dmnRules.json" />
+    <Content Include="Data\dmnRules.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\dummyResults.json" />
-    <Content Include="Data\dmnNames.json" />
+    <Content Include="Data\dmnNames.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\PublishProfiles\digitek-veiviser-dev - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\uuResults.js" />
     <Content Include="Scripts\uu.js" />
@@ -224,7 +235,9 @@
     <None Include=".bowerrc" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\resourceMethods.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
