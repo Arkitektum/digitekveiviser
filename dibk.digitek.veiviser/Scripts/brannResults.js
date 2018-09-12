@@ -7,7 +7,8 @@ var vueBrannModel = new Vue({
         dmnNames: null,
         dmnRules: null,
         variables: null,
-        modelOutput: null
+        modelOutput: null,
+        loadingModelOutput: true
     },
     created: function () {
         this.getDmnNames();
@@ -35,11 +36,21 @@ var vueBrannModel = new Vue({
                     this.getModelOutput(executionId);
                 })
         },
-        getModelOutput: function (executionId) {
+        getModelOutput: function (executionId, requestAttemptCount) {
+            var attemptCount = requestAttemptCount !== undefined ? requestAttemptCount : 0;
             Promise.resolve(GETVariablesByExecutionId(executionId))
                 .then((modelOutput) => {
-                    console.log(modelOutput);
-                    this.modelOutput = modelOutput;
+                    if (!modelOutput && attemptCount < 20) {
+                        setTimeout(function() {
+                                attemptCount++;
+                                this.getModelOutput(executionId, attemptCount);
+                            }.bind(this),
+                            500);
+                    } else {
+                        this.modelOutput = modelOutput;
+                        this.loadingModelOutput = false;
+                    }
+                    
                 });
         },
         getCallName: function (key) {

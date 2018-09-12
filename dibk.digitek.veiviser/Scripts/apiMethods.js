@@ -18,9 +18,11 @@ function GETVariablesByExecutionId(executionId) {
     return axios.get('https://digitek-dev.arkitektum.no/engine-rest/process-instance/' + executionId + '/variables')
         .then(function (taskVariables) {
             if (taskVariables && taskVariables.data && taskVariables.data.modelOutputs) {
+                console.log(taskVariables.data.modelOutputs);
                 return taskVariables.data.modelOutputs;
             } else {
-                console.warn("'taskVariables.data.modelOutputs' is not defined")
+                console.warn("'taskVariables.data.modelOutputs' is not defined");
+                return false;
             }
         }.bind(this))
         .catch(function (error) {

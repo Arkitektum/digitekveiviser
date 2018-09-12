@@ -17,3 +17,7 @@ textarea,
     max-width: 400px;
 }
 
+.header-section {
+    z-index: 2;
+    position: relative;
+}

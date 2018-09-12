@@ -5,6 +5,12 @@
 
 <div id="vue-brann-results">
     <div class="wizard-container">
+        <div v-if="loadingModelOutput" class="loading-message-container">
+            <div class="loading-message">
+                <img src="~/Content/loading-animation.gif"/>
+                <div>Henter resultat</div>
+            </div>
+        </div>
         <main v-if="dmnNames && dmnRules && modelOutput && modelOutput.value" class="wizard-schema">
             <h1 class="wizard-schema-title">Resultat</h1>
             <div v-if="Object.keys(modelOutput.value).length">
