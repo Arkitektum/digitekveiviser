@@ -1,0 +1,93 @@
+{
+  "_bygningOffentligUnderTerreng": {
+    "Type": "Null",
+    "Value": null,
+    "ValueInfo": {}
+  },
+  "antallEtasjer": {
+    "Type": "Long",
+    "Value": 5,
+    "ValueInfo": {}
+  },
+  "_arealBrannseksjonPrEtasje": {
+    "Type": "Null",
+    "Value": null,
+    "ValueInfo": {}
+  },
+  "typeVirksomhet": {
+    "Type": "String",
+    "Value": "Kontor",
+    "ValueInfo": {}
+  },
+  "utgangTerrengAlleBoenheter": {
+    "Type": "Boolean",
+    "Value": true,
+    "ValueInfo": {}
+  },
+  "_beregnetForOvernatting": {
+    "Type": "Null",
+    "Value": null,
+    "ValueInfo": {}
+  },
+  "_liteBrannfarligAktivitet": {
+    "Type": "Null",
+    "Value": null,
+    "ValueInfo": {}
+  },
+  "_brannenergi": {
+    "Type": "Null",
+    "Value": null,
+    "ValueInfo": {}
+  },
+  "_brtArealPrEtasje": {
+    "Type": "Null",
+    "Value": null,
+    "ValueInfo": {}
+  },
+  "_konsekvensAvBrann": {
+    "Type": "Null",
+    "Value": null,
+    "ValueInfo": {}
+  },
+  "modelInputs": {
+    "Type": "Object",
+    "Value": "rO0ABXNyABdqYXZhLnV0aWwuTGlua2VkSGFzaE1hcDTATlwQbMD7AgABWgALYWNjZXNzT3JkZXJ4cgARamF2YS51dGlsLkhhc2hNYXAFB9rBwxZg0QMAAkYACmxvYWRGYWN0b3JJAAl0aHJlc2hvbGR4cD9AAAAAAAAMdwgAAAAQAAAADHQAD190eXBlVmlya3NvbWhldHQABktvbnRvcnQADl9hbnRhbGxFdGFzamVyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAV0ABFfYnJ0QXJlYWxQckV0YXNqZXB0ABtfdXRnYW5nVGVycmVuZ0FsbGVCb2VuaGV0ZXJzcgARamF2YS5sYW5nLkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHABdAAbX2JhcmVTcG9yYWRpc2tQZXJzb25vcHBob2xkcHQAGl9hbGxlS2plbm5lclJvbW5pbmdzVmVpZW5lcHQAF19iZXJlZ25ldEZvck92ZXJuYXR0aW5ncHQAGV9saXRlQnJhbm5mYXJsaWdBa3Rpdml0ZXRwdAASX2tvbnNla3ZlbnNBdkJyYW5ucHQAGl9hcmVhbEJyYW5uc2Vrc2pvblByRXRhc2plcHQADF9icmFubmVuZXJnaXB0AB1fYnlnbmluZ09mZmVudGxpZ1VuZGVyVGVycmVuZ3B4AA==",
+    "ValueInfo": {
+      "objectTypeName": "java.util.LinkedHashMap",
+      "serializationDataFormat": "application/x-java-serialized-object"
+    }
+  },
+  "_utgangTerrengAlleBoenheter": {
+    "Type": "Boolean",
+    "Value": true,
+    "ValueInfo": {}
+  },
+  "_alleKjennerRomningsVeiene": {
+    "Type": "Null",
+    "Value": null,
+    "ValueInfo": {}
+  },
+  "risikoklasseFraTypeVirksomhet": {
+    "Type": "Object",
+    "Value": "rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAACdAAacmVmZXJhbnNlUGFyYWdyYWZGb3Jza3JpZnR0AAfCpyAxMS0ydAAEX3JrbHQABFJLTDJ4",
+    "ValueInfo": {
+      "objectTypeName": "java.util.HashMap",
+      "serializationDataFormat": "application/x-java-serialized-object"
+    }
+  },
+  "_bareSporadiskPersonopphold": {
+    "Type": "Null",
+    "Value": null,
+    "ValueInfo": {}
+  },
+  "_antallEtasjer": {
+    "Type": "Integer",
+    "Value": 5,
+    "ValueInfo": {}
+  },
+  "_typeVirksomhet": {
+    "Type": "String",
+    "Value": "Kontor",
+    "ValueInfo": {}
+  }
+}

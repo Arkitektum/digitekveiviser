@@ -56,8 +56,8 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -224,6 +224,42 @@
     <Content Include="Data\dmnNames.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="CamundaModels\Risikoklasse Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\BPMNSubmodelTestDotNet.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\01_RisikoklasseFraTypeVirksomhet.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\01_Risikoklassifisering.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\01_VedleggTilRisikoklasse.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\02a_Brannklasse.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\02b_BrannklasseKonsekvensBeskrivelse.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\02_KonsekvensBrannklassifisering.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\03a_StorrelseBrannseksjonBelastningTiltak.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\03_TiltakStorrelseBrannseksjonBelastning.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\04_ BrannmotstandSeksjoneringsvegg.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\05_TiltakBrannveggHoyeBygg.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\06_BrannmotstandBaerendeBygningsdeler.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\07_BrannmotstandSkillendeKonstruksjon.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\08a_KlassifiseringTrapperom.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\08b_BrannmotstandTrapperom.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\09_TiltakPavirkeRomningstid.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\10a_BrannalarmKategori.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\10b_DetektorBrannalarmKategori.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\10b_KravBranndetektorRom.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\11_TiltakManuellBrannslokking.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\12a_LedesystemEvakuering.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\12b_LedesystemEvakueringVarighet.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\13_OverflateKledningBrannseksjonTEK17_11_9.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\14_OverflaterBranncelleRomningsvei.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\15_BrannmotstandIsolasjon.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\16_BrannmotstandDorRomningsvei.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\17_BrannmotstandDorISeksjvegg.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\18_BrannmotstandMotstaendeVinduerYttervegger.dmn" />
+    <EmbeddedResource Include="CamundaModels\Dmn\19_BranncelleRomningUtgang.dmn" />
+    <EmbeddedResource Include="CamundaModels\Brannklasse Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Brannmotstand Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Brannseksjon og Brannmotstand Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Krav til branntiltak Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Ledesystem Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\BrannTekniskProsjekteringModel.bpmn" />
     <None Include="Properties\PublishProfiles\digitek-veiviser-dev - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\uuResults.js" />
@@ -248,7 +284,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BranntekniskProsjekteringModel.cs" />
+    <Compile Include="Models\BrannDictionaryModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Worker\InputsValidationWorker.cs" />
+    <Compile Include="Worker\OutputConsolidation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
@@ -279,6 +319,13 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CamundaClient\CamundaClient.csproj">
+      <Project>{D316A8E0-09CB-4D66-B635-94860C3EB799}</Project>
+      <Name>CamundaClient</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

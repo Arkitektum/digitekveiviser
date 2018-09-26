@@ -33,6 +33,7 @@ var vueBrannModel = new Vue({
             Promise.resolve(postApiData({ variables: this.variables }))
                 .then((executionId) => {
                     console.log(executionId);
+                    console.warn(executionId);
                     this.getModelOutput(executionId);
                 })
         },
@@ -45,12 +46,13 @@ var vueBrannModel = new Vue({
                                 attemptCount++;
                                 this.getModelOutput(executionId, attemptCount);
                             }.bind(this),
-                            500);
+                            1000);
                     } else {
                         this.modelOutput = modelOutput;
                         this.loadingModelOutput = false;
                     }
-                    
+                    this.modelOutput = modelOutput;
+                    this.loadingModelOutput = false;
                 });
         },
         getCallName: function (key) {
