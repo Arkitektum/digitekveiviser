@@ -31,7 +31,7 @@ namespace VeiviserTest
 
             // Engine client should point to a dedicated Camunda instance for test, preferrably locally available
 
-            var camunda = new CamundaEngineClient(new System.Uri("http://localhost:8080/engine-rest/engine/default/"), null, null);
+            var camunda = new CamundaEngineClient(new System.Uri("http://digitek-dev.arkitektum.no/engine-rest/engine/default/"), null, null);
 
             // Deploy the models under test
             string deploymentId = camunda.RepositoryService.Deploy("testcase", new List<object> {

@@ -11,8 +11,8 @@ namespace CamundaClient
 
     public class CamundaEngineClient
     {
-        public static string DEFAULT_URL = "http://localhost:8080/engine-rest/engine/default/";
-        public static string COCKPIT_URL = "http://localhost:8080/camunda/app/cockpit/default/";
+        public static string DEFAULT_URL = "http://digitek-dev.arkitektum.no/engine-rest/engine/default/";
+        public static string COCKPIT_URL = "http://digitek-dev.arkitektum.no/camunda/app/cockpit/default/";
 
         private IList<ExternalTaskWorker> _workers = new List<ExternalTaskWorker>();
         private CamundaClientHelper _camundaClientHelper;
