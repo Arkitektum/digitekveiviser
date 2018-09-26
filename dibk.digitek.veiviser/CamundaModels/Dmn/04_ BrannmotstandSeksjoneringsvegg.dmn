@@ -47,18 +47,12 @@
         <outputValues id="UnaryTests_14tazup">        <text></text>
 </outputValues>
       </output>
-      <output id="OutputClause_15krg18" label="Referanse forskrift" name="referanseParagrafForskrift" typeRef="string">
-        <outputValues id="UnaryTests_1kqy7jv">        <text><![CDATA["§ 11-7"]]></text>
-</outputValues>
-      </output>
       <rule id="row-794237888-57">
         <inputEntry id="UnaryTests_0ybxf2h">        <text><![CDATA["Ikke krav"]]></text>
 </inputEntry>
         <inputEntry id="UnaryTests_1psadv2">        <text></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_0vsthcm">        <text><![CDATA["Ikke krav"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1wu15vf">        <text><![CDATA["§ 11-7"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-794237888-48">
@@ -68,8 +62,6 @@
 </inputEntry>
         <outputEntry id="LiteralExpression_15k5w7b">        <text><![CDATA["REI 90-M A2-s1,d0 [A 90]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_09s5p71">        <text><![CDATA["§ 11-7"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-794237888-49">
         <inputEntry id="UnaryTests_1mpnjja">        <text><![CDATA["BKL1"]]></text>
@@ -77,8 +69,6 @@
         <inputEntry id="UnaryTests_1g33m2j">        <text>[400..600]</text>
 </inputEntry>
         <outputEntry id="LiteralExpression_14pz0he">        <text><![CDATA["REI 120-M A2-s1,d0 [A 120]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_06k2zmu">        <text><![CDATA["§ 11-7"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-794237888-50">
@@ -88,8 +78,6 @@
 </inputEntry>
         <outputEntry id="LiteralExpression_1iv8rkc">        <text><![CDATA["REI 180-M A2-s1,d0 [A 180]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0aomti2">        <text><![CDATA["§ 11-7"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-794237888-51">
         <inputEntry id="UnaryTests_0ua72z9">        <text><![CDATA["BKL2"]]></text>
@@ -97,8 +85,6 @@
         <inputEntry id="UnaryTests_0q7c0pl">        <text><![CDATA[<400]]></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_0p5vt5n">        <text><![CDATA["REI 120-M A2-s1,d0 [A 120]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1q0gypd">        <text><![CDATA["§ 11-7"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-794237888-52">
@@ -108,8 +94,6 @@
 </inputEntry>
         <outputEntry id="LiteralExpression_16n4zx1">        <text><![CDATA["REI 180-M A2-s1,d0 [A 180]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_038irw1">        <text><![CDATA["§ 11-7"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-794237888-53">
         <inputEntry id="UnaryTests_10l2yrp">        <text><![CDATA["BKL2"]]></text>
@@ -117,8 +101,6 @@
         <inputEntry id="UnaryTests_17z35ok">        <text>[600..800]</text>
 </inputEntry>
         <outputEntry id="LiteralExpression_0wkwjgr">        <text><![CDATA["REI 240-M A2-s1,d0 [A 240]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1sdnqio">        <text><![CDATA["§ 11-7"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-794237888-54">
@@ -128,8 +110,6 @@
 </inputEntry>
         <outputEntry id="LiteralExpression_0a3b2ae">        <text><![CDATA["REI 120-M A2-s1,d0 [A 120]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_10ni42e">        <text><![CDATA["§ 11-7"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-794237888-55">
         <inputEntry id="UnaryTests_01b8ivp">        <text><![CDATA["BKL3"]]></text>
@@ -137,8 +117,6 @@
         <inputEntry id="UnaryTests_1366odm">        <text>[400..600]</text>
 </inputEntry>
         <outputEntry id="LiteralExpression_1ull2an">        <text><![CDATA["REI 180-M A2-s1,d0 [A 180]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1vdk4h4">        <text><![CDATA["§ 11-7"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-794237888-56">
@@ -148,8 +126,6 @@
 </inputEntry>
         <outputEntry id="LiteralExpression_1mecyvv">        <text><![CDATA["REI 240-M A2-s1,d0 [A 240]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0edfi20">        <text><![CDATA["§ 11-7"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-794237888-58">
         <inputEntry id="UnaryTests_1wh66lr">        <text></text>
@@ -157,8 +133,6 @@
         <inputEntry id="UnaryTests_1xwt1cq">        <text></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_1oesutb">        <text><![CDATA["Ikke definert"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0bgqviz">        <text><![CDATA["§ 11-7"]]></text>
 </outputEntry>
       </rule>
     </decisionTable>

@@ -24,13 +24,10 @@
 </inputExpression>
       </input>
       <output id="output_1" label="Krav brannmotstand dør i seksjoneringsvegg" name="kravBrannmotstandDorISeksjvegg" typeRef="string" />
-      <output id="OutputClause_0wwd431" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-948887753-21">
         <inputEntry id="UnaryTests_074gv1d">        <text><![CDATA["REI 90-M A2-s1,d0 [A 90]"]]></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_1hx7l75">        <text><![CDATA["EI-90C"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1bzrppe">        <text><![CDATA["Side 47"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-948887753-22">
@@ -38,15 +35,11 @@
 </inputEntry>
         <outputEntry id="LiteralExpression_0qneafh">        <text><![CDATA["EI-120C"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0akrfb9">        <text><![CDATA["Side 47"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-948887753-23">
         <inputEntry id="UnaryTests_1mbssav">        <text><![CDATA["REI 180-M A2-s1,d0 [A 180]"]]></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_1e24bxz">        <text><![CDATA["EI-180C"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1b7n184">        <text><![CDATA["Side 47"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-948887753-24">
@@ -54,23 +47,17 @@
 </inputEntry>
         <outputEntry id="LiteralExpression_0ft2hnr">        <text><![CDATA["EI-240C"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1bxwx7k">        <text><![CDATA["Side 47"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-948887753-26">
         <inputEntry id="UnaryTests_1b8wweg">        <text><![CDATA["Ikke krav"]]></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_0o7o2sc">        <text><![CDATA["Ikke krav"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0avo97t">        <text><![CDATA["Side 47"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-811958445-1">
         <inputEntry id="UnaryTests_17r6opa">        <text></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_0bi6zvn">        <text><![CDATA["Ikke definert"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0ay759f">        <text></text>
 </outputEntry>
       </rule>
     </decisionTable>

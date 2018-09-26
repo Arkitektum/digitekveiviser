@@ -43,7 +43,6 @@
       </input>
       <output id="output_2" label="Vegger, tak" name="kravOverflateVeggerTak" typeRef="string" />
       <output id="OutputClause_1jen752" label="Overflater i nedforet himling" name="kravOverflateNedforetHimling" typeRef="string" />
-      <output id="OutputClause_1002ti1" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-948887753-4">
         <inputEntry id="UnaryTests_1rfhh70">        <text></text>
 </inputEntry>
@@ -52,8 +51,6 @@
         <outputEntry id="LiteralExpression_1uiae5v">        <text><![CDATA["In1 på begr. brennbar"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0jz01j3">        <text><![CDATA["In1 på begr. brennbar"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_06v0ywu">        <text><![CDATA["§ 11-9"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-948887753-5">
@@ -65,8 +62,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_1lth70f">        <text><![CDATA["In1 på begr. brennbar"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1q4gnc9">        <text><![CDATA["§ 11-9"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-948887753-6">
         <inputEntry id="UnaryTests_06m7j9a">        <text></text>
@@ -76,8 +71,6 @@
         <outputEntry id="LiteralExpression_1j8hs4e">        <text><![CDATA["In1"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_02wu2la">        <text><![CDATA["In1"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0wki3e0">        <text><![CDATA["§ 11-9"]]></text>
 </outputEntry>
       </rule>
     </decisionTable>

@@ -47,7 +47,6 @@
       <output id="OutputClause_16zdqeh" label="Kledninger (er rømningsvei)" name="kravKledningerErRomningsvei" typeRef="string" />
       <output id="OutputClause_0z404mj" label="Overflater på ytterkledning" name="kravYtterkledning" typeRef="string" />
       <output id="OutputClause_0f58lc8" label="Kledning i sjakter og hulrom" name="kravKledningSjaktHulrom" typeRef="string" />
-      <output id="OutputClause_1cslcxc" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-568431566-7">
         <inputEntry id="UnaryTests_137scyy">        <text></text>
 </inputEntry>
@@ -72,8 +71,6 @@
         <outputEntry id="LiteralExpression_0huhele">        <text><![CDATA["D-s3,d0 [Ut 2]"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1irs5w4">        <text><![CDATA["K210 A2-s1,d0 [K1-A]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1xpc5e5">        <text><![CDATA["§ 11-9"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-568431566-8">
@@ -101,8 +98,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_07iynqf">        <text><![CDATA["K210 A2-s1,d0 [K1-A]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_03uss4i">        <text><![CDATA["§ 11-9"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-568431566-9">
         <inputEntry id="UnaryTests_0o23o48">        <text></text>
@@ -128,8 +123,6 @@
         <outputEntry id="LiteralExpression_1kat24o">        <text><![CDATA["B-s3,d0 [Ut 1]"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0dgn98r">        <text><![CDATA["K210 A2-s1,d0 [K1-A]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1mka9nz">        <text><![CDATA["§ 11-9"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-568431566-1">
@@ -157,8 +150,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0bcljz0">        <text><![CDATA["K210 B-s1,d0 [K1]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_107vgat">        <text><![CDATA["§ 11-9"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-568431566-2">
         <inputEntry id="UnaryTests_0i4ph8l">        <text><![CDATA[<= 200]]></text>
@@ -184,8 +175,6 @@
         <outputEntry id="LiteralExpression_00a96rx">        <text><![CDATA["B-s3,d0 [Ut 1]"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1dqvh2g">        <text><![CDATA["K210 A2-s1,d0 [K1-A]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1q25xpj">        <text><![CDATA["§ 11-9"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-568431566-3">
@@ -213,8 +202,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0q0im4c">        <text><![CDATA["K210 A2-s1,d0 [K1-A]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0kwsptu">        <text><![CDATA["§ 11-9"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-568431566-4">
         <inputEntry id="UnaryTests_03gibz1">        <text><![CDATA[>200]]></text>
@@ -240,8 +227,6 @@
         <outputEntry id="LiteralExpression_0lmn66f">        <text><![CDATA["B-s3,d0 [Ut 1]"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1s3fmx9">        <text><![CDATA["K210 B-s1,d0 [K1]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1jm62i1">        <text><![CDATA["§ 11-9"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-568431566-5">
@@ -269,8 +254,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_1p14uun">        <text><![CDATA["K210 A2-s1,d0 [K1-A]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0ojfqxf">        <text><![CDATA["§ 11-9"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-568431566-6">
         <inputEntry id="UnaryTests_11yz3pe">        <text><![CDATA[>200]]></text>
@@ -296,8 +279,6 @@
         <outputEntry id="LiteralExpression_0vw2dos">        <text><![CDATA["B-s3,d0 [Ut 1]"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_03nawdx">        <text><![CDATA["K210 A2-s1,d0 [K1-A]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1td1whh">        <text><![CDATA["§ 11-9"]]></text>
 </outputEntry>
       </rule>
     </decisionTable>

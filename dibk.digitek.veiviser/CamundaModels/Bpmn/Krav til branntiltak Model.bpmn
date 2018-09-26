@@ -22,7 +22,7 @@
         <bpmn:outgoing>SequenceFlow_0fdkmg1</bpmn:outgoing>
         <bpmn:outgoing>SequenceFlow_0n8andw</bpmn:outgoing>
       </bpmn:parallelGateway>
-      <bpmn:businessRuleTask id="BusinessRuleTask_1mst61q" name="10a_BrannalarmKategori" camunda:resultVariable="kravBrannAlarmKategori" camunda:decisionRef="BrannalarmKategori" camunda:mapDecisionResult="singleResult">
+      <bpmn:businessRuleTask id="BusinessRuleTask_1mst61q" name="10a_KravBrannAlarmKategori" camunda:resultVariable="kravBrannAlarmKategori" camunda:decisionRef="BrannalarmKategori" camunda:mapDecisionResult="singleResult">
         <bpmn:incoming>SequenceFlow_1kp2644</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_0i4k2jb</bpmn:outgoing>
       </bpmn:businessRuleTask>
@@ -68,7 +68,7 @@
       </bpmn:scriptTask>
       <bpmn:sequenceFlow id="SequenceFlow_137m3eg" sourceRef="ExclusiveGateway_1i4vqfs" targetRef="BusinessRuleTask_01yq0xi" />
       <bpmn:sequenceFlow id="SequenceFlow_0wars1h" sourceRef="ExclusiveGateway_1i4vqfs" targetRef="Task_12os9v7" />
-      <bpmn:businessRuleTask id="Task_12os9v7" name="10b_BranndetektorRomKrav&#10;" camunda:resultVariable="kravBranndetektorRom" camunda:decisionRef="KravBranndetektorRom" camunda:mapDecisionResult="singleResult">
+      <bpmn:businessRuleTask id="Task_12os9v7" name="10b_KravBranndetektorRom&#10;" camunda:resultVariable="kravBranndetektorRom" camunda:decisionRef="KravBranndetektorRom" camunda:mapDecisionResult="singleResult">
         <bpmn:incoming>SequenceFlow_0wars1h</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_1imgj5v</bpmn:outgoing>
       </bpmn:businessRuleTask>

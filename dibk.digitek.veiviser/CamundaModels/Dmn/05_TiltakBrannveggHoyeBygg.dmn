@@ -31,13 +31,10 @@
 </inputExpression>
       </input>
       <output id="output_1" label="Brannveggkvalitet v/mønehøyde over 9m og nabobyggg nærmere enn 8m" name="kravBrannveggKvalitet" typeRef="string" />
-      <output id="OutputClause_1b8mfhp" label="Referanse forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-794237888-59">
         <inputEntry id="UnaryTests_0sttirz">        <text><![CDATA[<=400]]></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_1jrr7uh">        <text><![CDATA["REI 120-M A2-s1, d0 [A 120]"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1o2alkq">        <text><![CDATA["§11-6"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-794237888-60">
@@ -45,23 +42,17 @@
 </inputEntry>
         <outputEntry id="LiteralExpression_1ug9nuw">        <text><![CDATA["REI 180-M A2-s1, d0 [A 180]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0uknfes">        <text><![CDATA["§11-6"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-794237888-61">
         <inputEntry id="UnaryTests_0y92yo5">        <text>]600..800]</text>
 </inputEntry>
         <outputEntry id="LiteralExpression_0bfawsf">        <text><![CDATA["REI 240-M A2-s1, d0 [A 240]"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1lvm4rl">        <text><![CDATA["§11-6"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-794237888-62">
         <inputEntry id="UnaryTests_0o8arq6">        <text><![CDATA[>800]]></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_1n82zi4">        <text><![CDATA["For nært nabobygg"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0g7dc82">        <text><![CDATA["§11-6"]]></text>
 </outputEntry>
       </rule>
     </decisionTable>

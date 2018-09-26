@@ -37,102 +37,64 @@
     </authorityRequirement>
     <decisionTable id="DecisionTable_00w57yy" hitPolicy="FIRST">
       <input id="InputClause_0w6mtlz" label="Brannklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1wbb8na" typeRef="string">
-          <text>bkl</text>
-        </inputExpression>
+        <inputExpression id="LiteralExpression_1wbb8na" typeRef="string">        <text>bkl</text>
+</inputExpression>
       </input>
       <input id="InputClause_0dgy5jq" label="Krav til ledesystem" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1t3kgrd" typeRef="boolean">
-          <text>kravLedesystemEvakuering</text>
-        </inputExpression>
+        <inputExpression id="LiteralExpression_1t3kgrd" typeRef="boolean">        <text>kravLedesystemEvakuering</text>
+</inputExpression>
       </input>
       <output id="OutputClause_14nkrdg" label="Trapperom / tekn. inst. som skal fungere under rømning" name="kravTrappTekniskRomVarighet" typeRef="string" />
       <output id="OutputClause_0ckrwyj" label="Varighet ved krav" name="kravLedesystemVarighet" typeRef="string" />
-      <output id="OutputClause_05xiomn" label="Referanse forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-40789973-2">
-        <inputEntry id="UnaryTests_1ntueef">
-          <text>"Ikke Krav"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1thnyri">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1e1uxcx">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0dlcoql">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0er8pqz">
-          <text>"§11-12 (3)"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_1ntueef">        <text><![CDATA["Ikke Krav"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1thnyri">        <text></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1e1uxcx">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0dlcoql">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-542513221-33">
-        <inputEntry id="UnaryTests_1257tl5">
-          <text>"BKL1"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1l02qrd">
-          <text>false</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_0p4wi9l">
-          <text>"minst 30 min./nødv.tid"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1wk2dci">
-          <text>"Ikke Krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_06bhbqf">
-          <text>"§11-12 (3)"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_1257tl5">        <text><![CDATA["BKL1"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1l02qrd">        <text>false</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0p4wi9l">        <text><![CDATA["minst 30 min./nødv.tid"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1wk2dci">        <text><![CDATA["Ikke Krav"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-542513221-34">
-        <inputEntry id="UnaryTests_0lbw4su">
-          <text>"BKL1"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0ovnw4r">
-          <text>true</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_0lq7bnn">
-          <text>"minst 30 min./nødv.tid"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_02j831m">
-          <text>"minst 30 min./nødv.tid"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1h9mlru">
-          <text>"§11-12 (3)"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_0lbw4su">        <text><![CDATA["BKL1"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0ovnw4r">        <text>true</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0lq7bnn">        <text><![CDATA["minst 30 min./nødv.tid"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_02j831m">        <text><![CDATA["minst 30 min./nødv.tid"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-542513221-35">
-        <inputEntry id="UnaryTests_0qp1j73">
-          <text>"BKL2", "BKL3", "BKL4"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1l3oi5j">
-          <text>true</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1ji312w">
-          <text>"minst 60 minutter"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1ueycgv">
-          <text>"minst 60 minutter"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_07kokre">
-          <text>"§11-12 (3)"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_0qp1j73">        <text><![CDATA["BKL2", "BKL3", "BKL4"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1l3oi5j">        <text>true</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1ji312w">        <text><![CDATA["minst 60 minutter"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1ueycgv">        <text><![CDATA["minst 60 minutter"]]></text>
+</outputEntry>
       </rule>
       <rule id="table-83060396-1">
-        <inputEntry id="UnaryTests_0bdoj62">
-          <text>"BKL2", "BKL3", "BKL4"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_141v0m6">
-          <text>false</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_11m1vp8">
-          <text>"minst 60 minutter"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0071iyc">
-          <text>"Ikke Krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1xa0ejm">
-          <text>"§11-12 (3)"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_0bdoj62">        <text><![CDATA["BKL2", "BKL3", "BKL4"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_141v0m6">        <text>false</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_11m1vp8">        <text><![CDATA["minst 60 minutter"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0071iyc">        <text><![CDATA["Ikke Krav"]]></text>
+</outputEntry>
       </rule>
     </decisionTable>
   </decision>

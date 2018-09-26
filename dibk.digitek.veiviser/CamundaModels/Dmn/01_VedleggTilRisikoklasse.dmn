@@ -22,7 +22,6 @@
       <output id="OutputClause_0cuk9jh" label="Alle kjenner rømningsveiene" name="alleKjennerRomningsVeiene" typeRef="boolean" />
       <output id="OutputClause_0hwdn2d" label="beregnet for overnatting" name="beregnetForOvernatting" typeRef="boolean" />
       <output id="OutputClause_05vie8f" label="Lite brannfarlig aktivitet" name="liteBrannfarligAktivitet" typeRef="boolean" />
-      <output id="OutputClause_0qdg9yz" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-150327175-1">
         <inputEntry id="UnaryTests_1b5kkrg">        <text><![CDATA["RKL1"]]></text>
 </inputEntry>
@@ -33,8 +32,6 @@
         <outputEntry id="LiteralExpression_0xjepai">        <text>false</text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0n2cny1">        <text>true</text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_02uwnky">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-150327175-2">
@@ -48,8 +45,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_1kl4rnw">        <text>false</text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0xddn4s">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-150327175-3">
         <inputEntry id="UnaryTests_14xcz0o">        <text><![CDATA["RKL3"]]></text>
@@ -61,8 +56,6 @@
         <outputEntry id="LiteralExpression_1lo303p">        <text>false</text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0z0hm0d">        <text>true</text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_03v8axy">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-150327175-4">
@@ -76,8 +69,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_1f8h7yi">        <text>true</text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_15jsk8l">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-150327175-5">
         <inputEntry id="UnaryTests_1mtng77">        <text><![CDATA["RKL5"]]></text>
@@ -89,8 +80,6 @@
         <outputEntry id="LiteralExpression_0ldk3gc">        <text>false</text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0359lpx">        <text>true</text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1p4by2h">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-150327175-6">
@@ -104,8 +93,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0yhbpxm">        <text>true</text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_07ahyzr">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-953599122-1">
         <inputEntry id="UnaryTests_0612yjx">        <text><![CDATA["Ukjent"]]></text>
@@ -117,8 +104,6 @@
         <outputEntry id="LiteralExpression_1c9pbuj">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1bqfgbs">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0ujmhzc">        <text></text>
 </outputEntry>
       </rule>
     </decisionTable>

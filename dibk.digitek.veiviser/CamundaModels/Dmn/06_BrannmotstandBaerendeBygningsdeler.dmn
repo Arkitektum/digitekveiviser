@@ -61,7 +61,6 @@
       <output id="OutputClause_1bizxix" label="Trappeløp" name="trappeLop" typeRef="string" />
       <output id="OutputClause_1xvh9oo" label="Bærende deler under øverste Kjeller" name="baerendeDelerUnderOversteKjeller" typeRef="string" />
       <output id="OutputClause_1ewdpgu" label="Utvendig trappeløp beskyttet mot flamme og strålevarme" name="beskytttetUtvTrappeLop" typeRef="string" />
-      <output id="OutputClause_1abvrli" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-620640661-1">
         <inputEntry id="UnaryTests_1xbztji">        <text><![CDATA["BKL1"]]></text>
 </inputEntry>
@@ -78,8 +77,6 @@
         <outputEntry id="LiteralExpression_0vlytg3">        <text><![CDATA["R-60*"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1kl8sk6">        <text><![CDATA["-"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0ft9302">        <text><![CDATA["§ 7-23 tabell 1  s. 41"]]></text>
 </outputEntry>
       </rule>
       <rule id="table-377237838-1">
@@ -99,8 +96,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0wtdrpf">        <text><![CDATA["-"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1snj8xm">        <text><![CDATA["§ 7-23 tabell 1  s. 41"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-620640661-4">
         <inputEntry id="UnaryTests_0g97mjh">        <text><![CDATA["BKL1"]]></text>
@@ -118,8 +113,6 @@
         <outputEntry id="LiteralExpression_1gfsupd">        <text><![CDATA["R-60*"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1n7aghn">        <text><![CDATA["-"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1tz9c6k">        <text><![CDATA["§ 7-23 tabell 1  s. 41"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-620640661-2">
@@ -139,8 +132,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0pz0p4s">        <text><![CDATA["R-30*"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_14rex7j">        <text><![CDATA["§ 7-23 tabell 1  s. 41"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-620640661-3">
         <inputEntry id="UnaryTests_1gwa0om">        <text><![CDATA["BKL3"]]></text>
@@ -159,8 +150,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0i3f0ax">        <text><![CDATA["Ubrennbart"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0ceu1eq">        <text><![CDATA["§ 7-23 tabell 1  s. 41"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-949241528-5">
         <inputEntry id="UnaryTests_0bcm4ey">        <text><![CDATA["Ikke krav"]]></text>
@@ -178,8 +167,6 @@
         <outputEntry id="LiteralExpression_0pgtxss">        <text><![CDATA["Ikke krav"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1ljij8q">        <text><![CDATA["Ikke krav"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0nzzzt5">        <text></text>
 </outputEntry>
       </rule>
     </decisionTable>

@@ -32,15 +32,12 @@
       </input>
       <output id="output_1" label="Manuell brannslokking" name="kravManuellSlokking" typeRef="string" />
       <output id="OutputClause_1qitw3t" label="Slangelengde" name="maxBrannslangeLengde" typeRef="string" />
-      <output id="OutputClause_00n16ij" label="Referanse forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-542513221-23">
         <inputEntry id="UnaryTests_03fbnjj">        <text><![CDATA["RKL1","RKL2","RKL4"]]></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_1iebn01">        <text><![CDATA["Håndslokkeapparat, evt. brannslange"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1nv2490">        <text><![CDATA["maks 30m lengde"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1mj89pw">        <text><![CDATA["§ 11-16"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-542513221-24">
@@ -49,8 +46,6 @@
         <outputEntry id="LiteralExpression_1e7wza7">        <text><![CDATA["Brannslange krav i bygning med trykkvann"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1rduwhr">        <text><![CDATA["maks 30m lengde"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0hzjdrf">        <text><![CDATA["§ 11-16"]]></text>
 </outputEntry>
       </rule>
     </decisionTable>

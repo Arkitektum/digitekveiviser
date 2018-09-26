@@ -39,82 +39,49 @@
     </authorityRequirement>
     <decisionTable id="DecisionTable_1ohh97b">
       <input id="InputClause_1bseupg" label="Brannklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0i81tqj" typeRef="string">
-          <text>bkl</text>
-        </inputExpression>
-        <inputValues id="UnaryTests_1innouu">
-          <text>"BKL1","BKL2","BKL3","BKL4","Ikke krav"</text>
-        </inputValues>
+        <inputExpression id="LiteralExpression_0i81tqj" typeRef="string">        <text>bkl</text>
+</inputExpression>
+        <inputValues id="UnaryTests_1innouu">        <text><![CDATA["BKL1","BKL2","BKL3","BKL4","Ikke krav"]]></text>
+</inputValues>
       </input>
       <input id="InputClause_1x78vky" label="Trapperom" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1qnxews" typeRef="string">
-          <text>trappeRomKlasse</text>
-        </inputExpression>
-        <inputValues id="UnaryTests_0w05e0t">
-          <text>"TR1","TR2","TR3"</text>
-        </inputValues>
+        <inputExpression id="LiteralExpression_1qnxews" typeRef="string">        <text>trappeRomKlasse</text>
+</inputExpression>
+        <inputValues id="UnaryTests_0w05e0t">        <text><![CDATA["TR1","TR2","TR3"]]></text>
+</inputValues>
       </input>
       <output id="OutputClause_1nykj0s" label="Konstruksjoner som omgir trapperom" name="kravBrannmotstandRundtTrapperom" typeRef="string" />
-      <output id="OutputClause_0qwecto" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string">
-        <outputValues id="UnaryTests_0fg5pw8">
-          <text>"§ 11-8"</text>
-        </outputValues>
-      </output>
       <rule id="row-542513221-7">
-        <inputEntry id="UnaryTests_1boaptm">
-          <text>"BKL1"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0eg92bp">
-          <text>"TR1","TR2"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_18ttjrw">
-          <text>"EI-30 [B 30]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0suarzd">
-          <text>"§ 11-8"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_1boaptm">        <text><![CDATA["BKL1"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0eg92bp">        <text><![CDATA["TR1","TR2"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_18ttjrw">        <text><![CDATA["EI-30 [B 30]"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-542513221-8">
-        <inputEntry id="UnaryTests_1195hp5">
-          <text>"BKL1","BKL2","BKL3"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0g0dirn">
-          <text>"TR3"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1y1av0b">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1oaeqpt">
-          <text>"§ 11-8"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_1195hp5">        <text><![CDATA["BKL1","BKL2","BKL3"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0g0dirn">        <text><![CDATA["TR3"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1y1av0b">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-542513221-9">
-        <inputEntry id="UnaryTests_0gb38mr">
-          <text>"BKL2","BKL3"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1nhfz9w">
-          <text>"TR1","TR2"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_063vhpa">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_064u8d5">
-          <text>"§ 11-8"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_0gb38mr">        <text><![CDATA["BKL2","BKL3"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1nhfz9w">        <text><![CDATA["TR1","TR2"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_063vhpa">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-30955691-2">
-        <inputEntry id="UnaryTests_0j8ak5b">
-          <text>"Ikke krav"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_099dgyf">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_0oojih2">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_00qm6a5">
-          <text></text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_0j8ak5b">        <text><![CDATA["Ikke krav"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_099dgyf">        <text></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0oojih2">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
       </rule>
     </decisionTable>
   </decision>

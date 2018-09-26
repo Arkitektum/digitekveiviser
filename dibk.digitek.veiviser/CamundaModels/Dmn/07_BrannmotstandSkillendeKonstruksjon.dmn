@@ -27,12 +27,10 @@
     </authorityRequirement>
     <decisionTable>
       <input id="InputClause_151z0jf" label="Brannklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_02suqda" typeRef="string">
-          <text>bkl</text>
-        </inputExpression>
-        <inputValues id="UnaryTests_0fsjp4w">
-          <text>"BKL1","BKL2","BKL3","BKL4"</text>
-        </inputValues>
+        <inputExpression id="LiteralExpression_02suqda" typeRef="string">        <text>bkl</text>
+</inputExpression>
+        <inputValues id="UnaryTests_0fsjp4w">        <text><![CDATA["BKL1","BKL2","BKL3","BKL4"]]></text>
+</inputValues>
       </input>
       <output id="output_1" label="Branncellebegrensende konstruksjon" name="kravBranncelleBegrensKonstruksjon" typeRef="string" />
       <output id="OutputClause_0ndb6gl" label="Bygningsdel som omslutter trapperom, heissjakt mm. over flere plan" name="kravBygningRundtTrapperomHeisEtc" typeRef="string" />
@@ -41,126 +39,77 @@
       <output id="OutputClause_1mrbr5o" label="Fyrrom for sentralvarmeanlegg flytende / gassbrensel, innfyrt effekt P&#60;50 kW" name="kravFyrromSVAInnfyrtEffektmax50" typeRef="string" />
       <output id="OutputClause_05yxgcv" label="Fyrrom for sentralvarmeanlegg flytende / gassbrensel, innfyrt effekt 50&#60;P&#60;100 kW" name="kravFyrromSVAInnfyrtEffekt50p100" typeRef="string" />
       <output id="OutputClause_0a2zfkc" label="Fyrrom for&#10;  sentralvarmeanlegg flytende / gassbrensel, innfyrt effekt P&#62;100 kW" name="kravFyrromSVAInnfyrtEffektmin100" typeRef="string" />
-      <output id="OutputClause_01c3ge4" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string">
-        <outputValues id="UnaryTests_0j0peh3">
-          <text>"§ 11-8"</text>
-        </outputValues>
-      </output>
       <rule id="row-542513221-10">
-        <inputEntry id="UnaryTests_0lfzcnr">
-          <text>"BKL1"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_0vqzklw">
-          <text>"EI-30 [B 30]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_15vtmqm">
-          <text>"EI-30 [B 30]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1ore2mb">
-          <text>"EI-60 [B 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0ozq504">
-          <text>"EI-60 [B 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0cq3k89">
-          <text>"K 2 10 A2-s1,d0 [K1-A]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_13jvb3j">
-          <text>"EI 30 [B 30]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_173o50l">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1nxefmo">
-          <text>"§ 11-8"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_0lfzcnr">        <text><![CDATA["BKL1"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0vqzklw">        <text><![CDATA["EI-30 [B 30]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_15vtmqm">        <text><![CDATA["EI-30 [B 30]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1ore2mb">        <text><![CDATA["EI-60 [B 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0ozq504">        <text><![CDATA["EI-60 [B 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0cq3k89">        <text><![CDATA["K 2 10 A2-s1,d0 [K1-A]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_13jvb3j">        <text><![CDATA["EI 30 [B 30]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_173o50l">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-542513221-11">
-        <inputEntry id="UnaryTests_10ehr79">
-          <text>"BKL2"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_0ei62ss">
-          <text>"EI-60 [B 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0j85btv">
-          <text>"EI-60 [B 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0xzo3vm">
-          <text>"EI-60 [B 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0nqfcj4">
-          <text>"EI-60 [B 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1pbqd73">
-          <text>"K 2 10 A2-s1,d0 [K1-A]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1laf906">
-          <text>"EI-60 [B 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_00im0n9">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_15iohit">
-          <text>"§ 11-8"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_10ehr79">        <text><![CDATA["BKL2"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0ei62ss">        <text><![CDATA["EI-60 [B 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0j85btv">        <text><![CDATA["EI-60 [B 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0xzo3vm">        <text><![CDATA["EI-60 [B 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0nqfcj4">        <text><![CDATA["EI-60 [B 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1pbqd73">        <text><![CDATA["K 2 10 A2-s1,d0 [K1-A]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1laf906">        <text><![CDATA["EI-60 [B 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_00im0n9">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-542513221-12">
-        <inputEntry id="UnaryTests_1qla28c">
-          <text>"BKL3"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1ufcd92">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_06xn1a4">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1w68bkf">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1d70hhw">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0winafj">
-          <text>"K 2 10 A2-s1,d0 [K1-A]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1u4ognw">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0qwe5ro">
-          <text>"EI 60 A2-s1,d0 [A 60]"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0s73pvl">
-          <text>"§ 11-8"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_1qla28c">        <text><![CDATA["BKL3"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1ufcd92">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_06xn1a4">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1w68bkf">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1d70hhw">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0winafj">        <text><![CDATA["K 2 10 A2-s1,d0 [K1-A]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1u4ognw">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0qwe5ro">        <text><![CDATA["EI 60 A2-s1,d0 [A 60]"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-542513221-13">
-        <inputEntry id="UnaryTests_176xmxe">
-          <text>"Ikke krav"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1od57oa">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1yjo0fj">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0msfcgm">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0yz79nq">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0qp02ie">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1sol65k">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_07gl7la">
-          <text>"Ikke krav"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0vtmt7h">
-          <text>"§ 11-8"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_176xmxe">        <text><![CDATA["Ikke krav"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1od57oa">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1yjo0fj">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0msfcgm">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0yz79nq">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0qp02ie">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1sol65k">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_07gl7la">        <text><![CDATA["Ikke krav"]]></text>
+</outputEntry>
       </rule>
     </decisionTable>
   </decision>

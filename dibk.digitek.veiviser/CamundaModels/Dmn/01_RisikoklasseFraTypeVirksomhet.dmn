@@ -36,10 +36,6 @@
       </output>
       <output id="OutputClause_03z2918" label="Lang fullstendig evakuering" name="langFullstendigEvakuering" typeRef="string" />
       <output id="OutputClause_02ur6u2" label="Merknad" name="typeVirksomhetMerknad" typeRef="string" />
-      <output id="OutputClause_0yehjar" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string">
-        <outputValues id="UnaryTests_0uwjfm5">        <text><![CDATA["§ 11-2"]]></text>
-</outputValues>
-      </output>
       <rule id="row-279083498-3">
         <description>§ 11-2</description>
         <inputEntry id="UnaryTests_1ku6r80">        <text><![CDATA["Annen (egen vurd.risikokl.)"]]></text>
@@ -49,8 +45,6 @@
         <outputEntry id="LiteralExpression_0cpv9co">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0kan4q1">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1dkjgjl">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-4">
@@ -63,8 +57,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0zof4d3">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_06fttc8">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-5">
         <description></description>
@@ -75,8 +67,6 @@
         <outputEntry id="LiteralExpression_1cwk60v">        <text><![CDATA["Ja"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1a3cde5">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0pudluw">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-6">
@@ -89,8 +79,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_02mz9ns">        <text><![CDATA["Maks.600m2/etg/seksjon"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0asgzbb">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-11">
         <description></description>
@@ -101,8 +89,6 @@
         <outputEntry id="LiteralExpression_0hktz3b">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_bob">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1p99ngh">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-12">
@@ -115,8 +101,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_1qx22q9">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0ib7d6u">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-13">
         <description></description>
@@ -127,8 +111,6 @@
         <outputEntry id="LiteralExpression_1q82zr1">        <text><![CDATA["Ja"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1mcs8s6">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1upp7qc">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-14">
@@ -141,8 +123,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0poyrah">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1rjhjn5">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-15">
         <description></description>
@@ -153,8 +133,6 @@
         <outputEntry id="LiteralExpression_1mur7uq">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_13fwimx">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_15ycjix">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-16">
@@ -167,8 +145,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_19n009l">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_106oaz9">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-17">
         <description></description>
@@ -179,8 +155,6 @@
         <outputEntry id="LiteralExpression_06bnub5">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1458dv3">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1xm8wtx">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-18">
@@ -193,8 +167,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_11q1jqb">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_17w4z3y">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-19">
         <description></description>
@@ -205,8 +177,6 @@
         <outputEntry id="LiteralExpression_1egqvcz">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_14el2gf">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0b66rmx">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-20">
@@ -219,8 +189,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_01jf4wo">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0jdwd8k">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-21">
         <description></description>
@@ -231,8 +199,6 @@
         <outputEntry id="LiteralExpression_0gd54vh">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1sit7co">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_15ghx5z">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-22">
@@ -245,8 +211,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_102qwov">        <text><![CDATA["Økt motst.v.stor betydn."]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0js0qgo">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-23">
         <description></description>
@@ -257,8 +221,6 @@
         <outputEntry id="LiteralExpression_1qb4642">        <text><![CDATA["Ja"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0xphdey">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1lwy6ru">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-24">
@@ -271,8 +233,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_10tep3p">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1cnpj50">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-25">
         <description></description>
@@ -283,8 +243,6 @@
         <outputEntry id="LiteralExpression_0tkqy6a">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0k18y0n">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0i95eci">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-26">
@@ -297,8 +255,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0ezsw25">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0sfvdet">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-27">
         <description></description>
@@ -309,8 +265,6 @@
         <outputEntry id="LiteralExpression_1kqwfmc">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0862u34">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_123b5m2">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-28">
@@ -323,8 +277,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_12k8mdt">        <text><![CDATA["Økt krav belstn.>400MJ/m2"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0ynj89p">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-29">
         <description></description>
@@ -335,8 +287,6 @@
         <outputEntry id="LiteralExpression_1a7gi8o">        <text><![CDATA["Ja"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1kuu39s">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_18zdr8o">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-30">
@@ -349,8 +299,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_03mbfn8">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_10kvkox">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-31">
         <description></description>
@@ -361,8 +309,6 @@
         <outputEntry id="LiteralExpression_0agd19w">        <text><![CDATA["Ja"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_15wbzdg">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0ogzp37">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-32">
@@ -375,8 +321,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0im30ow">        <text><![CDATA["Økt krav belstn.>400MJ/m2"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0q83z2q">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-33">
         <description></description>
@@ -387,8 +331,6 @@
         <outputEntry id="LiteralExpression_0ghj7yu">        <text><![CDATA["Ja"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_12dp7ve">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1rvr14k">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-34">
@@ -401,8 +343,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_02hugtp">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0hu4zen">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-35">
         <description></description>
@@ -413,8 +353,6 @@
         <outputEntry id="LiteralExpression_01ub49x">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1wific8">        <text><![CDATA["Økt krav belstn.>400MJ/m2"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_18zo8m6">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-36">
@@ -427,8 +365,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_1w11a0m">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1skchrj">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-37">
         <description></description>
@@ -439,8 +375,6 @@
         <outputEntry id="LiteralExpression_0gl01gv">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_16lyw0m">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0ya1bnb">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-38">
@@ -453,8 +387,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_13ae18d">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1v0td6f">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-39">
         <description></description>
@@ -465,8 +397,6 @@
         <outputEntry id="LiteralExpression_18jzzxp">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0jt9uzf">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_171kj25">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-40">
@@ -479,8 +409,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0k9fwda">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0camna0">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-41">
         <description></description>
@@ -491,8 +419,6 @@
         <outputEntry id="LiteralExpression_0wcyox5">        <text><![CDATA["Ja"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_01f4ke3">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0e34dr6">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-42">
@@ -505,8 +431,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_07o5s3o">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_17zftc2">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-43">
         <description></description>
@@ -517,8 +441,6 @@
         <outputEntry id="LiteralExpression_1vm8lzj">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0po7374">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_00rs87h">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-44">
@@ -531,8 +453,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0md1yrb">        <text><![CDATA["Min.2 brannseksj. vertikalt"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0epzagc">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-45">
         <description></description>
@@ -543,8 +463,6 @@
         <outputEntry id="LiteralExpression_0hkakd8">        <text><![CDATA["Ja"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0ctcdv7">        <text><![CDATA["Min.2 brannseksj. vertikalt"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0g09ysv">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-46">
@@ -557,8 +475,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0qxy593">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_13raxq6">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-47">
         <description></description>
@@ -569,8 +485,6 @@
         <outputEntry id="LiteralExpression_1q161sr">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0v03zij">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1wnijrx">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-48">
@@ -583,8 +497,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_088flx6">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1cxyepu">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-49">
         <description></description>
@@ -595,8 +507,6 @@
         <outputEntry id="LiteralExpression_09zz4hg">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0j2kpgd">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1f1em2o">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-50">
@@ -609,8 +519,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_14p0gbe">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1ybvr95">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-51">
         <description></description>
@@ -621,8 +529,6 @@
         <outputEntry id="LiteralExpression_0idpk3l">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1dqhl55">        <text><![CDATA["Med rom for brannf. varer"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_10z7kd1">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-52">
@@ -635,8 +541,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_05waql1">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1lxhz8f">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-53">
         <description></description>
@@ -647,8 +551,6 @@
         <outputEntry id="LiteralExpression_12p2yx9">        <text><![CDATA["Ja"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_19rcmql">        <text><![CDATA["Min.2 brannseksj. vertikalt"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1pkjagx">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-54">
@@ -661,8 +563,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0dbdt3n">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_01yujc1">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-55">
         <description></description>
@@ -673,8 +573,6 @@
         <outputEntry id="LiteralExpression_0tiztpk">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1ddw1n2">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1g3gify">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-56">
@@ -687,8 +585,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_0twqcm0">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1efebms">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-57">
         <description></description>
@@ -699,8 +595,6 @@
         <outputEntry id="LiteralExpression_0p7lxag">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_08tncbe">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1mue07j">        <text><![CDATA["§ 11-2"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-279083498-58">
@@ -713,8 +607,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_000n561">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0w82alh">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-279083498-59">
         <description></description>
@@ -726,8 +618,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_1i2bmej">        <text></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0pszhu4">        <text><![CDATA["§ 11-2"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-949241528-1">
         <inputEntry id="UnaryTests_0pwjahl">        <text></text>
@@ -737,8 +627,6 @@
         <outputEntry id="LiteralExpression_00hfcj4">        <text></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_0fnry31">        <text></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0mnnvsh">        <text></text>
 </outputEntry>
       </rule>
     </decisionTable>

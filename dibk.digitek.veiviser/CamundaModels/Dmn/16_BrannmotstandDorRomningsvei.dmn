@@ -37,7 +37,6 @@
       <output id="OutputClause_0lztth7" label="Garasje - brannsluse" name="kravDorGarasjeBrannsluse" typeRef="string" />
       <output id="OutputClause_0m1w6x2" label="Branncelle - korridor" name="kravDorBranncelleKorridor" typeRef="string" />
       <output id="OutputClause_1ljrqmg" label="Korridor - fri luft (i komb. m. trapperom Tr3)" name="kravDorKorridorFriLuft" typeRef="string" />
-      <output id="OutputClause_1az72e9" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-948887753-17">
         <inputEntry id="UnaryTests_1hbpt1d">        <text><![CDATA["BKL1"]]></text>
 </inputEntry>
@@ -54,8 +53,6 @@
         <outputEntry id="LiteralExpression_02vckxn">        <text><![CDATA["EI-15"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1bsr0m3">        <text><![CDATA["Ikke krav"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_12rm1il">        <text><![CDATA["§ 11-8"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-948887753-18">
@@ -75,8 +72,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_1p4xf29">        <text><![CDATA["EI-30"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0evj664">        <text><![CDATA["§ 11-8"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-948887753-19">
         <inputEntry id="UnaryTests_0mhkglb">        <text><![CDATA["BKL3"]]></text>
@@ -94,8 +89,6 @@
         <outputEntry id="LiteralExpression_0bldx8q">        <text><![CDATA["EI-30"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_1awmed8">        <text><![CDATA["EI-30"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_0evs14u">        <text><![CDATA["§ 11-8"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-772546082-2">
@@ -115,8 +108,6 @@
 </outputEntry>
         <outputEntry id="LiteralExpression_1c5sx32">        <text><![CDATA["Ikke krav"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_0oq5pl5">        <text><![CDATA["§ 11-8"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-948887753-20">
         <inputEntry id="UnaryTests_0lh6hml">        <text><![CDATA["Ikke krav"]]></text>
@@ -134,8 +125,6 @@
         <outputEntry id="LiteralExpression_1aif0bg">        <text><![CDATA["Ikke krav"]]></text>
 </outputEntry>
         <outputEntry id="LiteralExpression_067u1t2">        <text><![CDATA["Ikke krav"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_06av2w7">        <text><![CDATA["§ 11-8"]]></text>
 </outputEntry>
       </rule>
     </decisionTable>

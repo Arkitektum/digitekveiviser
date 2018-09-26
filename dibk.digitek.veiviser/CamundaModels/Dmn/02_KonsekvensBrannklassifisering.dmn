@@ -13,55 +13,33 @@
     </informationRequirement>
     <decisionTable id="decisionTable">
       <input id="input1" label="Konsekvens av brann" camunda:inputVariable="">
-        <inputExpression id="inputExpression1" typeRef="string">
-          <text>konsekvensAvBrann</text>
-        </inputExpression>
+        <inputExpression id="inputExpression1" typeRef="string">        <text>konsekvensAvBrann</text>
+</inputExpression>
       </input>
       <output id="output1" label="Brannklasse" name="bkl" typeRef="string" />
-      <output id="OutputClause_10yonw7" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-953599122-5">
-        <inputEntry id="UnaryTests_17q8pwz">
-          <text>"Liten konsekvens"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1t2bm8z">
-          <text>"BKL1"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0y3jsgv">
-          <text>"§ 11-3"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_17q8pwz">        <text><![CDATA["Liten konsekvens"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1t2bm8z">        <text><![CDATA["BKL1"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-953599122-6">
-        <inputEntry id="UnaryTests_1swvmbe">
-          <text>"Middels konsekvens"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1k8geka">
-          <text>"BKL2"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1a2xc56">
-          <text>"§ 11-3"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_1swvmbe">        <text><![CDATA["Middels konsekvens"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1k8geka">        <text><![CDATA["BKL2"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-953599122-7">
-        <inputEntry id="UnaryTests_1uumetr">
-          <text>"Stor konsekvens"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_08svbl5">
-          <text>"BKL3"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0q2lvh9">
-          <text>"§ 11-3"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_1uumetr">        <text><![CDATA["Stor konsekvens"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_08svbl5">        <text><![CDATA["BKL3"]]></text>
+</outputEntry>
       </rule>
       <rule id="row-953599122-8">
-        <inputEntry id="UnaryTests_1hddcgs">
-          <text>"Saerlig stor konsekvens"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1o9hlhw">
-          <text>"BKL4"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1lgyhcy">
-          <text>"§ 11-3"</text>
-        </outputEntry>
+        <inputEntry id="UnaryTests_1hddcgs">        <text><![CDATA["Saerlig stor konsekvens"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1o9hlhw">        <text><![CDATA["BKL4"]]></text>
+</outputEntry>
       </rule>
     </decisionTable>
   </decision>

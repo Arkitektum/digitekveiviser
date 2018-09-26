@@ -38,13 +38,10 @@
 </inputExpression>
       </input>
       <output id="output_1" label="Tiltak for å påvirke rømningstider" name="tiltakPavirkeRomningstid" typeRef="string" />
-      <output id="OutputClause_1n5knc1" label="Referanse forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-542513221-14">
         <inputEntry id="UnaryTests_1t8z3f5">        <text><![CDATA["RKL1","RKL2"]]></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_16h4sgs">        <text><![CDATA["Slukkesystem*"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1sedmtz">        <text><![CDATA["§7-27 tabell 1 s.57"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-542513221-15">
@@ -52,15 +49,11 @@
 </inputEntry>
         <outputEntry id="LiteralExpression_17fjpuj">        <text><![CDATA["Røykvarsler/Slukkesystem*"]]></text>
 </outputEntry>
-        <outputEntry id="LiteralExpression_1jn957v">        <text><![CDATA["§7-27 tabell 1 s.57"]]></text>
-</outputEntry>
       </rule>
       <rule id="row-542513221-16">
         <inputEntry id="UnaryTests_01gr7yb">        <text><![CDATA["RKL5","RKL6"]]></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_1xo4ikw">        <text><![CDATA["Br.alarm/lede-, slukkesyst*"]]></text>
-</outputEntry>
-        <outputEntry id="LiteralExpression_1m13rb2">        <text><![CDATA["§7-27 tabell 1 s.57"]]></text>
 </outputEntry>
       </rule>
     </decisionTable>
