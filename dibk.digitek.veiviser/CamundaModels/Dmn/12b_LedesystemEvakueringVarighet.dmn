@@ -38,12 +38,12 @@
     <decisionTable id="DecisionTable_00w57yy" hitPolicy="FIRST">
       <input id="InputClause_0w6mtlz" label="Brannklasse" camunda:inputVariable="">
         <inputExpression id="LiteralExpression_1wbb8na" typeRef="string">
-          <text>_bkl</text>
+          <text>bkl</text>
         </inputExpression>
       </input>
       <input id="InputClause_0dgy5jq" label="Krav til ledesystem" camunda:inputVariable="">
         <inputExpression id="LiteralExpression_1t3kgrd" typeRef="boolean">
-          <text>_kravLedesystemEvakuering</text>
+          <text>kravLedesystemEvakuering</text>
         </inputExpression>
       </input>
       <output id="OutputClause_14nkrdg" label="Trapperom / tekn. inst. som skal fungere under rømning" name="kravTrappTekniskRomVarighet" typeRef="string" />

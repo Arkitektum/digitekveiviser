@@ -47,7 +47,6 @@ namespace dibk.digitek.veiviser
             {
                 var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
                 camunda.Startup(assemblyName); // Deploys all models to Camunda and Start all found ExternalTask-Workers
-                //bool serverOK = BranntekniskProsjektering.Program.runn();
             }
             catch (Exception exception)
             {

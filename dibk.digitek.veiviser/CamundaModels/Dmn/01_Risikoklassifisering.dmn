@@ -41,24 +41,24 @@
     </authorityRequirement>
     <decisionTable id="decisionTable" hitPolicy="FIRST">
       <input id="input1" label="Bare sporadisk personopphold" camunda:inputVariable="">
-        <inputExpression id="inputExpression1" typeRef="string">        <text>_bareSporadiskPersonopphold</text>
+        <inputExpression id="inputExpression1" typeRef="string">        <text>bareSporadiskPersonopphold</text>
 </inputExpression>
         <inputValues id="UnaryTests_0xyjgk0">        <text><![CDATA["true","false","begge"]]></text>
 </inputValues>
       </input>
       <input id="InputClause_160nayq" label="Alle kjenner rømningsveiene" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0j1l3xb" typeRef="boolean">        <text>_alleKjennerRomningsVeiene</text>
+        <inputExpression id="LiteralExpression_0j1l3xb" typeRef="boolean">        <text>alleKjennerRomningsVeiene</text>
 </inputExpression>
       </input>
       <input id="InputClause_0xo1xbp" label="Beregnet for overnatting" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0b2xuil" typeRef="boolean">        <text>_beregnetForOvernatting</text>
+        <inputExpression id="LiteralExpression_0b2xuil" typeRef="boolean">        <text>beregnetForOvernatting</text>
 </inputExpression>
       </input>
       <input id="InputClause_0eqr379" label="Lite brannfarlig aktivitet" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1jlu0nf" typeRef="boolean">        <text>_liteBrannfarligAktivitet</text>
+        <inputExpression id="LiteralExpression_1jlu0nf" typeRef="boolean">        <text>liteBrannfarligAktivitet</text>
 </inputExpression>
       </input>
-      <output id="output1" label="Risikoklasse" name="_rkl" typeRef="string">
+      <output id="output1" label="Risikoklasse" name="rkl" typeRef="string">
         <outputValues id="UnaryTests_173knzm">        <text><![CDATA["RKL1","RKL2","RKL3","RKL4","RKL5","RKL6"]]></text>
 </outputValues>
       </output>

@@ -27,15 +27,15 @@
     </informationRequirement>
     <decisionTable hitPolicy="FIRST">
       <input id="InputClause_0mrn23n" label="Brannseksjon per etasje" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1w8ebn5" typeRef="integer">        <text>_arealBrannseksjonPrEtasje</text>
+        <inputExpression id="LiteralExpression_1w8ebn5" typeRef="integer">        <text>arealBrannseksjonPrEtasje</text>
 </inputExpression>
       </input>
       <input id="InputClause_09k2c5r" label="Brannklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0imrllq" typeRef="string">        <text>_bkl</text>
+        <inputExpression id="LiteralExpression_0imrllq" typeRef="string">        <text>bkl</text>
 </inputExpression>
       </input>
       <input id="InputClause_0ydb1zm" label="Risikoklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1on36u0" typeRef="string">        <text>_rkl</text>
+        <inputExpression id="LiteralExpression_1on36u0" typeRef="string">        <text>rkl</text>
 </inputExpression>
       </input>
       <output id="output_1" label="Overflater  på vegger og i himling/tak (ikke rømningsvei)" name="kravOverflVegHimlingTakIkkeRomningsvei" typeRef="string" />

@@ -13,7 +13,7 @@
     </informationRequirement>
     <decisionTable id="decisionTable" hitPolicy="FIRST">
       <input id="input1" label="Risikoklasse" camunda:inputVariable="">
-        <inputExpression id="inputExpression1" typeRef="string">        <text>_rkl</text>
+        <inputExpression id="inputExpression1" typeRef="string">        <text>rkl</text>
 </inputExpression>
         <inputValues id="UnaryTests_12ij2im">        <text><![CDATA["RKL1","RKL2","RKL3","RKL4","RKL5","RKL6"]]></text>
 </inputValues>

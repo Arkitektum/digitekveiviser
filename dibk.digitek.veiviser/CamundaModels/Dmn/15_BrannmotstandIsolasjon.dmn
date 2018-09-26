@@ -35,12 +35,12 @@
     <decisionTable hitPolicy="FIRST">
       <input id="InputClause_0midnw2" label="Risikoklasse" camunda:inputVariable="">
         <inputExpression id="LiteralExpression_07mqdyc" typeRef="string">
-          <text>_rkl</text>
+          <text>rkl</text>
         </inputExpression>
       </input>
       <input id="InputClause_10gnzco" label="Brannklasse" camunda:inputVariable="">
         <inputExpression id="LiteralExpression_0l0lpla" typeRef="string">
-          <text>_bkl</text>
+          <text>bkl</text>
         </inputExpression>
       </input>
       <output id="OutputClause_1gul6ea" label="Utvendig overflate" name="kravUtvendigOverflate" typeRef="string" />

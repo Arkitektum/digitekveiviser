@@ -34,16 +34,16 @@
     </authorityRequirement>
     <decisionTable>
       <input id="InputClause_1ozwsbp" label="Risikoklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1tifg7p" typeRef="string">        <text>_rkl</text>
+        <inputExpression id="LiteralExpression_1tifg7p" typeRef="string">        <text>rkl</text>
 </inputExpression>
         <inputValues id="UnaryTests_0ibwe18">        <text><![CDATA["RKL1","RKL2","RKL3","RKL4","RKL5","RKL6"]]></text>
 </inputValues>
       </input>
       <input id="InputClause_0sh33mt" label="Antall etasjer" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_06ec47z" typeRef="integer">        <text>_antallEtasjer</text>
+        <inputExpression id="LiteralExpression_06ec47z" typeRef="integer">        <text>antallEtasjer</text>
 </inputExpression>
       </input>
-      <output id="output_1" label="Trapperomklasse" name="_trappeRomKlasse" typeRef="string">
+      <output id="output_1" label="Trapperomklasse" name="trappeRomKlasse" typeRef="string">
         <outputValues id="UnaryTests_1dsz30l">        <text><![CDATA["TR1","TR2","TR3"]]></text>
 </outputValues>
       </output>

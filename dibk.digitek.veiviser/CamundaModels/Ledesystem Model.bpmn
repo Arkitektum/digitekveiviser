@@ -28,20 +28,20 @@
       </bpmn:endEvent>
       <bpmn:sequenceFlow id="SequenceFlow_0g2gutu" sourceRef="StartEvent_0dmpg2y" targetRef="ExclusiveGateway_1hdbah9" />
       <bpmn:sequenceFlow id="SequenceFlow_1g6jby7" name="Yes" sourceRef="ExclusiveGateway_1hdbah9" targetRef="BusinessRuleTask_120iuwp">
-        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${not empty _bygningOffentligUnderTerreng}</bpmn:conditionExpression>
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${not empty bygningOffentligUnderTerreng}</bpmn:conditionExpression>
       </bpmn:sequenceFlow>
       <bpmn:sequenceFlow id="SequenceFlow_12o14bt" name="No" sourceRef="ExclusiveGateway_1hdbah9" targetRef="EndEvent_0re6gjw" />
       <bpmn:sequenceFlow id="SequenceFlow_14g4tga" sourceRef="BusinessRuleTask_120iuwp" targetRef="Task_1wvvnwn" />
       <bpmn:sequenceFlow id="SequenceFlow_0lgcwxq" sourceRef="BusinessRuleTask_07ev5jz" targetRef="EndEvent_01jh3kj" />
-      <bpmn:scriptTask id="Task_1wvvnwn" name="_kravLedesystemEvakuering" scriptFormat="groovy" camunda:resultVariable="_kravLedesystemEvakuering">
+      <bpmn:scriptTask id="Task_1wvvnwn" name="kravLedesystemEvakuering" scriptFormat="groovy" camunda:resultVariable="kravLedesystemEvakuering">
         <bpmn:incoming>SequenceFlow_14g4tga</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_1qckq5r</bpmn:outgoing>
-        <bpmn:script>ledesystemEvakuering._kravLedesystemEvakuering</bpmn:script>
+        <bpmn:script>ledesystemEvakuering.kravLedesystemEvakuering</bpmn:script>
       </bpmn:scriptTask>
       <bpmn:sequenceFlow id="SequenceFlow_1qckq5r" sourceRef="Task_1wvvnwn" targetRef="BusinessRuleTask_07ev5jz" />
       <bpmn:endEvent id="EndEvent_0re6gjw">
         <bpmn:incoming>SequenceFlow_12o14bt</bpmn:incoming>
-        <bpmn:messageEventDefinition camunda:expression="Ukjent" camunda:resultVariable="_kravLedesystemEvakuering" />
+        <bpmn:messageEventDefinition camunda:expression="Ukjent" camunda:resultVariable="kravLedesystemEvakuering" />
       </bpmn:endEvent>
     </bpmn:subProcess>
     <bpmn:sequenceFlow id="SequenceFlow_08j5x7b" sourceRef="StartEvent_1" targetRef="SubProcess_04kx7j9" />

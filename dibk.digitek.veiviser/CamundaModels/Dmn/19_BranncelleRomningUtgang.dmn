@@ -28,7 +28,7 @@
     <decisionTable id="decisionTable">
       <input id="input1" label="Risikoklasse" camunda:inputVariable="">
         <inputExpression id="inputExpression1" typeRef="string">
-          <text>_rkl</text>
+          <text>rkl</text>
         </inputExpression>
       </input>
       <output id="OutputClause_13u69k2" label="Fri bredde i rømningsvei, minimum (samlet)" name="kravFriBreddeRomnVei" typeRef="string" />

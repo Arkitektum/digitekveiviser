@@ -34,17 +34,17 @@
     </authorityRequirement>
     <decisionTable hitPolicy="FIRST">
       <input id="InputClause_0bstkbi" label="Brannklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1l4m3ie" typeRef="string">        <text>_bkl</text>
+        <inputExpression id="LiteralExpression_1l4m3ie" typeRef="string">        <text>bkl</text>
 </inputExpression>
         <inputValues id="UnaryTests_0jcddbr">        <text><![CDATA["Ikke krav","BKL1","BKL2","BKL3"]]></text>
 </inputValues>
       </input>
       <input id="InputClause_0th5q25" label="Brannenergi, MJ/m2" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_18nstpj" typeRef="integer">        <text>_brannenergi</text>
+        <inputExpression id="LiteralExpression_18nstpj" typeRef="integer">        <text>brannenergi</text>
 </inputExpression>
       </input>
-      <output id="output_1" label="Brannmotstand Seksjoneringsvegg" name="_kravBrannmotstSeksjVegg" typeRef="string">
-        <outputValues id="UnaryTests_14tazup">        <text><![CDATA["REIM-90","REIM-120","REIM-180","REIM-240"]]></text>
+      <output id="output_1" label="Brannmotstand Seksjoneringsvegg" name="kravBrannmotstSeksjVegg" typeRef="string">
+        <outputValues id="UnaryTests_14tazup">        <text></text>
 </outputValues>
       </output>
       <output id="OutputClause_15krg18" label="Referanse forskrift" name="referanseParagrafForskrift" typeRef="string">

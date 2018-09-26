@@ -40,7 +40,7 @@
     <decisionTable id="DecisionTable_1ohh97b">
       <input id="InputClause_1bseupg" label="Brannklasse" camunda:inputVariable="">
         <inputExpression id="LiteralExpression_0i81tqj" typeRef="string">
-          <text>_bkl</text>
+          <text>bkl</text>
         </inputExpression>
         <inputValues id="UnaryTests_1innouu">
           <text>"BKL1","BKL2","BKL3","BKL4","Ikke krav"</text>
@@ -48,7 +48,7 @@
       </input>
       <input id="InputClause_1x78vky" label="Trapperom" camunda:inputVariable="">
         <inputExpression id="LiteralExpression_1qnxews" typeRef="string">
-          <text>_trappeRomKlasse</text>
+          <text>trappeRomKlasse</text>
         </inputExpression>
         <inputValues id="UnaryTests_0w05e0t">
           <text>"TR1","TR2","TR3"</text>

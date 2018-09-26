@@ -6,6 +6,7 @@ using System.Reflection;
 using CamundaClient;
 using CamundaClient.Dto;
 using dibk.digitek.veiviser.Models;
+using dibk.digitek.veiviser.Worker;
 using Xunit;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -94,18 +95,36 @@ namespace VeiviserTest
         [Fact]
         public void GetListOfValueFromJsonObj()
         {
-            const string file = "JsonInputVariables.json";
+            const string file = "JsonCamundaOutputVariables.json";
             var jsonFile = Path.Combine(Directory.GetCurrentDirectory() + @"..\..\..\TestData\", file);
             var jsonText = File.ReadAllText(jsonFile);
-            //var sponsors = JsonConvert.DeserializeObject<object>(jsonText);
-            //var table = GetValueFromJsonObj(sponsors, "risikoklasseFraTypeVirksomhet");
-            //var jsonTable = JsonConvert.DeserializeObject<object>(table.ToString());
+
             var jo = JObject.Parse(jsonText);
-            var id = jo["risikoklasseFraTypeVirksomhet"]["ValueInfo"]["objectTypeName"];
+            var modelOutputsVariables = jo["modelOutputs"]["value"];
+
+            var external = new ExternalTask()
+            {
+                Variables = new Dictionary<string, Variable>()
+                {
+                    {
+                        "modelOutputs", new Variable()
+                        {
+                           Type = "Object",
+                            Value = modelOutputsVariables,
+                            ValueInfo = "java.util.HashMap<java.lang.Object,java.lang.Object>"
+                        }
+                    }
+                }
+            };
+            //TODO test worker class
+            //var modelOutputTEst =new ModelOutputsDataDictionary().Execute(external,ref new Dictionary<string,object>);
 
 
             jsonText.Should().NotBeNullOrEmpty();
         }
+
+
+
         [Fact]
         public void CreateModelDicionary()
         {
@@ -119,7 +138,7 @@ namespace VeiviserTest
                 new BranntekniskProsjekteringModelBuilder().AddVariableInfo("avstandDorIBranncelle1Dor","Avstand til dør (1)","Krav til lengste avstand til dør som er utgang fra branncelle eller til trapp, ved 1 dør, etter risikoklasse"),
                 new BranntekniskProsjekteringModelBuilder().AddVariableInfo("kravAvstandDorIBranncelleflereDorer","Avstand til dør (>1)","Krav til lengste avstand til dør som er utgang fra branncelle eller til trapp, ved flere dører, etter risikoklasse"),
             };
-            var BranncelleRomningUtgangTableInfo =  new BranntekniskProsjekteringModelBuilder().AddTableInfo("Utgang fra branncelle", "§ 11-13", "", "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-13/",BranncelleRomningUtgangVariables);
+            var BranncelleRomningUtgangTableInfo = new BranntekniskProsjekteringModelBuilder().AddTableInfo("Utgang fra branncelle", "§ 11-13", "", "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-13/", BranncelleRomningUtgangVariables);
             BranntekniskProsjektering.Add("BranncelleRomningUtgang", BranncelleRomningUtgangTableInfo);
 
             var brannDictionary = new BrannDictionaryModel().BranntekniskProsjekteringDictionary;

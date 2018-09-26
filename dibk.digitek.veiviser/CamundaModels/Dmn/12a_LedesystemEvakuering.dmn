@@ -34,14 +34,14 @@
     </authorityRequirement>
     <decisionTable id="decisionTable" hitPolicy="FIRST">
       <input id="InputClause_1yhvixo" label="Risikoklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0he37zl" typeRef="string">        <text>_rkl</text>
+        <inputExpression id="LiteralExpression_0he37zl" typeRef="string">        <text>rkl</text>
 </inputExpression>
       </input>
       <input id="input1" label="Offentlig tilgjengelig og ligger under terreng" camunda:inputVariable="">
-        <inputExpression id="inputExpression1" typeRef="boolean">        <text>_bygningOffentligUnderTerreng</text>
+        <inputExpression id="inputExpression1" typeRef="boolean">        <text>bygningOffentligUnderTerreng</text>
 </inputExpression>
       </input>
-      <output id="output1" label="Ledesystem evakuering" name="_kravLedesystemEvakuering" typeRef="boolean" />
+      <output id="output1" label="Ledesystem evakuering" name="kravLedesystemEvakuering" typeRef="boolean" />
       <rule id="row-542513221-30">
         <inputEntry id="UnaryTests_0vw18re">        <text><![CDATA["RKL5", "RKL6"]]></text>
 </inputEntry>

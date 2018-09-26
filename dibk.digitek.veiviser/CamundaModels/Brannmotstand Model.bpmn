@@ -52,10 +52,10 @@
       <bpmn:sequenceFlow id="SequenceFlow_1rsdww8" sourceRef="StartEvent_0rbzil2" targetRef="ParallelGateway_0dtb2gi" />
       <bpmn:sequenceFlow id="SequenceFlow_1hu11ov" sourceRef="ParallelGateway_1riepfz" targetRef="EndEvent_1a8c8wj" />
       <bpmn:sequenceFlow id="SequenceFlow_1wwmabk" sourceRef="ParallelGateway_0dtb2gi" targetRef="ExclusiveGateway_1kdgcwc" />
-      <bpmn:scriptTask id="Task_1q6uwsg" name="_trappeRomKlasse" scriptFormat="groovy" camunda:resultVariable="_trappeRomKlasse">
+      <bpmn:scriptTask id="Task_1q6uwsg" name="_trappeRomKlasse" scriptFormat="groovy" camunda:resultVariable="trappeRomKlasse">
         <bpmn:incoming>SequenceFlow_1ahkatq</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_0q8e5cl</bpmn:outgoing>
-        <bpmn:script>klassifiseringTrapperom._trappeRomKlasse</bpmn:script>
+        <bpmn:script>klassifiseringTrapperom.trappeRomKlasse</bpmn:script>
       </bpmn:scriptTask>
       <bpmn:parallelGateway id="ExclusiveGateway_18pv509">
         <bpmn:incoming>SequenceFlow_1njtqif</bpmn:incoming>
@@ -86,7 +86,7 @@
       <bpmn:sequenceFlow id="SequenceFlow_0f0h5gc" sourceRef="BusinessRuleTask_02flzap" targetRef="ParallelGateway_1riepfz" />
       <bpmn:sequenceFlow id="SequenceFlow_0zf2owc" sourceRef="ExclusiveGateway_18pv509" targetRef="BusinessRuleTask_0aq0gzt" />
       <bpmn:sequenceFlow id="SequenceFlow_1njtqif" name="Yes" sourceRef="ExclusiveGateway_1kdgcwc" targetRef="ExclusiveGateway_18pv509">
-        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${not empty _antallEtasjer}</bpmn:conditionExpression>
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${not empty antallEtasjer}</bpmn:conditionExpression>
       </bpmn:sequenceFlow>
       <bpmn:sequenceFlow id="SequenceFlow_19ahft0" sourceRef="ExclusiveGateway_1kdgcwc" targetRef="ExclusiveGateway_0enm9nh" />
     </bpmn:subProcess>

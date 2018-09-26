@@ -27,7 +27,7 @@
     </authorityRequirement>
     <decisionTable>
       <input id="InputClause_10bynak" label="brannenergi MJ/m2" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_138545q" typeRef="integer">        <text>_brannenergi</text>
+        <inputExpression id="LiteralExpression_138545q" typeRef="integer">        <text>brannenergi</text>
 </inputExpression>
       </input>
       <output id="output_1" label="Brannveggkvalitet v/mønehøyde over 9m og nabobyggg nærmere enn 8m" name="kravBrannveggKvalitet" typeRef="string" />

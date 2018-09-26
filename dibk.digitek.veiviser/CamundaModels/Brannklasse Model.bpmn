@@ -27,10 +27,10 @@
         <bpmn:incoming>SequenceFlow_1pdpmwx</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_0c2v2fq</bpmn:outgoing>
       </bpmn:businessRuleTask>
-      <bpmn:scriptTask id="MappingBKL_2" name="Mapping BKL" scriptFormat="Groovy" camunda:resultVariable="_bkl">
+      <bpmn:scriptTask id="MappingBKL_2" name="Mapping BKL" scriptFormat="Groovy" camunda:resultVariable="bkl">
         <bpmn:incoming>SequenceFlow_1k5pcvi</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_1gg3zxi</bpmn:outgoing>
-        <bpmn:script>konsekvensBrannklassifisering._bkl</bpmn:script>
+        <bpmn:script>konsekvensBrannklassifisering.bkl</bpmn:script>
       </bpmn:scriptTask>
       <bpmn:exclusiveGateway id="ExclusiveGateway_0gtrvfj">
         <bpmn:incoming>SequenceFlow_0c2v2fq</bpmn:incoming>
@@ -40,14 +40,14 @@
       <bpmn:endEvent id="EndEvent_1anqo3u">
         <bpmn:incoming>SequenceFlow_19j1s5j</bpmn:incoming>
       </bpmn:endEvent>
-      <bpmn:scriptTask id="MappingBKL_2a" name="Mapping BKL" scriptFormat="Groovy" camunda:resultVariable="_bkl">
+      <bpmn:scriptTask id="MappingBKL_2a" name="Mapping BKL" scriptFormat="Groovy" camunda:resultVariable="bkl">
         <bpmn:incoming>SequenceFlow_0og82nj</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_1pdpmwx</bpmn:outgoing>
-        <bpmn:script>brannklasse._bkl</bpmn:script>
+        <bpmn:script>brannklasse.bkl</bpmn:script>
       </bpmn:scriptTask>
       <bpmn:sequenceFlow id="SequenceFlow_1jdiryl" sourceRef="StartEvent_09i08px" targetRef="ExclusiveGateway_03q4orf" />
       <bpmn:sequenceFlow id="SequenceFlow_1l75waq" name="" sourceRef="ExclusiveGateway_03q4orf" targetRef="KonsekvensBrannklassifisering">
-        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">#{not empty _konsekvensAvBrann}</bpmn:conditionExpression>
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">#{not empty konsekvensAvBrann}</bpmn:conditionExpression>
       </bpmn:sequenceFlow>
       <bpmn:sequenceFlow id="SequenceFlow_1k5pcvi" sourceRef="KonsekvensBrannklassifisering" targetRef="MappingBKL_2" />
       <bpmn:sequenceFlow id="SequenceFlow_0og82nj" sourceRef="BusinessRuleTask_0a7lxnf" targetRef="MappingBKL_2a" />

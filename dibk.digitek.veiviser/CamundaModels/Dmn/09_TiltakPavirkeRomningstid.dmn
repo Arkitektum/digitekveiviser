@@ -34,7 +34,7 @@
     </authorityRequirement>
     <decisionTable>
       <input id="InputClause_1cooutk" label="Risikoklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1fok9g1" typeRef="string">        <text>_rkl</text>
+        <inputExpression id="LiteralExpression_1fok9g1" typeRef="string">        <text>rkl</text>
 </inputExpression>
       </input>
       <output id="output_1" label="Tiltak for å påvirke rømningstider" name="tiltakPavirkeRomningstid" typeRef="string" />

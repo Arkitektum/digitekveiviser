@@ -3,14 +3,14 @@
   <decision id="StorrelseBrannseksjonBelastningTiltak" name="Størrelse brannseksjon etter belastning og tiltak">
     <decisionTable id="decisionTable_1" hitPolicy="FIRST">
       <input id="input_1" label="Brannenergi MJ/m2">
-        <inputExpression id="inputExpression_1" typeRef="integer">        <text>_brannenergi</text>
+        <inputExpression id="inputExpression_1" typeRef="integer">        <text>brannenergi</text>
 </inputExpression>
       </input>
       <input id="InputClause_0s0okny" label="Brannbegrensende tiltak">
-        <inputExpression id="LiteralExpression_083ig3c" typeRef="string">        <text>_brannBegrensendeTiltak</text>
+        <inputExpression id="LiteralExpression_083ig3c" typeRef="string">        <text>brannBegrensendeTiltak</text>
 </inputExpression>
       </input>
-      <output id="output_1" label="Maks. brt.areal før seksjonering" name="_maxBrtArealFørSeksjonering" typeRef="integer" />
+      <output id="output_1" label="Maks. brt.areal før seksjonering" name="maxBrtArealFørSeksjonering" typeRef="integer" />
       <output id="OutputClause_1l5jfd4" label="Bemerkning" name="bemerkning" typeRef="string" />
       <output id="OutputClause_1cdbv7c" label="Referanse forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="DecisionRule_14yxtwd">

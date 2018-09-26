@@ -34,11 +34,11 @@
     </authorityRequirement>
     <decisionTable hitPolicy="FIRST">
       <input id="InputClause_02pt7zy" label="Risikoklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_15v9qat" typeRef="string">        <text>_rkl</text>
+        <inputExpression id="LiteralExpression_15v9qat" typeRef="string">        <text>rkl</text>
 </inputExpression>
       </input>
       <input id="InputClause_0e4b392" label="Brannklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0nn14e7" typeRef="string">        <text>_bkl</text>
+        <inputExpression id="LiteralExpression_0nn14e7" typeRef="string">        <text>bkl</text>
 </inputExpression>
       </input>
       <output id="output_2" label="Vegger, tak" name="kravOverflateVeggerTak" typeRef="string" />

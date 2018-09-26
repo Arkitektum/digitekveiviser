@@ -27,7 +27,7 @@
     </authorityRequirement>
     <decisionTable>
       <input id="InputClause_0mt6k0k" label="Risikoklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0id1m95" typeRef="string">        <text>_rkl</text>
+        <inputExpression id="LiteralExpression_0id1m95" typeRef="string">        <text>rkl</text>
 </inputExpression>
       </input>
       <output id="output_1" label="Manuell brannslokking" name="kravManuellSlokking" typeRef="string" />

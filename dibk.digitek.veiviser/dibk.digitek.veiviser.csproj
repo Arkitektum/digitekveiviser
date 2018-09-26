@@ -260,7 +260,25 @@
     <EmbeddedResource Include="CamundaModels\Krav til branntiltak Model.bpmn" />
     <EmbeddedResource Include="CamundaModels\Ledesystem Model.bpmn" />
     <EmbeddedResource Include="CamundaModels\BrannTekniskProsjekteringModel.bpmn" />
+    <Content Include="Data\JsonDmn2TEK.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\JsonDmnVariablesNames.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\JsonTable2Variables.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="CamundaModels\SubmodelDataDictionaryDotNet.bpmn" />
+    <EmbeddedResource Include="CamundaModels\BrannJsonOutputModel.bpmn" />
+    <EmbeddedResource Include="CamundaModels\KravTilBranntiltaktModelDotNet.bpmn" />
+    <EmbeddedResource Include="CamundaModels\LedesystemModelDotNet.bpmn" />
+    <EmbeddedResource Include="CamundaModels\RisikoklassenModelDotNet.bpmn" />
+    <EmbeddedResource Include="CamundaModels\BrannmotstandModelDotNet.bpmn" />
+    <EmbeddedResource Include="CamundaModels\BrannseksjonOgBrannmotstandDotNet.bpmn" />
+    <EmbeddedResource Include="CamundaModels\BrannklasseModelDotNet.bpmn" />
     <None Include="Properties\PublishProfiles\digitek-veiviser-dev - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\digitek-veiviser-test - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\uuResults.js" />
     <Content Include="Scripts\uu.js" />
@@ -288,6 +306,7 @@
     <Compile Include="Models\BrannDictionaryModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Worker\InputsValidationWorker.cs" />
+    <Compile Include="Worker\ModelOutputsDataDictionary.cs" />
     <Compile Include="Worker\OutputConsolidation.cs" />
   </ItemGroup>
   <ItemGroup>

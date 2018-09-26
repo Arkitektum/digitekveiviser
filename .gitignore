@@ -260,3 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 dibk\.digitek\.veiviser/Properties/PublishProfiles/digitek-veiviser-dev - Web Deploy\.pubxml
+
+dibk\.digitek\.veiviser/Properties/PublishProfiles/digitek-veiviser-test - Web Deploy\.pubxml

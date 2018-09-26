@@ -22,7 +22,7 @@
         <bpmn:outgoing>SequenceFlow_0fdkmg1</bpmn:outgoing>
         <bpmn:outgoing>SequenceFlow_0n8andw</bpmn:outgoing>
       </bpmn:parallelGateway>
-      <bpmn:businessRuleTask id="BusinessRuleTask_1mst61q" name="10a_KravBrannalarmKategori" camunda:resultVariable="brannalarmKategori" camunda:decisionRef="BrannalarmKategori" camunda:mapDecisionResult="singleResult">
+      <bpmn:businessRuleTask id="BusinessRuleTask_1mst61q" name="10a_BrannalarmKategori" camunda:resultVariable="kravBrannAlarmKategori" camunda:decisionRef="BrannalarmKategori" camunda:mapDecisionResult="singleResult">
         <bpmn:incoming>SequenceFlow_1kp2644</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_0i4k2jb</bpmn:outgoing>
       </bpmn:businessRuleTask>
@@ -52,7 +52,7 @@
       <bpmn:sequenceFlow id="SequenceFlow_0hriuai" name="No" sourceRef="ExclusiveGateway_07tj55e" targetRef="ExclusiveGateway_0z3cqlu" />
       <bpmn:sequenceFlow id="SequenceFlow_1jg1qq8" sourceRef="ParallelGateway_1rdwsmo" targetRef="EndEvent_11bg2lm" />
       <bpmn:sequenceFlow id="SequenceFlow_1kp2644" name="Yes" sourceRef="ExclusiveGateway_07tj55e" targetRef="BusinessRuleTask_1mst61q">
-        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${not empty _antallEtasjer}</bpmn:conditionExpression>
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${not empty antallEtasjer}</bpmn:conditionExpression>
       </bpmn:sequenceFlow>
       <bpmn:sequenceFlow id="SequenceFlow_0i4k2jb" sourceRef="BusinessRuleTask_1mst61q" targetRef="Task_0ee06fo" />
       <bpmn:sequenceFlow id="SequenceFlow_0n57e3l" sourceRef="Task_0ee06fo" targetRef="ExclusiveGateway_1i4vqfs" />
@@ -61,10 +61,10 @@
         <bpmn:outgoing>SequenceFlow_137m3eg</bpmn:outgoing>
         <bpmn:outgoing>SequenceFlow_0wars1h</bpmn:outgoing>
       </bpmn:parallelGateway>
-      <bpmn:scriptTask id="Task_0ee06fo" name="_brannalarmKategori" scriptFormat="groovy" camunda:resultVariable="_brannalarmKategori">
+      <bpmn:scriptTask id="Task_0ee06fo" name="_brannalarmKategori" scriptFormat="groovy" camunda:resultVariable="brannalarmKategori">
         <bpmn:incoming>SequenceFlow_0i4k2jb</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_0n57e3l</bpmn:outgoing>
-        <bpmn:script>brannalarmKategori._brannalarmKategori</bpmn:script>
+        <bpmn:script>kravBrannAlarmKategori.brannalarmKategori</bpmn:script>
       </bpmn:scriptTask>
       <bpmn:sequenceFlow id="SequenceFlow_137m3eg" sourceRef="ExclusiveGateway_1i4vqfs" targetRef="BusinessRuleTask_01yq0xi" />
       <bpmn:sequenceFlow id="SequenceFlow_0wars1h" sourceRef="ExclusiveGateway_1i4vqfs" targetRef="Task_12os9v7" />
@@ -86,17 +86,17 @@
       </bpmn:exclusiveGateway>
       <bpmn:sequenceFlow id="SequenceFlow_0w0trwc" sourceRef="ExclusiveGateway_06rha6h" targetRef="ExclusiveGateway_0z3cqlu" />
       <bpmn:sequenceFlow id="SequenceFlow_02kn9ym" sourceRef="ExclusiveGateway_0z3cqlu" targetRef="ParallelGateway_1rdwsmo" />
-      <bpmn:inclusiveGateway id="ParallelGateway_1rdwsmo">
+      <bpmn:startEvent id="StartEvent_08dks6z">
+        <bpmn:outgoing>SequenceFlow_0wahqup</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:sequenceFlow id="SequenceFlow_0wahqup" sourceRef="StartEvent_08dks6z" targetRef="ParallelGateway_0ut5u0i" />
+      <bpmn:parallelGateway id="ParallelGateway_1rdwsmo">
         <bpmn:incoming>SequenceFlow_1jaifh7</bpmn:incoming>
         <bpmn:incoming>SequenceFlow_0vmc4xj</bpmn:incoming>
         <bpmn:incoming>SequenceFlow_0jprhqw</bpmn:incoming>
         <bpmn:incoming>SequenceFlow_02kn9ym</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_1jg1qq8</bpmn:outgoing>
-      </bpmn:inclusiveGateway>
-      <bpmn:startEvent id="StartEvent_08dks6z">
-        <bpmn:outgoing>SequenceFlow_0wahqup</bpmn:outgoing>
-      </bpmn:startEvent>
-      <bpmn:sequenceFlow id="SequenceFlow_0wahqup" sourceRef="StartEvent_08dks6z" targetRef="ParallelGateway_0ut5u0i" />
+      </bpmn:parallelGateway>
     </bpmn:subProcess>
     <bpmn:sequenceFlow id="SequenceFlow_0uw8ast" sourceRef="StartEvent_1" targetRef="SubProcess_0tgxmqb" />
     <bpmn:sequenceFlow id="SequenceFlow_0p8kr31" sourceRef="SubProcess_0tgxmqb" targetRef="ExclusiveGateway_1ijq9mb" />
@@ -239,7 +239,7 @@
         <di:waypoint xsi:type="dc:Point" x="1036" y="253" />
         <di:waypoint xsi:type="dc:Point" x="1061" y="253" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1004" y="232" width="90" height="12" />
+          <dc:Bounds x="1003.5" y="232" width="90" height="12" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="SequenceFlow_1kp2644_di" bpmnElement="SequenceFlow_1kp2644">
@@ -386,15 +386,9 @@
         <di:waypoint xsi:type="dc:Point" x="961" y="253" />
         <di:waypoint xsi:type="dc:Point" x="986" y="253" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="931" y="218" width="90" height="12" />
+          <dc:Bounds x="931" y="217.5" width="90" height="12" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="InclusiveGateway_1rs6kh3_di" bpmnElement="ParallelGateway_1rdwsmo">
-        <dc:Bounds x="986" y="228" width="50" height="50" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="831" y="288" width="90" height="12" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_0wahqup_di" bpmnElement="SequenceFlow_0wahqup">
         <di:waypoint xsi:type="dc:Point" x="163" y="253" />
         <di:waypoint xsi:type="dc:Point" x="193" y="253" />
@@ -402,6 +396,12 @@
           <dc:Bounds x="133" y="232" width="90" height="12" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ParallelGateway_12xynbf_di" bpmnElement="ParallelGateway_1rdwsmo">
+        <dc:Bounds x="986" y="228" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="831" y="288" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>

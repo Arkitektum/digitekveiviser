@@ -20,16 +20,16 @@
     </informationRequirement>
     <decisionTable id="decisionTable">
       <input id="input1" label="Risikoklasse" camunda:inputVariable="">
-        <inputExpression id="inputExpression1" typeRef="string">        <text>_rkl</text>
+        <inputExpression id="inputExpression1" typeRef="string">        <text>rkl</text>
 </inputExpression>
         <inputValues id="UnaryTests_06kfxr6">        <text><![CDATA["RKL1","RKL2","RKL3","RKL4","RKL5","RKL6"]]></text>
 </inputValues>
       </input>
       <input id="InputClause_0bjzlkl" label="Antall etasjer" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0u5dhxa" typeRef="integer">        <text>_antallEtasjer</text>
+        <inputExpression id="LiteralExpression_0u5dhxa" typeRef="integer">        <text>antallEtasjer</text>
 </inputExpression>
       </input>
-      <output id="output1" label="Brannalarmkategori" name="_brannalarmKategori" typeRef="integer" />
+      <output id="output1" label="Brannalarmkategori" name="brannalarmKategori" typeRef="integer" />
       <rule id="row-181972709-1">
         <description></description>
         <inputEntry id="UnaryTests_0176inp">        <text><![CDATA["RKL1"]]></text>

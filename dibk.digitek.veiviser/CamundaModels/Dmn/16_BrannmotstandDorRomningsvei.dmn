@@ -27,7 +27,7 @@
     </authorityRequirement>
     <decisionTable>
       <input id="InputClause_1x9anh8" label="Brannklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0u7nzan" typeRef="string">        <text>_bkl</text>
+        <inputExpression id="LiteralExpression_0u7nzan" typeRef="string">        <text>bkl</text>
 </inputExpression>
       </input>
       <output id="output_1" label="Branncelle - trapperom Tr1" name="kravDorBranncelleTrapperomTr1" typeRef="string" />

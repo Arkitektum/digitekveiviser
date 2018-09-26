@@ -27,10 +27,10 @@
     </authorityRequirement>
     <decisionTable hitPolicy="FIRST">
       <input id="typeVirksomhet" label="Type virksomhet" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1nv2797" typeRef="string">        <text>_typeVirksomhet</text>
+        <inputExpression id="LiteralExpression_1nv2797" typeRef="string">        <text>typeVirksomhet</text>
 </inputExpression>
       </input>
-      <output id="rkl" label="Risikoklasse" name="_rkl" typeRef="string">
+      <output id="rkl" label="Risikoklasse" name="rkl" typeRef="string">
         <outputValues id="UnaryTests_09x1utx">        <text><![CDATA["RKL1","RKL2","RKL3","RKL4","RKL5","RKL6","Ukjent"]]></text>
 </outputValues>
       </output>

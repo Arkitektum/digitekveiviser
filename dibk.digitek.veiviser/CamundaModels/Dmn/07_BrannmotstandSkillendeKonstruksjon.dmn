@@ -28,7 +28,7 @@
     <decisionTable>
       <input id="InputClause_151z0jf" label="Brannklasse" camunda:inputVariable="">
         <inputExpression id="LiteralExpression_02suqda" typeRef="string">
-          <text>_bkl</text>
+          <text>bkl</text>
         </inputExpression>
         <inputValues id="UnaryTests_0fsjp4w">
           <text>"BKL1","BKL2","BKL3","BKL4"</text>

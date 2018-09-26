@@ -11,7 +11,7 @@ namespace dibk.digitek.veiviser.Worker
 {
     [ExternalTaskTopic("brannInputsValidation")]
     [ExternalTaskVariableRequirements("typeVirksomhet", "antallEtasjer", "brtArealPrEtasje", "utgangTerrengAlleBoenheter",
-        "bareSporadiskPersonopphold", "alleKjennerRomningsVeiene", "beregnetForOvernatting", "liteBrannfarligAktivitet", 
+        "bareSporadiskPersonopphold", "alleKjennerRomningsVeiene", "beregnetForOvernatting", "liteBrannfarligAktivitet",
         "konsekvensAvBrann", "brannenergi", "bygningOffentligUnderTerreng", "arealBrannseksjonPrEtasje")]
     public class InputsValidationWorker : IExternalTaskAdapter
     {
@@ -20,19 +20,19 @@ namespace dibk.digitek.veiviser.Worker
             // just create an id for demo purposes here
             BranntekniskProsjekteringModel branntekniskProsjektering = new BranntekniskProsjekteringModel();
 
-            try { branntekniskProsjektering._typeVirksomhet = (string)externalTask.Variables["typeVirksomhet"].Value; }catch{/*ignored*/}
+            try { branntekniskProsjektering.typeVirksomhet = (string)externalTask.Variables["typeVirksomhet"].Value; }catch{/*ignored*/}
 
-            try { branntekniskProsjektering._antallEtasjer = Convert.ToInt64(externalTask.Variables["antallEtasjer"].Value); }catch{/*ignored*/}
-            try { branntekniskProsjektering._brtArealPrEtasje = Convert.ToInt64(externalTask.Variables["brtArealPrEtasje"].Value); }catch{/*ignored*/}
-            try { branntekniskProsjektering._utgangTerrengAlleBoenheter = (bool)externalTask.Variables["utgangTerrengAlleBoenheter"].Value; }catch{/*ignored*/}
-            try { branntekniskProsjektering._bareSporadiskPersonopphold = (string)externalTask.Variables["bareSporadiskPersonopphold"].Value; }catch{/*ignored*/}
-            try { branntekniskProsjektering._alleKjennerRomningsVeiene = (bool)externalTask.Variables["alleKjennerRomningsVeiene"].Value; }catch{/*ignored*/}
-            try { branntekniskProsjektering._beregnetForOvernatting = (bool)externalTask.Variables["beregnetForOvernatting"].Value; }catch{/*ignored*/}
-            try { branntekniskProsjektering._liteBrannfarligAktivitet = (bool)externalTask.Variables["liteBrannfarligAktivitet"].Value; }catch{/*ignored*/}
-            try { branntekniskProsjektering._konsekvensAvBrann = (string)externalTask.Variables["konsekvensAvBrann"].Value; }catch{/*ignored*/}
-            try { branntekniskProsjektering._brannenergi = Convert.ToInt64(externalTask.Variables["brannenergi"].Value); }catch{/*ignored*/}
-            try { branntekniskProsjektering._bygningOffentligUnderTerreng = (Boolean)externalTask.Variables["bygningOffentligUnderTerreng"].Value; }catch{/*ignored*/}
-            try { branntekniskProsjektering._arealBrannseksjonPrEtasje = Convert.ToInt64(externalTask.Variables["arealBrannseksjonPrEtasje"].Value); } catch {/*ignored*/}
+            try { branntekniskProsjektering.antallEtasjer = Convert.ToInt64(externalTask.Variables["antallEtasjer"].Value); }catch{/*ignored*/}
+            try { branntekniskProsjektering.brtArealPrEtasje = Convert.ToInt64(externalTask.Variables["brtArealPrEtasje"].Value); }catch{/*ignored*/}
+            try { branntekniskProsjektering.utgangTerrengAlleBoenheter = (bool)externalTask.Variables["utgangTerrengAlleBoenheter"].Value; }catch{/*ignored*/}
+            try { branntekniskProsjektering.bareSporadiskPersonopphold = (string)externalTask.Variables["bareSporadiskPersonopphold"].Value; }catch{/*ignored*/}
+            try { branntekniskProsjektering.alleKjennerRomningsVeiene = (bool)externalTask.Variables["alleKjennerRomningsVeiene"].Value; }catch{/*ignored*/}
+            try { branntekniskProsjektering.beregnetForOvernatting = (bool)externalTask.Variables["beregnetForOvernatting"].Value; }catch{/*ignored*/}
+            try { branntekniskProsjektering.liteBrannfarligAktivitet = (bool)externalTask.Variables["liteBrannfarligAktivitet"].Value; }catch{/*ignored*/}
+            try { branntekniskProsjektering.konsekvensAvBrann = (string)externalTask.Variables["konsekvensAvBrann"].Value; }catch{/*ignored*/}
+            try { branntekniskProsjektering.brannenergi = Convert.ToInt64(externalTask.Variables["brannenergi"].Value); }catch{/*ignored*/}
+            try { branntekniskProsjektering.bygningOffentligUnderTerreng = (Boolean)externalTask.Variables["bygningOffentligUnderTerreng"].Value; }catch{/*ignored*/}
+            try { branntekniskProsjektering.arealBrannseksjonPrEtasje = Convert.ToInt64(externalTask.Variables["arealBrannseksjonPrEtasje"].Value); } catch {/*ignored*/}
 
             var newDictionary = branntekniskProsjektering.GetType()
                  .GetProperties(BindingFlags.Instance | BindingFlags.Public)

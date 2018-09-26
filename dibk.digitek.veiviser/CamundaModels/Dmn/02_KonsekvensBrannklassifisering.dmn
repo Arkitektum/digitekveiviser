@@ -14,10 +14,10 @@
     <decisionTable id="decisionTable">
       <input id="input1" label="Konsekvens av brann" camunda:inputVariable="">
         <inputExpression id="inputExpression1" typeRef="string">
-          <text>_konsekvensAvBrann</text>
+          <text>konsekvensAvBrann</text>
         </inputExpression>
       </input>
-      <output id="output1" label="Brannklasse" name="_bkl" typeRef="string" />
+      <output id="output1" label="Brannklasse" name="bkl" typeRef="string" />
       <output id="OutputClause_10yonw7" label="Referanse Forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-953599122-5">
         <inputEntry id="UnaryTests_17q8pwz">

@@ -25,7 +25,7 @@
     <decisionTable id="DecisionTable_0vaxas2">
       <input id="InputClause_1l8mlvm" label="Krav branndetektor" camunda:inputVariable="">
         <inputExpression id="LiteralExpression_0btxo5a" typeRef="integer">
-          <text>_brannalarmKategori</text>
+          <text>brannalarmKategori</text>
         </inputExpression>
       </input>
       <output id="OutputClause_1jkog4m" label="Rømningsvei" name="kravBranndetektorRomningsvei" typeRef="string" />

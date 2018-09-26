@@ -41,18 +41,18 @@
     </authorityRequirement>
     <decisionTable id="decisionTable" hitPolicy="FIRST">
       <input id="InputClause_10gvasy" label="Type virksomhet" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_146j68k" typeRef="string">        <text>_typeVirksomhet</text>
+        <inputExpression id="LiteralExpression_146j68k" typeRef="string">        <text>typeVirksomhet</text>
 </inputExpression>
       </input>
       <input id="InputClause_1eet5lo" label="Brannenergi, MJ/m2" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_01rrq7v" typeRef="integer">        <text>_brannenergi</text>
+        <inputExpression id="LiteralExpression_01rrq7v" typeRef="integer">        <text>brannenergi</text>
 </inputExpression>
       </input>
       <input id="InputClause_0dsqdiv" label="Størrelse brannseksjon pr. etasje, m2" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0ojvs6x" typeRef="integer">        <text>_arealBrannseksjonPrEtasje</text>
+        <inputExpression id="LiteralExpression_0ojvs6x" typeRef="integer">        <text>arealBrannseksjonPrEtasje</text>
 </inputExpression>
       </input>
-      <output id="output1" label="Tiltak etter størrelse brannseksjon/brannbelastning" name="_brannTiltakStrSeksjonBelastning" typeRef="string" />
+      <output id="output1" label="Tiltak etter størrelse brannseksjon/brannbelastning" name="brannTiltakStrSeksjonBelastning" typeRef="string" />
       <output id="OutputClause_0oj4dmk" label="Referanse forskrift" name="referanseParagrafForskrift" typeRef="string" />
       <rule id="row-573550739-10">
         <description>Ut her fra? Barnehage, maks, 600 m2 brannseksjon, men hva er relevant tiltak?</description>

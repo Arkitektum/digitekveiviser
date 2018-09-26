@@ -25,9 +25,9 @@ namespace VeiviserTest.Builders
         {
             var variableInfo = new VariablesInfo()
             {
-                VariableId = variableId,
-                VariableName = variableName,
-                VariableDescription = variableDescription
+                VariabelId = variableId,
+                VariabelNavn = variableName,
+                VariabelBeskrivelse = variableDescription
             };
             return variableInfo;
         }
@@ -36,11 +36,11 @@ namespace VeiviserTest.Builders
         {
             var tableInfo = new TableInfo()
             {
-                Chapter = "§ 11-12",
-                Ledd = "Tabell 3",
-                TableName = "Brannalarmkategori avhengig av risikoklasse",
-                Url = "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-12/",
-                VariablesInfo = variablesInfo
+                TekKapitel = "§ 11-12",
+                TekLedd = "Tabell 3",
+                DmnId = "Brannalarmkategori avhengig av risikoklasse",
+                TekWebLink = "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/11/iv/11-12/",
+                OutputVariablesInfo = variablesInfo
             };
             return tableInfo;
         }

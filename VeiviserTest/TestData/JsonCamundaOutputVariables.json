@@ -1,0 +1,610 @@
+﻿{
+  "_bygningOffentligUnderTerreng": {
+    "type": "Boolean",
+    "value": true,
+    "valueInfo": {}
+  },
+  "brannmotstandSeksjoneringsvegg": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 11-7",
+      "_kravBrannmotstSeksjVegg": "REI 90-M A2-s1,d0 [A 90]"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "utgangTerrengAlleBoenheter": {
+    "type": "Boolean",
+    "value": true,
+    "valueInfo": {}
+  },
+  "_brannalarmKategori": {
+    "type": "Integer",
+    "value": 2,
+    "valueInfo": {}
+  },
+  "arealBrannseksjonPrEtasje": {
+    "type": "Long",
+    "value": 2000,
+    "valueInfo": {}
+  },
+  "tiltakManuellBrannslokking": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 11-16",
+      "kravManuellSlokking": "Håndslokkeapparat, evt. brannslange",
+      "maxBrannslangeLengde": "maks 30m lengde"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "brannmotstandDorISeksjoneringsvegg": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "Side 47",
+      "kravBrannmotstandDorISeksjvegg": "EI-90C"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "brannmotstandDorRomningsvei": {
+    "type": "Object",
+    "value": {
+      "kravDorRomTrapperomTr3": "Ikke krav",
+      "kravDorGarasjeBrannsluse": "EI-60C ubrennbar",
+      "referanseParagrafForskrift": "§ 11-8",
+      "kravDorBranncelleKorridor": "EI-15",
+      "kravDorBranncelleTrapperomTr1": "EI-30C m. terskel",
+      "kravDorBoenhetTrapperom": "EI-30",
+      "kravDorKorridorTrapperomTr2": "E-30C / EI-30C, m. terskel",
+      "kravDorKorridorFriLuft": "Ikke krav"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "brtArealPrEtasje": {
+    "type": "Long",
+    "value": 400,
+    "valueInfo": {}
+  },
+  "_alleKjennerRomningsVeiene": {
+    "type": "Null",
+    "value": null,
+    "valueInfo": {}
+  },
+  "tiltakStorrelseBrannseksjonBelastning": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 7-24 tabell 6 s. 51",
+      "_brannTiltakStrSeksjonBelastning": "Br.vent./best 1-etg.bygn."
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "_typeVirksomhet": {
+    "type": "String",
+    "value": "Bolig",
+    "valueInfo": {}
+  },
+  "_kravBrannmotstSeksjVegg": {
+    "type": "String",
+    "value": "REI 90-M A2-s1,d0 [A 90]",
+    "valueInfo": {}
+  },
+  "overflaterBranncelleRomningsvei": {
+    "type": "Object",
+    "value": {
+      "kravOverflateNedforetHimling": "In1",
+      "referanseParagrafForskrift": "§ 11-9",
+      "kravOverflateVeggerTak": "In1"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "brannmotstandTrapperom": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 11-8",
+      "kravBrannmotstandRundtTrapperom": "EI-30 [B 30]"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "tiltakPavirkeRomningstid": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§7-27 tabell 1 s.57",
+      "tiltakPavirkeRomningstid": "Røykvarsler/Slukkesystem*"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "_kravLedesystemEvakuering": {
+    "type": "Boolean",
+    "value": true,
+    "valueInfo": {}
+  },
+  "brannklasse": {
+    "type": "Object",
+    "value": {
+      "_bkl": "BKL1"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "_arealBrannseksjonPrEtasje": {
+    "type": "Long",
+    "value": 2000,
+    "valueInfo": {}
+  },
+  "_bkl": {
+    "type": "String",
+    "value": "BKL1",
+    "valueInfo": {}
+  },
+  "brannmotstandBaerendeBygningsdeler": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 7-23 tabell 1  s. 41",
+      "sekundareBaerendeDeler": "R-15*",
+      "beskytttetUtvTrappeLop": "-",
+      "trappeLop": "-",
+      "baerendeDelerUnderOversteKjeller": "R-60*",
+      "baerendeHovedSystem": "R-15*"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "_utgangTerrengAlleBoenheter": {
+    "type": "Boolean",
+    "value": true,
+    "valueInfo": {}
+  },
+  "_trappeRomKlasse": {
+    "type": "String",
+    "value": "TR1",
+    "valueInfo": {}
+  },
+  "brannklasseKonsekvensBeskrivelse": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 11-3",
+      "konsekvensAvBrann": "Liten konsekvens"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "brannalarmKategori": {
+    "type": "Object",
+    "value": {
+      "_brannalarmKategori": 2
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "_rkl": {
+    "type": "String",
+    "value": "RKL4",
+    "valueInfo": {}
+  },
+  "_antallEtasjer": {
+    "type": "Long",
+    "value": 3,
+    "valueInfo": {}
+  },
+  "tiltakBrannveggHoyeBygg": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§11-6",
+      "kravBrannveggKvalitet": "REI 120-M A2-s1, d0 [A 120]"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "brannmotstandIsolasjon": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 11-9",
+      "kravUtvendigOverflate": "Ut2",
+      "kravIsolasjonEureficKlasse": "B"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "brannenergi": {
+    "type": "Long",
+    "value": 100,
+    "valueInfo": {}
+  },
+  "overflateKledningBrannseksjon": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 11-9",
+      "kravOverflVegHimlingTakIkkeRomningsvei": "D-s2,d0 [In 2]",
+      "kravGolvErRomningsvei": "Dfl-s1 [G]",
+      "kravKledningerIkkeRomningsvei": "K210 D-s2,d0 [K2]",
+      "kravVegHimlingTakErRomningsvei": "B-s1,d0 [In 1]",
+      "kravOverflSjakHulIkkeRomningsvei": "B-s1,d0 [In 1]",
+      "kravKledningSjaktHulrom": "K210 B-s1,d0 [K1]",
+      "kravGolvIkkeRomningsvei": "Ikke krav",
+      "kravYtterkledning": "B-s3,d0 [Ut 1]",
+      "kravKledningerErRomningsvei": "K210 B-s1,d0 [K1]"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "kravBranndetektorRom": {
+    "type": "Object",
+    "value": {
+      "kravBranndetektorLoft": "Varme- eller Røykdetektor",
+      "kravBrannsetektorSengerom": "Røykdetektor",
+      "kravBranndetektorKjeller": "Varme- eller Røykdetektor",
+      "kravBranndetektorTekniskRom": "Røykdetektor",
+      "kravBranndetektorAndre": "Varme- eller Røykdetektor",
+      "kravBranndetektorRomningsvei": "Røykdetektor",
+      "kravBranndetektorFellesrom": "Røykdetektor"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "antallEtasjer": {
+    "type": "Long",
+    "value": 3,
+    "valueInfo": {}
+  },
+  "typeVirksomhet": {
+    "type": "String",
+    "value": "Bolig",
+    "valueInfo": {}
+  },
+  "bygningOffentligUnderTerreng": {
+    "type": "Boolean",
+    "value": true,
+    "valueInfo": {}
+  },
+  "_beregnetForOvernatting": {
+    "type": "Null",
+    "value": null,
+    "valueInfo": {}
+  },
+  "_liteBrannfarligAktivitet": {
+    "type": "Null",
+    "value": null,
+    "valueInfo": {}
+  },
+  "_konsekvensAvBrann": {
+    "type": "Null",
+    "value": null,
+    "valueInfo": {}
+  },
+  "detektorBrannalarmKategori": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 11-12",
+      "beskrBrannDetektor": "Heldekkende brannalarmanlegg med optiske røykdetektorer i alle områder"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "klassifiseringTrapperom": {
+    "type": "Object",
+    "value": {
+      "_trappeRomKlasse": "TR1"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "ledesystemEvakuering": {
+    "type": "Object",
+    "value": {
+      "_kravLedesystemEvakuering": true
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "ledesystemEvakueringVarighet": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§11-12 (3)",
+      "kravLedesystemVarighet": "minst 30 min./nødv.tid",
+      "kravTrappTekniskRomVarighet": "minst 30 min./nødv.tid"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "brannmotstandSkillendeKonstruksjon": {
+    "type": "Object",
+    "value": {
+      "kravFyrromSVAInnfyrtEffektmax50": "K 2 10 A2-s1,d0 [K1-A]",
+      "referanseParagrafForskrift": "§ 11-8",
+      "kravBranncelleBegrensKonstruksjon": "EI-30 [B 30]",
+      "kravBygningRundtTrapperomHeisEtc": "EI-30 [B 30]",
+      "kravFyrromSVAInnfyrtEffektmin100": "EI 60 A2-s1,d0 [A 60]",
+      "kravFyrromSVAFastBrensel": "EI-60 [B 60]",
+      "kravHeisMaskinRom": "EI-60 [B 60]",
+      "kravFyrromSVAInnfyrtEffekt50p100": "EI 30 [B 30]"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "vedleggTilRisikoklasse": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 11-2",
+      "beregnetForOvernatting": true,
+      "liteBrannfarligAktivitet": true,
+      "bareSporadiskPersonopphold": "false",
+      "alleKjennerRomningsVeiene": true
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "_brannenergi": {
+    "type": "Long",
+    "value": 100,
+    "valueInfo": {}
+  },
+  "_brtArealPrEtasje": {
+    "type": "Long",
+    "value": 400,
+    "valueInfo": {}
+  },
+  "branncelleRomningUtgang": {
+    "type": "Object",
+    "value": {
+      "kravMinFriDorBredde": 0.9,
+      "referanseParagrafForskrift": "§ 11-13",
+      "avstandDorIBranncelle1Dor": 15,
+      "kravMaxLengdeFluktvei": 30,
+      "kravFriBreddeRomnVei": "1cm pr.pers / min. 0,9m",
+      "kravAvstandDorIBranncelleflereDorer": 30
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "modelOutputs": {
+    "type": "Object",
+    "value": {
+      "overflateKledningBrannseksjon": {
+        "referanseParagrafForskrift": "§ 11-9",
+        "kravOverflVegHimlingTakIkkeRomningsvei": "D-s2,d0 [In 2]",
+        "kravGolvErRomningsvei": "Dfl-s1 [G]",
+        "kravKledningerIkkeRomningsvei": "K210 D-s2,d0 [K2]",
+        "kravVegHimlingTakErRomningsvei": "B-s1,d0 [In 1]",
+        "kravOverflSjakHulIkkeRomningsvei": "B-s1,d0 [In 1]",
+        "kravKledningSjaktHulrom": "K210 B-s1,d0 [K1]",
+        "kravGolvIkkeRomningsvei": "Ikke krav",
+        "kravYtterkledning": "B-s3,d0 [Ut 1]",
+        "kravKledningerErRomningsvei": "K210 B-s1,d0 [K1]"
+      },
+      "brannmotstandSeksjoneringsvegg": {
+        "referanseParagrafForskrift": "§ 11-7",
+        "_kravBrannmotstSeksjVegg": "REI 90-M A2-s1,d0 [A 90]"
+      },
+      "kravBranndetektorRom": {
+        "kravBranndetektorLoft": "Varme- eller Røykdetektor",
+        "kravBrannsetektorSengerom": "Røykdetektor",
+        "kravBranndetektorKjeller": "Varme- eller Røykdetektor",
+        "kravBranndetektorTekniskRom": "Røykdetektor",
+        "kravBranndetektorAndre": "Varme- eller Røykdetektor",
+        "kravBranndetektorRomningsvei": "Røykdetektor",
+        "kravBranndetektorFellesrom": "Røykdetektor"
+      },
+      "tiltakManuellBrannslokking": {
+        "referanseParagrafForskrift": "§ 11-16",
+        "kravManuellSlokking": "Håndslokkeapparat, evt. brannslange",
+        "maxBrannslangeLengde": "maks 30m lengde"
+      },
+      "brannmotstandDorISeksjoneringsvegg": {
+        "referanseParagrafForskrift": "Side 47",
+        "kravBrannmotstandDorISeksjvegg": "EI-90C"
+      },
+      "brannmotstandDorRomningsvei": {
+        "kravDorRomTrapperomTr3": "Ikke krav",
+        "kravDorGarasjeBrannsluse": "EI-60C ubrennbar",
+        "referanseParagrafForskrift": "§ 11-8",
+        "kravDorBranncelleKorridor": "EI-15",
+        "kravDorBranncelleTrapperomTr1": "EI-30C m. terskel",
+        "kravDorBoenhetTrapperom": "EI-30",
+        "kravDorKorridorTrapperomTr2": "E-30C / EI-30C, m. terskel",
+        "kravDorKorridorFriLuft": "Ikke krav"
+      },
+      "detektorBrannalarmKategori": {
+        "referanseParagrafForskrift": "§ 11-12",
+        "beskrBrannDetektor": "Heldekkende brannalarmanlegg med optiske røykdetektorer i alle områder"
+      },
+      "klassifiseringTrapperom": {
+        "_trappeRomKlasse": "TR1"
+      },
+      "tiltakStorrelseBrannseksjonBelastning": {
+        "referanseParagrafForskrift": "§ 7-24 tabell 6 s. 51",
+        "_brannTiltakStrSeksjonBelastning": "Br.vent./best 1-etg.bygn."
+      },
+      "overflaterBranncelleRomningsvei": {
+        "kravOverflateNedforetHimling": "In1",
+        "referanseParagrafForskrift": "§ 11-9",
+        "kravOverflateVeggerTak": "In1"
+      },
+      "brannmotstandTrapperom": {
+        "referanseParagrafForskrift": "§ 11-8",
+        "kravBrannmotstandRundtTrapperom": "EI-30 [B 30]"
+      },
+      "tiltakPavirkeRomningstid": {
+        "referanseParagrafForskrift": "§7-27 tabell 1 s.57",
+        "tiltakPavirkeRomningstid": "Røykvarsler/Slukkesystem*"
+      },
+      "brannklasse": {
+        "_bkl": "BKL1"
+      },
+      "ledesystemEvakuering": {
+        "_kravLedesystemEvakuering": true
+      },
+      "ledesystemEvakueringVarighet": {
+        "referanseParagrafForskrift": "§11-12 (3)",
+        "kravLedesystemVarighet": "minst 30 min./nødv.tid",
+        "kravTrappTekniskRomVarighet": "minst 30 min./nødv.tid"
+      },
+      "brannmotstandSkillendeKonstruksjon": {
+        "kravFyrromSVAInnfyrtEffektmax50": "K 2 10 A2-s1,d0 [K1-A]",
+        "referanseParagrafForskrift": "§ 11-8",
+        "kravBranncelleBegrensKonstruksjon": "EI-30 [B 30]",
+        "kravBygningRundtTrapperomHeisEtc": "EI-30 [B 30]",
+        "kravFyrromSVAInnfyrtEffektmin100": "EI 60 A2-s1,d0 [A 60]",
+        "kravFyrromSVAFastBrensel": "EI-60 [B 60]",
+        "kravHeisMaskinRom": "EI-60 [B 60]",
+        "kravFyrromSVAInnfyrtEffekt50p100": "EI 30 [B 30]"
+      },
+      "vedleggTilRisikoklasse": {
+        "referanseParagrafForskrift": "§ 11-2",
+        "beregnetForOvernatting": true,
+        "liteBrannfarligAktivitet": true,
+        "bareSporadiskPersonopphold": "false",
+        "alleKjennerRomningsVeiene": true
+      },
+      "branncelleRomningUtgang": {
+        "kravMinFriDorBredde": 0.9,
+        "referanseParagrafForskrift": "§ 11-13",
+        "avstandDorIBranncelle1Dor": 15,
+        "kravMaxLengdeFluktvei": 30,
+        "kravFriBreddeRomnVei": "1cm pr.pers / min. 0,9m",
+        "kravAvstandDorIBranncelleflereDorer": 30
+      },
+      "brannmotstandBaerendeBygningsdeler": {
+        "referanseParagrafForskrift": "§ 7-23 tabell 1  s. 41",
+        "sekundareBaerendeDeler": "R-15*",
+        "beskytttetUtvTrappeLop": "-",
+        "trappeLop": "-",
+        "baerendeDelerUnderOversteKjeller": "R-60*",
+        "baerendeHovedSystem": "R-15*"
+      },
+      "brannklasseKonsekvensBeskrivelse": {
+        "referanseParagrafForskrift": "§ 11-3",
+        "konsekvensAvBrann": "Liten konsekvens"
+      },
+      "brannalarmKategori": {
+        "_brannalarmKategori": 2
+      },
+      "risikoklasseFraTypeVirksomhet": {
+        "referanseParagrafForskrift": "§ 11-2",
+        "_rkl": "RKL4"
+      },
+      "tiltakBrannveggHoyeBygg": {
+        "referanseParagrafForskrift": "§11-6",
+        "kravBrannveggKvalitet": "REI 120-M A2-s1, d0 [A 120]"
+      },
+      "brannmotstandIsolasjon": {
+        "referanseParagrafForskrift": "§ 11-9",
+        "kravUtvendigOverflate": "Ut2",
+        "kravIsolasjonEureficKlasse": "B"
+      },
+      "brannmotstandMotstaendeVinduerYttervegger": {
+        "referanseParagrafForskrift": "§ 7-24 tabell 5  s.50",
+        "kravAvstandInnvHjorne5T8m": "Ett EI-15",
+        "kravAvstandMotstYtterveggMin8m": "Ett EI-30 evt. begge EI-15",
+        "kravAvstandOver8m": "Ikke Krav",
+        "kravAvstandInnvHjorneMin5m": "Ett EI-30 evt. begge EI-15"
+      }
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "risikoklasseFraTypeVirksomhet": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 11-2",
+      "_rkl": "RKL4"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "_bareSporadiskPersonopphold": {
+    "type": "Null",
+    "value": null,
+    "valueInfo": {}
+  },
+  "modelInputsVariables": {
+    "type": "Object",
+    "value": {
+      "beregnetForOvernatting": null,
+      "brtArealPrEtasje": 400,
+      "antallEtasjer": 3,
+      "typeVirksomhet": "Bolig",
+      "utgangTerrengAlleBoenheter": true,
+      "liteBrannfarligAktivitet": null,
+      "bygningOffentligUnderTerreng": true,
+      "bareSporadiskPersonopphold": null,
+      "konsekvensAvBrann": null,
+      "brannenergi": 100,
+      "arealBrannseksjonPrEtasje": 2000,
+      "alleKjennerRomningsVeiene": null
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  },
+  "brannmotstandMotstaendeVinduerYttervegger": {
+    "type": "Object",
+    "value": {
+      "referanseParagrafForskrift": "§ 7-24 tabell 5  s.50",
+      "kravAvstandInnvHjorne5T8m": "Ett EI-15",
+      "kravAvstandMotstYtterveggMin8m": "Ett EI-30 evt. begge EI-15",
+      "kravAvstandOver8m": "Ikke Krav",
+      "kravAvstandInnvHjorneMin5m": "Ett EI-30 evt. begge EI-15"
+    },
+    "valueInfo": {
+      "objectTypeName": "java.util.HashMap<java.lang.Object,java.lang.Object>",
+      "serializationDataFormat": "application/json"
+    }
+  }
+}

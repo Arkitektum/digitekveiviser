@@ -48,10 +48,10 @@
         <bpmn:outgoing>SequenceFlow_1wdgniv</bpmn:outgoing>
       </bpmn:parallelGateway>
       <bpmn:sequenceFlow id="SequenceFlow_1we85sf" sourceRef="Task_1eje345" targetRef="BusinessRuleTask_0mlunff" />
-      <bpmn:scriptTask id="Task_1eje345" name="_kravBrannmotstSeksjVegg" scriptFormat="groovy" camunda:resultVariable="_kravBrannmotstSeksjVegg">
+      <bpmn:scriptTask id="Task_1eje345" name="_kravBrannmotstSeksjVegg" scriptFormat="groovy" camunda:resultVariable="kravBrannmotstSeksjVegg">
         <bpmn:incoming>SequenceFlow_14brj18</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_1we85sf</bpmn:outgoing>
-        <bpmn:script>brannmotstandSeksjoneringsvegg._kravBrannmotstSeksjVegg</bpmn:script>
+        <bpmn:script>brannmotstandSeksjoneringsvegg.kravBrannmotstSeksjVegg</bpmn:script>
       </bpmn:scriptTask>
       <bpmn:sequenceFlow id="SequenceFlow_12okzo6" sourceRef="ExclusiveGateway_0tjegas" targetRef="BusinessRuleTask_18fklbk" />
       <bpmn:sequenceFlow id="SequenceFlow_16rkoww" sourceRef="ExclusiveGateway_0tjegas" targetRef="BusinessRuleTask_0nce90j" />

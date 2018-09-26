@@ -55,28 +55,28 @@
     </authorityRequirement>
     <decisionTable id="decisionTable" hitPolicy="FIRST">
       <input id="typeVirksomhet" label="Type virksomhet" camunda:inputVariable="">
-        <inputExpression id="inputExpression1" typeRef="string">        <text>_typeVirksomhet</text>
+        <inputExpression id="inputExpression1" typeRef="string">        <text>typeVirksomhet</text>
 </inputExpression>
       </input>
       <input id="antallEtasjer" label="Antall etasjer" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_084ezb1" typeRef="integer">        <text>_antallEtasjer</text>
+        <inputExpression id="LiteralExpression_084ezb1" typeRef="integer">        <text>antallEtasjer</text>
 </inputExpression>
       </input>
       <input id="rkl" label="Risikoklasse" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_1hr913m" typeRef="string">        <text>_rkl</text>
+        <inputExpression id="LiteralExpression_1hr913m" typeRef="string">        <text>rkl</text>
 </inputExpression>
         <inputValues id="UnaryTests_0sscs4n">        <text><![CDATA["RKL1","RKL2","RKL3","RKL4","RKL5","RKL6"]]></text>
 </inputValues>
       </input>
       <input id="brtarealPrEtasje" label="Bruttoareal per etasje" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0ivlagw" typeRef="integer">        <text>_brtArealPrEtasje</text>
+        <inputExpression id="LiteralExpression_0ivlagw" typeRef="integer">        <text>brtArealPrEtasje</text>
 </inputExpression>
       </input>
       <input id="utgangTerrengAlleBoenheter" label="Har hver boenhet egen utgang til terreng" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0sbk9vg" typeRef="boolean">        <text>_utgangTerrengAlleBoenheter</text>
+        <inputExpression id="LiteralExpression_0sbk9vg" typeRef="boolean">        <text>utgangTerrengAlleBoenheter</text>
 </inputExpression>
       </input>
-      <output id="bkl" label="Brannklasse" name="_bkl" typeRef="string">
+      <output id="bkl" label="Brannklasse" name="bkl" typeRef="string">
         <outputValues id="UnaryTests_0gnc3ys">        <text><![CDATA["Ikke krav","BKL1","BKL2","BKL3","BKL4","Udefinert"]]></text>
 </outputValues>
       </output>

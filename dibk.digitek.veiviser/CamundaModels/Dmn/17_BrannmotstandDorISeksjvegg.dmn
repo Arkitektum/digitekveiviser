@@ -20,7 +20,7 @@
     </authorityRequirement>
     <decisionTable hitPolicy="FIRST">
       <input id="InputClause_1q7oe6k" label="Brannmotstand Seksjoneringsvegg" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0bqunv5" typeRef="string">        <text>_kravBrannmotstSeksjVegg</text>
+        <inputExpression id="LiteralExpression_0bqunv5" typeRef="string">        <text>kravBrannmotstSeksjVegg</text>
 </inputExpression>
       </input>
       <output id="output_1" label="Krav brannmotstand dør i seksjoneringsvegg" name="kravBrannmotstandDorISeksjvegg" typeRef="string" />
