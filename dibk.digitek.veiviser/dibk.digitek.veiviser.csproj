@@ -224,7 +224,7 @@
     <Content Include="Data\dmnNames.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="CamundaModels\Risikoklasse Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Bpmn\Risikoklasse Model.bpmn" />
     <EmbeddedResource Include="CamundaModels\BPMNSubmodelTestDotNet.bpmn" />
     <EmbeddedResource Include="CamundaModels\Dmn\01_RisikoklasseFraTypeVirksomhet.dmn" />
     <EmbeddedResource Include="CamundaModels\Dmn\01_Risikoklassifisering.dmn" />
@@ -254,11 +254,11 @@
     <EmbeddedResource Include="CamundaModels\Dmn\17_BrannmotstandDorISeksjvegg.dmn" />
     <EmbeddedResource Include="CamundaModels\Dmn\18_BrannmotstandMotstaendeVinduerYttervegger.dmn" />
     <EmbeddedResource Include="CamundaModels\Dmn\19_BranncelleRomningUtgang.dmn" />
-    <EmbeddedResource Include="CamundaModels\Brannklasse Model.bpmn" />
-    <EmbeddedResource Include="CamundaModels\Brannmotstand Model.bpmn" />
-    <EmbeddedResource Include="CamundaModels\Brannseksjon og Brannmotstand Model.bpmn" />
-    <EmbeddedResource Include="CamundaModels\Krav til branntiltak Model.bpmn" />
-    <EmbeddedResource Include="CamundaModels\Ledesystem Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Bpmn\Brannklasse Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Bpmn\Brannmotstand Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Bpmn\Brannseksjon og Brannmotstand Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Bpmn\Krav til branntiltak Model.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Bpmn\Ledesystem Model.bpmn" />
     <EmbeddedResource Include="CamundaModels\BrannTekniskProsjekteringModel.bpmn" />
     <Content Include="Data\JsonDmn2TEK.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -270,7 +270,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="CamundaModels\SubmodelDataDictionaryDotNet.bpmn" />
-    <EmbeddedResource Include="CamundaModels\BrannJsonOutputModel.bpmn" />
+    <EmbeddedResource Include="CamundaModels\Bpmn\BrannJsonOutputModel.bpmn" />
     <EmbeddedResource Include="CamundaModels\KravTilBranntiltaktModelDotNet.bpmn" />
     <EmbeddedResource Include="CamundaModels\LedesystemModelDotNet.bpmn" />
     <EmbeddedResource Include="CamundaModels\RisikoklassenModelDotNet.bpmn" />
